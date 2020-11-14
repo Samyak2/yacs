@@ -1,9 +1,14 @@
 import socket
 import logging
 import sys
+import json
+from pprint import pformat
 
-format = "%(asctime)s: %(message)s"
-logging.basicConfig(format=format, level=logging.INFO, datefmt="%H:%M:%S")
+from job_utils.task import Task
+
+logging.basicConfig(
+    format="%(asctime)s: %(message)s", level=logging.INFO, datefmt="%H:%M:%S"
+)
 port = int(sys.argv[1])
 w_id = int(sys.argv[2])
 
@@ -17,8 +22,10 @@ master.listen()
 while True:
     conn, addr = master.accept()
     with conn:
-        logging.info('Connected by %s', addr)
+        logging.info("Connected by %s", addr)
         data = conn.recv(1024)
         if not data:
             continue
-        logging.info("\nPrinting data: %s \n", data.decode('utf-8'))
+        data = json.loads(data)
+        task = Task(**data)
+        logging.info("Got task: %s", pformat(task))
