@@ -7,6 +7,7 @@ from typing import List
 from dataclasses import dataclass, asdict
 
 from master_utils.sendWorker import sendWorkerData
+from master_utils.worker import Worker
 from job_utils.task import Task
 
 
@@ -66,6 +67,7 @@ def processRequestData(queries: queue.Queue, scheduler):
     while True:
         query: Query = queries.get()
         logging.info("Processing query %s", pformat(query))
-        worker = scheduler.getNext()
+        worker: Worker = scheduler.getNext()
         for task in query.get_tasks():
+            worker.delegateTask()
             sendWorkerData(worker, asdict(task))
