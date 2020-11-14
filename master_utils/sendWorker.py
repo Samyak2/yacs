@@ -1,15 +1,19 @@
 import socket
 import json
 import logging
+from master_utils.worker import Worker
 
-def sendWorkerData(host, port, query):
+
+def sendWorkerData(worker: Worker, query: dict):
     """
-    Sends job query to a specific worker node at a given port
+    Sends job query to a specific worker node
     Parameters:
-        host: hostname / host ip
-        port: port of the worker node
+        worker: Worker object
         query: query to be sent
     """
-    worker = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    worker.connect((host, port))
-    worker.sendall(str(query).encode())
+    logging.info("Connecting to worker %s", worker)
+    worker_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    worker_socket.connect((worker.host, worker.port))
+    worker_socket.sendall(json.dumps(query).encode())
+    worker_socket.close()
+    logging.info("Sent data to worker")
