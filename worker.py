@@ -21,17 +21,19 @@ master = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 host = "localhost"
 master.bind((host, port))
 
-def waste_time(task_id,duration):
+
+def waste_time(task_id, duration):
     while duration != 0:
         time.sleep(1)
-        duration-=1
-    logging.info("Completed task %d on worker %d",task_id,w_id)
+        duration -= 1
+    logging.info("Completed task %s on worker %d", task_id, w_id)
     response = {}
-    response["message"]="Completed task {} on worker {} %d".format(task_id,w_id)
-    response["task_id"]=task_id
+    response["message"] = "Completed task {} on worker {} %d".format(task_id, w_id)
+    response["task_id"] = task_id
     data = json.dumps(response)
-    master.connect((responseHost,responsePort))
+    # master.connect((responseHost,responsePort))
     master.sendall(data.encode())
+
 
 master.listen()
 
@@ -45,10 +47,9 @@ while True:
         data = json.loads(data)
         task = Task(**data)
         logging.info("Got task: %s", pformat(task))
-        #task_id, duration
+        # task_id, duration
         task_id = data["task_id"]
         duration = data["duration"]
-        logging.info("starting task %d on worker %d",task_id,w_id)
-        thread = threading.Thread(target=waste_time,args=(task_id,duration))
+        logging.info("starting task %s on worker %d", task_id, w_id)
+        thread = threading.Thread(target=waste_time, args=(task_id, duration))
         thread.start()
-
