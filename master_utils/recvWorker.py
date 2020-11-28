@@ -37,7 +37,8 @@ def recvFromWorker(host, port, message):
             if not data:
                 return
             data = json.loads(data.decode())
-            msg = WorkerMessage(addr, **data)
+            data['addr'] = tuple(data['addr'])
+            msg = WorkerMessage(**data)
             message.put(msg)
 
 
@@ -49,5 +50,5 @@ def processWorkerMessage(workerMessages: queue.Queue, workers: Dict[Tuple, Worke
     while True:
         msg = workerMessages.get()
         logging.info("Got data %s", msg)
-        if msg.job_id is not None:
+        if msg.task_id is not None:
             workers[msg.addr].finishTask()

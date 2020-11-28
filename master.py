@@ -2,6 +2,7 @@ import threading
 import logging
 import queue
 from pprint import pprint
+import time
 
 from master_utils.getRequest import getRequestData, processRequestData
 from master_utils.recvWorker import recvFromWorker, processWorkerMessage
@@ -9,7 +10,9 @@ from config_utils import getWorkers
 from master_utils.scheduler import RandomScheduler
 
 logging.basicConfig(
-    format="%(asctime)s: %(message)s", level=logging.INFO, datefmt="%H:%M:%S"
+    format="%(asctime)s: %(message)s", 
+    level=logging.INFO,
+    datefmt="%Y-%m-%dT%H:%M:%S%z"
 )
 
 # read configuration
@@ -34,6 +37,8 @@ scheduler = RandomScheduler(workers)
 logging.info("Starting client requests thread.")
 clientThread = threading.Thread(target=getRequestData, args=(host, clientPort, queries))
 clientMsgThread = threading.Thread(target=processRequestData, args=(queries, scheduler))
+
+# worker threads
 workerThread = threading.Thread(
     target=recvFromWorker, args=(host, recvWorkerPort, workerMessages)
 )

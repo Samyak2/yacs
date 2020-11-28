@@ -8,8 +8,9 @@ import time
 from job_utils.task import Task
 
 logging.basicConfig(
-    format="%(asctime)s: %(message)s", level=logging.INFO, datefmt="%H:%M:%S"
+        format="%(asctime)s: %(message)s", level=logging.INFO, datefmt="%Y-%m-%dT%H:%M:%S%z"
 )
+ 
 port = int(sys.argv[1])
 w_id = int(sys.argv[2])
 responsePort = 5001
@@ -18,7 +19,7 @@ responseHost = "localhost"
 logging.info("Starting worker %d on port %d", w_id, port)
 
 master = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-host = "localhost"
+host = "127.0.0.1"
 master.bind((host, port))
 
 
@@ -28,11 +29,14 @@ def waste_time(task_id, duration):
         duration -= 1
     logging.info("Completed task %s on worker %d", task_id, w_id)
     response = {}
-    response["message"] = "Completed task {} on worker {} %d".format(task_id, w_id)
+    response["message"] = "Completed task {} on worker {}".format(task_id, w_id)
     response["task_id"] = task_id
+    response["addr"] = [host, port]
     data = json.dumps(response)
-    # master.connect((responseHost,responsePort))
-    master.sendall(data.encode())
+    master_send = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    master_send.connect((responseHost,responsePort))
+    master_send.sendall(data.encode())
+    master_send.close()
 
 
 master.listen()
