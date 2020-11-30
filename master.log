@@ -1,0 +1,1442 @@
+2020-11-30T11:29:41+0530: Starting client requests thread.
+2020-11-30T11:29:41+0530: Started listening for messages from worker nodes
+2020-11-30T11:30:40+0530: Connected by ('127.0.0.1', 58170)
+2020-11-30T11:30:40+0530: Got query: Query(job_id='0', map_tasks=[Task(task_id='0_M0', duration=3)], reduce_tasks=[Task(task_id='0_R0', duration=2)])
+2020-11-30T11:30:40+0530: Processing query Query(job_id='0', map_tasks=[Task(task_id='0_M0', duration=3)], reduce_tasks=[Task(task_id='0_R0', duration=2)])
+2020-11-30T11:30:41+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:41+0530: Sent data to worker
+2020-11-30T11:30:41+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:41+0530: Sent data to worker
+2020-11-30T11:30:43+0530: Connected by ('127.0.0.1', 58176)
+2020-11-30T11:30:43+0530: Got query: Query(job_id='1', map_tasks=[Task(task_id='1_M0', duration=3), Task(task_id='1_M1', duration=2), Task(task_id='1_M2', duration=1), Task(task_id='1_M3', duration=4)], reduce_tasks=[Task(task_id='1_R0', duration=2)])
+2020-11-30T11:30:43+0530: Processing query Query(job_id='1', map_tasks=[Task(task_id='1_M0', duration=3), Task(task_id='1_M1', duration=2), Task(task_id='1_M2', duration=1), Task(task_id='1_M3', duration=4)], reduce_tasks=[Task(task_id='1_R0', duration=2)])
+2020-11-30T11:30:43+0530: Connected by ('127.0.0.1', 60938)
+2020-11-30T11:30:43+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='0_R0', message='Completed task 0_R0 on worker 3')
+2020-11-30T11:30:43+0530: Connected by ('127.0.0.1', 58180)
+2020-11-30T11:30:43+0530: Got query: Query(job_id='2', map_tasks=[Task(task_id='2_M0', duration=3), Task(task_id='2_M1', duration=1), Task(task_id='2_M2', duration=2)], reduce_tasks=[Task(task_id='2_R0', duration=3), Task(task_id='2_R1', duration=4)])
+2020-11-30T11:30:44+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:44+0530: Sent data to worker
+2020-11-30T11:30:44+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:44+0530: Sent data to worker
+2020-11-30T11:30:44+0530: Connected by ('127.0.0.1', 58186)
+2020-11-30T11:30:44+0530: Got query: Query(job_id='3', map_tasks=[Task(task_id='3_M0', duration=3)], reduce_tasks=[Task(task_id='3_R0', duration=4)])
+2020-11-30T11:30:44+0530: Connected by ('127.0.0.1', 60948)
+2020-11-30T11:30:44+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='0_M0', message='Completed task 0_M0 on worker 3')
+2020-11-30T11:30:44+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:44+0530: Sent data to worker
+2020-11-30T11:30:45+0530: Connected by ('127.0.0.1', 60952)
+2020-11-30T11:30:45+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='1_M2', message='Completed task 1_M2 on worker 3')
+2020-11-30T11:30:45+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:45+0530: Sent data to worker
+2020-11-30T11:30:46+0530: Connected by ('127.0.0.1', 60956)
+2020-11-30T11:30:46+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='1_M1', message='Completed task 1_M1 on worker 3')
+2020-11-30T11:30:46+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:46+0530: Sent data to worker
+2020-11-30T11:30:46+0530: Processing query Query(job_id='2', map_tasks=[Task(task_id='2_M0', duration=3), Task(task_id='2_M1', duration=1), Task(task_id='2_M2', duration=2)], reduce_tasks=[Task(task_id='2_R0', duration=3), Task(task_id='2_R1', duration=4)])
+2020-11-30T11:30:46+0530: Connected by ('127.0.0.1', 58200)
+2020-11-30T11:30:46+0530: Got query: Query(job_id='4', map_tasks=[Task(task_id='4_M0', duration=2)], reduce_tasks=[Task(task_id='4_R0', duration=2), Task(task_id='4_R1', duration=2)])
+2020-11-30T11:30:47+0530: Connected by ('127.0.0.1', 60962)
+2020-11-30T11:30:47+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='1_M0', message='Completed task 1_M0 on worker 3')
+2020-11-30T11:30:47+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:30:47+0530: Sent data to worker
+2020-11-30T11:30:47+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:30:47+0530: Sent data to worker
+2020-11-30T11:30:47+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:30:47+0530: Sent data to worker
+2020-11-30T11:30:47+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:30:47+0530: Sent data to worker
+2020-11-30T11:30:47+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:30:47+0530: Sent data to worker
+2020-11-30T11:30:47+0530: Processing query Query(job_id='3', map_tasks=[Task(task_id='3_M0', duration=3)], reduce_tasks=[Task(task_id='3_R0', duration=4)])
+2020-11-30T11:30:48+0530: Connected by ('127.0.0.1', 60974)
+2020-11-30T11:30:48+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='1_R0', message='Completed task 1_R0 on worker 3')
+2020-11-30T11:30:48+0530: Connected by ('127.0.0.1', 60976)
+2020-11-30T11:30:48+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='2_M1', message='Completed task 2_M1 on worker 1')
+2020-11-30T11:30:49+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:30:49+0530: Sent data to worker
+2020-11-30T11:30:49+0530: Connected by ('127.0.0.1', 60980)
+2020-11-30T11:30:49+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:30:49+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='2_M2', message='Completed task 2_M2 on worker 1')
+2020-11-30T11:30:49+0530: Sent data to worker
+2020-11-30T11:30:49+0530: Processing query Query(job_id='4', map_tasks=[Task(task_id='4_M0', duration=2)], reduce_tasks=[Task(task_id='4_R0', duration=2), Task(task_id='4_R1', duration=2)])
+2020-11-30T11:30:49+0530: Connected by ('127.0.0.1', 58224)
+2020-11-30T11:30:49+0530: Got query: Query(job_id='5', map_tasks=[Task(task_id='5_M0', duration=4), Task(task_id='5_M1', duration=3)], reduce_tasks=[Task(task_id='5_R0', duration=2), Task(task_id='5_R1', duration=2)])
+2020-11-30T11:30:49+0530: Connected by ('127.0.0.1', 58226)
+2020-11-30T11:30:49+0530: Got query: Query(job_id='6', map_tasks=[Task(task_id='6_M0', duration=3), Task(task_id='6_M1', duration=1), Task(task_id='6_M2', duration=3)], reduce_tasks=[Task(task_id='6_R0', duration=3)])
+2020-11-30T11:30:49+0530: Connected by ('127.0.0.1', 60988)
+2020-11-30T11:30:49+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='1_M3', message='Completed task 1_M3 on worker 3')
+2020-11-30T11:30:50+0530: Connected by ('127.0.0.1', 60990)
+2020-11-30T11:30:50+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='2_M0', message='Completed task 2_M0 on worker 1')
+2020-11-30T11:30:50+0530: Connected by ('127.0.0.1', 60992)
+2020-11-30T11:30:50+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='2_R0', message='Completed task 2_R0 on worker 1')
+2020-11-30T11:30:50+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:30:50+0530: Sent data to worker
+2020-11-30T11:30:50+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:30:50+0530: Sent data to worker
+2020-11-30T11:30:50+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:30:50+0530: Sent data to worker
+2020-11-30T11:30:50+0530: Processing query Query(job_id='5', map_tasks=[Task(task_id='5_M0', duration=4), Task(task_id='5_M1', duration=3)], reduce_tasks=[Task(task_id='5_R0', duration=2), Task(task_id='5_R1', duration=2)])
+2020-11-30T11:30:51+0530: Connected by ('127.0.0.1', 32768)
+2020-11-30T11:30:51+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='2_R1', message='Completed task 2_R1 on worker 1')
+2020-11-30T11:30:51+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:30:51+0530: Sent data to worker
+2020-11-30T11:30:51+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:30:51+0530: Sent data to worker
+2020-11-30T11:30:52+0530: Connected by ('127.0.0.1', 58246)
+2020-11-30T11:30:52+0530: Got query: Query(job_id='7', map_tasks=[Task(task_id='7_M0', duration=2), Task(task_id='7_M1', duration=3)], reduce_tasks=[Task(task_id='7_R0', duration=2), Task(task_id='7_R1', duration=2)])
+2020-11-30T11:30:52+0530: Connected by ('127.0.0.1', 32776)
+2020-11-30T11:30:52+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='4_M0', message='Completed task 4_M0 on worker 1')
+2020-11-30T11:30:52+0530: Connected by ('127.0.0.1', 32778)
+2020-11-30T11:30:52+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:30:52+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='3_M0', message='Completed task 3_M0 on worker 2')
+2020-11-30T11:30:52+0530: Connected by ('127.0.0.1', 32780)
+2020-11-30T11:30:52+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='4_R0', message='Completed task 4_R0 on worker 1')
+2020-11-30T11:30:52+0530: Sent data to worker
+2020-11-30T11:30:52+0530: Connected by ('127.0.0.1', 32782)
+2020-11-30T11:30:52+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:30:52+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='4_R1', message='Completed task 4_R1 on worker 1')
+2020-11-30T11:30:52+0530: Sent data to worker
+2020-11-30T11:30:52+0530: Processing query Query(job_id='6', map_tasks=[Task(task_id='6_M0', duration=3), Task(task_id='6_M1', duration=1), Task(task_id='6_M2', duration=3)], reduce_tasks=[Task(task_id='6_R0', duration=3)])
+2020-11-30T11:30:52+0530: Connected by ('127.0.0.1', 58260)
+2020-11-30T11:30:52+0530: Got query: Query(job_id='8', map_tasks=[Task(task_id='8_M0', duration=3), Task(task_id='8_M1', duration=4), Task(task_id='8_M2', duration=4), Task(task_id='8_M3', duration=2)], reduce_tasks=[Task(task_id='8_R0', duration=4), Task(task_id='8_R1', duration=3)])
+2020-11-30T11:30:53+0530: Connected by ('127.0.0.1', 32790)
+2020-11-30T11:30:53+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='3_R0', message='Completed task 3_R0 on worker 2')
+2020-11-30T11:30:53+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:53+0530: Sent data to worker
+2020-11-30T11:30:53+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:53+0530: Sent data to worker
+2020-11-30T11:30:53+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:53+0530: Sent data to worker
+2020-11-30T11:30:54+0530: Connected by ('127.0.0.1', 32798)
+2020-11-30T11:30:54+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='5_R0', message='Completed task 5_R0 on worker 1')
+2020-11-30T11:30:54+0530: Connected by ('127.0.0.1', 32800)
+2020-11-30T11:30:54+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='5_M1', message='Completed task 5_M1 on worker 1')
+2020-11-30T11:30:54+0530: Connected by ('127.0.0.1', 32802)
+2020-11-30T11:30:54+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='5_R1', message='Completed task 5_R1 on worker 1')
+2020-11-30T11:30:54+0530: Connected by ('127.0.0.1', 32804)
+2020-11-30T11:30:54+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='6_M1', message='Completed task 6_M1 on worker 3')
+2020-11-30T11:30:54+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:54+0530: Sent data to worker
+2020-11-30T11:30:54+0530: Processing query Query(job_id='7', map_tasks=[Task(task_id='7_M0', duration=2), Task(task_id='7_M1', duration=3)], reduce_tasks=[Task(task_id='7_R0', duration=2), Task(task_id='7_R1', duration=2)])
+2020-11-30T11:30:54+0530: Connected by ('127.0.0.1', 58280)
+2020-11-30T11:30:54+0530: Got query: Query(job_id='9', map_tasks=[Task(task_id='9_M0', duration=4), Task(task_id='9_M1', duration=3)], reduce_tasks=[Task(task_id='9_R0', duration=3), Task(task_id='9_R1', duration=2)])
+2020-11-30T11:30:55+0530: Connected by ('127.0.0.1', 32810)
+2020-11-30T11:30:55+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='5_M0', message='Completed task 5_M0 on worker 1')
+2020-11-30T11:30:55+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:30:55+0530: Sent data to worker
+2020-11-30T11:30:55+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:30:55+0530: Sent data to worker
+2020-11-30T11:30:55+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:30:55+0530: Sent data to worker
+2020-11-30T11:30:55+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:30:55+0530: Sent data to worker
+2020-11-30T11:30:55+0530: Processing query Query(job_id='8', map_tasks=[Task(task_id='8_M0', duration=3), Task(task_id='8_M1', duration=4), Task(task_id='8_M2', duration=4), Task(task_id='8_M3', duration=2)], reduce_tasks=[Task(task_id='8_R0', duration=4), Task(task_id='8_R1', duration=3)])
+2020-11-30T11:30:56+0530: Connected by ('127.0.0.1', 32820)
+2020-11-30T11:30:56+0530: Connected by ('127.0.0.1', 32822)
+2020-11-30T11:30:56+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='6_M0', message='Completed task 6_M0 on worker 3')
+2020-11-30T11:30:56+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='6_M2', message='Completed task 6_M2 on worker 3')
+2020-11-30T11:30:56+0530: Connected by ('127.0.0.1', 58296)
+2020-11-30T11:30:56+0530: Got query: Query(job_id='10', map_tasks=[Task(task_id='10_M0', duration=1)], reduce_tasks=[Task(task_id='10_R0', duration=3)])
+2020-11-30T11:30:57+0530: Connected by ('127.0.0.1', 32826)
+2020-11-30T11:30:57+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='6_R0', message='Completed task 6_R0 on worker 3')
+2020-11-30T11:30:57+0530: Connected by ('127.0.0.1', 32828)
+2020-11-30T11:30:57+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:57+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='7_M0', message='Completed task 7_M0 on worker 2')
+2020-11-30T11:30:57+0530: Sent data to worker
+2020-11-30T11:30:57+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:57+0530: Connected by ('127.0.0.1', 32832)
+2020-11-30T11:30:57+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='7_R0', message='Completed task 7_R0 on worker 2')
+2020-11-30T11:30:57+0530: Connected by ('127.0.0.1', 32834)
+2020-11-30T11:30:57+0530: Sent data to worker
+2020-11-30T11:30:57+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:30:57+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='7_R1', message='Completed task 7_R1 on worker 2')
+2020-11-30T11:30:57+0530: Sent data to worker
+2020-11-30T11:30:57+0530: Connected by ('127.0.0.1', 58312)
+2020-11-30T11:30:57+0530: Got query: Query(job_id='11', map_tasks=[Task(task_id='11_M0', duration=2), Task(task_id='11_M1', duration=3)], reduce_tasks=[Task(task_id='11_R0', duration=3), Task(task_id='11_R1', duration=2)])
+2020-11-30T11:30:57+0530: Connected by ('127.0.0.1', 58314)
+2020-11-30T11:30:57+0530: Got query: Query(job_id='12', map_tasks=[Task(task_id='12_M0', duration=4)], reduce_tasks=[Task(task_id='12_R0', duration=4), Task(task_id='12_R1', duration=4)])
+2020-11-30T11:30:58+0530: Connected by ('127.0.0.1', 58316)
+2020-11-30T11:30:58+0530: Got query: Query(job_id='13', map_tasks=[Task(task_id='13_M0', duration=2), Task(task_id='13_M1', duration=3)], reduce_tasks=[Task(task_id='13_R0', duration=3)])
+2020-11-30T11:30:58+0530: Connected by ('127.0.0.1', 32846)
+2020-11-30T11:30:58+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='7_M1', message='Completed task 7_M1 on worker 2')
+2020-11-30T11:31:00+0530: Connected by ('127.0.0.1', 32848)
+2020-11-30T11:31:00+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='8_M0', message='Completed task 8_M0 on worker 3')
+2020-11-30T11:31:00+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:00+0530: Sent data to worker
+2020-11-30T11:31:01+0530: Connected by ('127.0.0.1', 32852)
+2020-11-30T11:31:01+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='8_M1', message='Completed task 8_M1 on worker 3')
+2020-11-30T11:31:01+0530: Connected by ('127.0.0.1', 32854)
+2020-11-30T11:31:01+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='8_M2', message='Completed task 8_M2 on worker 3')
+2020-11-30T11:31:01+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:01+0530: Sent data to worker
+2020-11-30T11:31:01+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:01+0530: Sent data to worker
+2020-11-30T11:31:01+0530: Processing query Query(job_id='9', map_tasks=[Task(task_id='9_M0', duration=4), Task(task_id='9_M1', duration=3)], reduce_tasks=[Task(task_id='9_R0', duration=3), Task(task_id='9_R1', duration=2)])
+2020-11-30T11:31:02+0530: Connected by ('127.0.0.1', 32860)
+2020-11-30T11:31:02+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='8_M3', message='Completed task 8_M3 on worker 3')
+2020-11-30T11:31:02+0530: Connected by ('127.0.0.1', 58334)
+2020-11-30T11:31:02+0530: Got query: Query(job_id='14', map_tasks=[Task(task_id='14_M0', duration=2)], reduce_tasks=[Task(task_id='14_R0', duration=4), Task(task_id='14_R1', duration=3)])
+2020-11-30T11:31:02+0530: Connected by ('127.0.0.1', 58336)
+2020-11-30T11:31:02+0530: Got query: Query(job_id='15', map_tasks=[Task(task_id='15_M0', duration=3)], reduce_tasks=[Task(task_id='15_R0', duration=1), Task(task_id='15_R1', duration=3)])
+2020-11-30T11:31:03+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:03+0530: Sent data to worker
+2020-11-30T11:31:03+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:03+0530: Sent data to worker
+2020-11-30T11:31:03+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:03+0530: Sent data to worker
+2020-11-30T11:31:03+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:03+0530: Sent data to worker
+2020-11-30T11:31:03+0530: Processing query Query(job_id='10', map_tasks=[Task(task_id='10_M0', duration=1)], reduce_tasks=[Task(task_id='10_R0', duration=3)])
+2020-11-30T11:31:03+0530: Connected by ('127.0.0.1', 58346)
+2020-11-30T11:31:03+0530: Got query: Query(job_id='16', map_tasks=[Task(task_id='16_M0', duration=2), Task(task_id='16_M1', duration=2), Task(task_id='16_M2', duration=2)], reduce_tasks=[Task(task_id='16_R0', duration=3), Task(task_id='16_R1', duration=1)])
+2020-11-30T11:31:04+0530: Connected by ('127.0.0.1', 32876)
+2020-11-30T11:31:04+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='8_R1', message='Completed task 8_R1 on worker 3')
+2020-11-30T11:31:04+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:04+0530: Sent data to worker
+2020-11-30T11:31:04+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:04+0530: Sent data to worker
+2020-11-30T11:31:04+0530: Processing query Query(job_id='11', map_tasks=[Task(task_id='11_M0', duration=2), Task(task_id='11_M1', duration=3)], reduce_tasks=[Task(task_id='11_R0', duration=3), Task(task_id='11_R1', duration=2)])
+2020-11-30T11:31:04+0530: Connected by ('127.0.0.1', 58354)
+2020-11-30T11:31:04+0530: Got query: Query(job_id='17', map_tasks=[Task(task_id='17_M0', duration=2)], reduce_tasks=[Task(task_id='17_R0', duration=2), Task(task_id='17_R1', duration=3)])
+2020-11-30T11:31:04+0530: Connected by ('127.0.0.1', 58356)
+2020-11-30T11:31:04+0530: Got query: Query(job_id='18', map_tasks=[Task(task_id='18_M0', duration=1), Task(task_id='18_M1', duration=1)], reduce_tasks=[Task(task_id='18_R0', duration=4)])
+2020-11-30T11:31:04+0530: Connected by ('127.0.0.1', 58358)
+2020-11-30T11:31:04+0530: Got query: Query(job_id='19', map_tasks=[Task(task_id='19_M0', duration=3), Task(task_id='19_M1', duration=2)], reduce_tasks=[Task(task_id='19_R0', duration=4), Task(task_id='19_R1', duration=1)])
+2020-11-30T11:31:04+0530: Connected by ('127.0.0.1', 58360)
+2020-11-30T11:31:04+0530: Got query: Query(job_id='20', map_tasks=[Task(task_id='20_M0', duration=2), Task(task_id='20_M1', duration=3), Task(task_id='20_M2', duration=2)], reduce_tasks=[Task(task_id='20_R0', duration=2)])
+2020-11-30T11:31:05+0530: Connected by ('127.0.0.1', 32890)
+2020-11-30T11:31:05+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='8_R0', message='Completed task 8_R0 on worker 3')
+2020-11-30T11:31:05+0530: Connected by ('127.0.0.1', 32892)
+2020-11-30T11:31:05+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:05+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='9_R1', message='Completed task 9_R1 on worker 2')
+2020-11-30T11:31:05+0530: Connected by ('127.0.0.1', 32894)
+2020-11-30T11:31:05+0530: Sent data to worker
+2020-11-30T11:31:05+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='10_M0', message='Completed task 10_M0 on worker 1')
+2020-11-30T11:31:05+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:05+0530: Sent data to worker
+2020-11-30T11:31:05+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:05+0530: Sent data to worker
+2020-11-30T11:31:05+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:05+0530: Sent data to worker
+2020-11-30T11:31:05+0530: Processing query Query(job_id='12', map_tasks=[Task(task_id='12_M0', duration=4)], reduce_tasks=[Task(task_id='12_R0', duration=4), Task(task_id='12_R1', duration=4)])
+2020-11-30T11:31:05+0530: Connected by ('127.0.0.1', 58376)
+2020-11-30T11:31:05+0530: Got query: Query(job_id='21', map_tasks=[Task(task_id='21_M0', duration=2)], reduce_tasks=[Task(task_id='21_R0', duration=1), Task(task_id='21_R1', duration=1)])
+2020-11-30T11:31:06+0530: Connected by ('127.0.0.1', 32906)
+2020-11-30T11:31:06+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='9_M1', message='Completed task 9_M1 on worker 2')
+2020-11-30T11:31:06+0530: Connected by ('127.0.0.1', 32908)
+2020-11-30T11:31:06+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='9_R0', message='Completed task 9_R0 on worker 2')
+2020-11-30T11:31:06+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:06+0530: Sent data to worker
+2020-11-30T11:31:06+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:06+0530: Sent data to worker
+2020-11-30T11:31:06+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:06+0530: Sent data to worker
+2020-11-30T11:31:06+0530: Processing query Query(job_id='13', map_tasks=[Task(task_id='13_M0', duration=2), Task(task_id='13_M1', duration=3)], reduce_tasks=[Task(task_id='13_R0', duration=3)])
+2020-11-30T11:31:06+0530: Connected by ('127.0.0.1', 58388)
+2020-11-30T11:31:06+0530: Got query: Query(job_id='22', map_tasks=[Task(task_id='22_M0', duration=3), Task(task_id='22_M1', duration=4)], reduce_tasks=[Task(task_id='22_R0', duration=1), Task(task_id='22_R1', duration=3)])
+2020-11-30T11:31:06+0530: Connected by ('127.0.0.1', 58390)
+2020-11-30T11:31:06+0530: Got query: Query(job_id='23', map_tasks=[Task(task_id='23_M0', duration=2)], reduce_tasks=[Task(task_id='23_R0', duration=4)])
+2020-11-30T11:31:07+0530: Connected by ('127.0.0.1', 32920)
+2020-11-30T11:31:07+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='9_M0', message='Completed task 9_M0 on worker 2')
+2020-11-30T11:31:07+0530: Connected by ('127.0.0.1', 32922)
+2020-11-30T11:31:07+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='10_R0', message='Completed task 10_R0 on worker 1')
+2020-11-30T11:31:07+0530: Connected by ('127.0.0.1', 32924)
+2020-11-30T11:31:07+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='11_M0', message='Completed task 11_M0 on worker 1')
+2020-11-30T11:31:07+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:07+0530: Connected by ('127.0.0.1', 32928)
+2020-11-30T11:31:07+0530: Sent data to worker
+2020-11-30T11:31:07+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='11_R1', message='Completed task 11_R1 on worker 1')
+2020-11-30T11:31:07+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:07+0530: Sent data to worker
+2020-11-30T11:31:07+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:07+0530: Sent data to worker
+2020-11-30T11:31:07+0530: Processing query Query(job_id='14', map_tasks=[Task(task_id='14_M0', duration=2)], reduce_tasks=[Task(task_id='14_R0', duration=4), Task(task_id='14_R1', duration=3)])
+2020-11-30T11:31:07+0530: Connected by ('127.0.0.1', 58406)
+2020-11-30T11:31:07+0530: Got query: Query(job_id='24', map_tasks=[Task(task_id='24_M0', duration=3), Task(task_id='24_M1', duration=3)], reduce_tasks=[Task(task_id='24_R0', duration=2)])
+2020-11-30T11:31:07+0530: Connected by ('127.0.0.1', 58408)
+2020-11-30T11:31:07+0530: Got query: Query(job_id='25', map_tasks=[Task(task_id='25_M0', duration=1)], reduce_tasks=[Task(task_id='25_R0', duration=1), Task(task_id='25_R1', duration=1)])
+2020-11-30T11:31:07+0530: Connected by ('127.0.0.1', 58410)
+2020-11-30T11:31:07+0530: Got query: Query(job_id='26', map_tasks=[Task(task_id='26_M0', duration=1)], reduce_tasks=[Task(task_id='26_R0', duration=2)])
+2020-11-30T11:31:07+0530: Connected by ('127.0.0.1', 58412)
+2020-11-30T11:31:07+0530: Got query: Query(job_id='27', map_tasks=[Task(task_id='27_M0', duration=3), Task(task_id='27_M1', duration=4)], reduce_tasks=[Task(task_id='27_R0', duration=2)])
+2020-11-30T11:31:08+0530: Connected by ('127.0.0.1', 32942)
+2020-11-30T11:31:08+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='11_M1', message='Completed task 11_M1 on worker 1')
+2020-11-30T11:31:08+0530: Connected by ('127.0.0.1', 32944)
+2020-11-30T11:31:08+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='11_R0', message='Completed task 11_R0 on worker 1')
+2020-11-30T11:31:08+0530: Connected by ('127.0.0.1', 58418)
+2020-11-30T11:31:08+0530: Got query: Query(job_id='28', map_tasks=[Task(task_id='28_M0', duration=4)], reduce_tasks=[Task(task_id='28_R0', duration=3), Task(task_id='28_R1', duration=1)])
+2020-11-30T11:31:09+0530: Connected by ('127.0.0.1', 32948)
+2020-11-30T11:31:09+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:09+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='13_M0', message='Completed task 13_M0 on worker 3')
+2020-11-30T11:31:09+0530: Sent data to worker
+2020-11-30T11:31:09+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:09+0530: Sent data to worker
+2020-11-30T11:31:09+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:09+0530: Sent data to worker
+2020-11-30T11:31:09+0530: Processing query Query(job_id='15', map_tasks=[Task(task_id='15_M0', duration=3)], reduce_tasks=[Task(task_id='15_R0', duration=1), Task(task_id='15_R1', duration=3)])
+2020-11-30T11:31:09+0530: Connected by ('127.0.0.1', 58428)
+2020-11-30T11:31:09+0530: Got query: Query(job_id='29', map_tasks=[Task(task_id='29_M0', duration=1), Task(task_id='29_M1', duration=3)], reduce_tasks=[Task(task_id='29_R0', duration=1), Task(task_id='29_R1', duration=3)])
+2020-11-30T11:31:10+0530: Connected by ('127.0.0.1', 32958)
+2020-11-30T11:31:10+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='12_M0', message='Completed task 12_M0 on worker 2')
+2020-11-30T11:31:10+0530: Connected by ('127.0.0.1', 32960)
+2020-11-30T11:31:10+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='12_R0', message='Completed task 12_R0 on worker 2')
+2020-11-30T11:31:10+0530: Connected by ('127.0.0.1', 32962)
+2020-11-30T11:31:10+0530: Connected by ('127.0.0.1', 32964)
+2020-11-30T11:31:10+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='12_R1', message='Completed task 12_R1 on worker 2')
+2020-11-30T11:31:10+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='13_M1', message='Completed task 13_M1 on worker 3')
+2020-11-30T11:31:10+0530: Connected by ('127.0.0.1', 32966)
+2020-11-30T11:31:10+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='13_R0', message='Completed task 13_R0 on worker 3')
+2020-11-30T11:31:10+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:10+0530: Sent data to worker
+2020-11-30T11:31:10+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:10+0530: Sent data to worker
+2020-11-30T11:31:10+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:10+0530: Sent data to worker
+2020-11-30T11:31:10+0530: Processing query Query(job_id='16', map_tasks=[Task(task_id='16_M0', duration=2), Task(task_id='16_M1', duration=2), Task(task_id='16_M2', duration=2)], reduce_tasks=[Task(task_id='16_R0', duration=3), Task(task_id='16_R1', duration=1)])
+2020-11-30T11:31:11+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:11+0530: Connected by ('127.0.0.1', 32974)
+2020-11-30T11:31:11+0530: Sent data to worker
+2020-11-30T11:31:11+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:11+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='14_M0', message='Completed task 14_M0 on worker 2')
+2020-11-30T11:31:11+0530: Connected by ('127.0.0.1', 32978)
+2020-11-30T11:31:11+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='15_R0', message='Completed task 15_R0 on worker 3')
+2020-11-30T11:31:11+0530: Sent data to worker
+2020-11-30T11:31:11+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:11+0530: Sent data to worker
+2020-11-30T11:31:11+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:11+0530: Sent data to worker
+2020-11-30T11:31:11+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:11+0530: Sent data to worker
+2020-11-30T11:31:11+0530: Processing query Query(job_id='17', map_tasks=[Task(task_id='17_M0', duration=2)], reduce_tasks=[Task(task_id='17_R0', duration=2), Task(task_id='17_R1', duration=3)])
+2020-11-30T11:31:11+0530: Connected by ('127.0.0.1', 58460)
+2020-11-30T11:31:11+0530: Got query: Query(job_id='30', map_tasks=[Task(task_id='30_M0', duration=4), Task(task_id='30_M1', duration=4), Task(task_id='30_M2', duration=3), Task(task_id='30_M3', duration=3)], reduce_tasks=[Task(task_id='30_R0', duration=4), Task(task_id='30_R1', duration=2)])
+2020-11-30T11:31:11+0530: Connected by ('127.0.0.1', 58462)
+2020-11-30T11:31:11+0530: Got query: Query(job_id='31', map_tasks=[Task(task_id='31_M0', duration=4), Task(task_id='31_M1', duration=3), Task(task_id='31_M2', duration=3), Task(task_id='31_M3', duration=1)], reduce_tasks=[Task(task_id='31_R0', duration=1)])
+2020-11-30T11:31:12+0530: Connected by ('127.0.0.1', 32992)
+2020-11-30T11:31:12+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='14_R1', message='Completed task 14_R1 on worker 2')
+2020-11-30T11:31:12+0530: Connected by ('127.0.0.1', 32994)
+2020-11-30T11:31:12+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='16_R1', message='Completed task 16_R1 on worker 1')
+2020-11-30T11:31:13+0530: Connected by ('127.0.0.1', 32996)
+2020-11-30T11:31:13+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='15_M0', message='Completed task 15_M0 on worker 3')
+2020-11-30T11:31:13+0530: Connected by ('127.0.0.1', 32998)
+2020-11-30T11:31:13+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='14_R0', message='Completed task 14_R0 on worker 2')
+2020-11-30T11:31:13+0530: Connected by ('127.0.0.1', 33000)
+2020-11-30T11:31:13+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='16_M0', message='Completed task 16_M0 on worker 1')
+2020-11-30T11:31:13+0530: Connected by ('127.0.0.1', 33002)
+2020-11-30T11:31:13+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='15_R1', message='Completed task 15_R1 on worker 3')
+2020-11-30T11:31:13+0530: Connected by ('127.0.0.1', 33004)
+2020-11-30T11:31:13+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='16_M1', message='Completed task 16_M1 on worker 1')
+2020-11-30T11:31:13+0530: Connected by ('127.0.0.1', 33006)
+2020-11-30T11:31:13+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:13+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='16_M2', message='Completed task 16_M2 on worker 1')
+2020-11-30T11:31:13+0530: Sent data to worker
+2020-11-30T11:31:13+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:13+0530: Sent data to worker
+2020-11-30T11:31:13+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:13+0530: Sent data to worker
+2020-11-30T11:31:13+0530: Processing query Query(job_id='18', map_tasks=[Task(task_id='18_M0', duration=1), Task(task_id='18_M1', duration=1)], reduce_tasks=[Task(task_id='18_R0', duration=4)])
+2020-11-30T11:31:14+0530: Connected by ('127.0.0.1', 33014)
+2020-11-30T11:31:14+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='16_R0', message='Completed task 16_R0 on worker 1')
+2020-11-30T11:31:14+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:14+0530: Sent data to worker
+2020-11-30T11:31:14+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:14+0530: Sent data to worker
+2020-11-30T11:31:14+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:14+0530: Sent data to worker
+2020-11-30T11:31:14+0530: Processing query Query(job_id='19', map_tasks=[Task(task_id='19_M0', duration=3), Task(task_id='19_M1', duration=2)], reduce_tasks=[Task(task_id='19_R0', duration=4), Task(task_id='19_R1', duration=1)])
+2020-11-30T11:31:15+0530: Connected by ('127.0.0.1', 58494)
+2020-11-30T11:31:15+0530: Got query: Query(job_id='32', map_tasks=[Task(task_id='32_M0', duration=1), Task(task_id='32_M1', duration=1), Task(task_id='32_M2', duration=3), Task(task_id='32_M3', duration=1)], reduce_tasks=[Task(task_id='32_R0', duration=1)])
+2020-11-30T11:31:15+0530: Connected by ('127.0.0.1', 33024)
+2020-11-30T11:31:15+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='17_R0', message='Completed task 17_R0 on worker 3')
+2020-11-30T11:31:15+0530: Connected by ('127.0.0.1', 33026)
+2020-11-30T11:31:15+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='17_M0', message='Completed task 17_M0 on worker 3')
+2020-11-30T11:31:15+0530: Connected by ('127.0.0.1', 33028)
+2020-11-30T11:31:15+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:15+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='18_M0', message='Completed task 18_M0 on worker 1')
+2020-11-30T11:31:15+0530: Connected by ('127.0.0.1', 33030)
+2020-11-30T11:31:15+0530: Sent data to worker
+2020-11-30T11:31:15+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='18_M1', message='Completed task 18_M1 on worker 1')
+2020-11-30T11:31:15+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:15+0530: Sent data to worker
+2020-11-30T11:31:15+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:15+0530: Sent data to worker
+2020-11-30T11:31:15+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:15+0530: Sent data to worker
+2020-11-30T11:31:15+0530: Processing query Query(job_id='20', map_tasks=[Task(task_id='20_M0', duration=2), Task(task_id='20_M1', duration=3), Task(task_id='20_M2', duration=2)], reduce_tasks=[Task(task_id='20_R0', duration=2)])
+2020-11-30T11:31:15+0530: Connected by ('127.0.0.1', 58512)
+2020-11-30T11:31:15+0530: Got query: Query(job_id='33', map_tasks=[Task(task_id='33_M0', duration=3), Task(task_id='33_M1', duration=1)], reduce_tasks=[Task(task_id='33_R0', duration=2)])
+2020-11-30T11:31:16+0530: Connected by ('127.0.0.1', 58514)
+2020-11-30T11:31:16+0530: Got query: Query(job_id='34', map_tasks=[Task(task_id='34_M0', duration=2), Task(task_id='34_M1', duration=4)], reduce_tasks=[Task(task_id='34_R0', duration=4), Task(task_id='34_R1', duration=4)])
+2020-11-30T11:31:16+0530: Connected by ('127.0.0.1', 33044)
+2020-11-30T11:31:16+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='17_R1', message='Completed task 17_R1 on worker 3')
+2020-11-30T11:31:16+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:16+0530: Sent data to worker
+2020-11-30T11:31:16+0530: Connected by ('127.0.0.1', 33048)
+2020-11-30T11:31:16+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:16+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='19_R1', message='Completed task 19_R1 on worker 2')
+2020-11-30T11:31:16+0530: Sent data to worker
+2020-11-30T11:31:16+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:16+0530: Sent data to worker
+2020-11-30T11:31:16+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:16+0530: Sent data to worker
+2020-11-30T11:31:16+0530: Processing query Query(job_id='21', map_tasks=[Task(task_id='21_M0', duration=2)], reduce_tasks=[Task(task_id='21_R0', duration=1), Task(task_id='21_R1', duration=1)])
+2020-11-30T11:31:16+0530: Connected by ('127.0.0.1', 58528)
+2020-11-30T11:31:16+0530: Got query: Query(job_id='35', map_tasks=[Task(task_id='35_M0', duration=4), Task(task_id='35_M1', duration=4), Task(task_id='35_M2', duration=3), Task(task_id='35_M3', duration=2)], reduce_tasks=[Task(task_id='35_R0', duration=4)])
+2020-11-30T11:31:16+0530: Connected by ('127.0.0.1', 58530)
+2020-11-30T11:31:16+0530: Got query: Query(job_id='36', map_tasks=[Task(task_id='36_M0', duration=1), Task(task_id='36_M1', duration=3), Task(task_id='36_M2', duration=2), Task(task_id='36_M3', duration=2)], reduce_tasks=[Task(task_id='36_R0', duration=2)])
+2020-11-30T11:31:16+0530: Connected by ('127.0.0.1', 58532)
+2020-11-30T11:31:16+0530: Got query: Query(job_id='37', map_tasks=[Task(task_id='37_M0', duration=3)], reduce_tasks=[Task(task_id='37_R0', duration=2), Task(task_id='37_R1', duration=2)])
+2020-11-30T11:31:16+0530: Connected by ('127.0.0.1', 58534)
+2020-11-30T11:31:16+0530: Got query: Query(job_id='38', map_tasks=[Task(task_id='38_M0', duration=2), Task(task_id='38_M1', duration=4), Task(task_id='38_M2', duration=2)], reduce_tasks=[Task(task_id='38_R0', duration=2), Task(task_id='38_R1', duration=2)])
+2020-11-30T11:31:17+0530: Connected by ('127.0.0.1', 33064)
+2020-11-30T11:31:17+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='19_M1', message='Completed task 19_M1 on worker 2')
+2020-11-30T11:31:17+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:17+0530: Sent data to worker
+2020-11-30T11:31:17+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:17+0530: Sent data to worker
+2020-11-30T11:31:17+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:17+0530: Sent data to worker
+2020-11-30T11:31:17+0530: Processing query Query(job_id='22', map_tasks=[Task(task_id='22_M0', duration=3), Task(task_id='22_M1', duration=4)], reduce_tasks=[Task(task_id='22_R0', duration=1), Task(task_id='22_R1', duration=3)])
+2020-11-30T11:31:18+0530: Connected by ('127.0.0.1', 58544)
+2020-11-30T11:31:18+0530: Got query: Query(job_id='39', map_tasks=[Task(task_id='39_M0', duration=4), Task(task_id='39_M1', duration=1), Task(task_id='39_M2', duration=2), Task(task_id='39_M3', duration=4)], reduce_tasks=[Task(task_id='39_R0', duration=2), Task(task_id='39_R1', duration=4)])
+2020-11-30T11:31:18+0530: Connected by ('127.0.0.1', 33074)
+2020-11-30T11:31:18+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='18_R0', message='Completed task 18_R0 on worker 1')
+2020-11-30T11:31:18+0530: Connected by ('127.0.0.1', 33076)
+2020-11-30T11:31:18+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='19_M0', message='Completed task 19_M0 on worker 2')
+2020-11-30T11:31:18+0530: Connected by ('127.0.0.1', 33080)
+2020-11-30T11:31:18+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='20_M0', message='Completed task 20_M0 on worker 1')
+2020-11-30T11:31:18+0530: Connected by ('127.0.0.1', 33082)
+2020-11-30T11:31:18+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='20_M2', message='Completed task 20_M2 on worker 1')
+2020-11-30T11:31:18+0530: Connected by ('127.0.0.1', 33084)
+2020-11-30T11:31:18+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='20_R0', message='Completed task 20_R0 on worker 1')
+2020-11-30T11:31:18+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:18+0530: Sent data to worker
+2020-11-30T11:31:18+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:18+0530: Connected by ('127.0.0.1', 33088)
+2020-11-30T11:31:18+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='21_R0', message='Completed task 21_R0 on worker 2')
+2020-11-30T11:31:18+0530: Sent data to worker
+2020-11-30T11:31:18+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:18+0530: Connected by ('127.0.0.1', 33092)
+2020-11-30T11:31:18+0530: Sent data to worker
+2020-11-30T11:31:18+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:18+0530: Sent data to worker
+2020-11-30T11:31:18+0530: Processing query Query(job_id='23', map_tasks=[Task(task_id='23_M0', duration=2)], reduce_tasks=[Task(task_id='23_R0', duration=4)])
+2020-11-30T11:31:18+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='21_R1', message='Completed task 21_R1 on worker 2')
+2020-11-30T11:31:19+0530: Connected by ('127.0.0.1', 33098)
+2020-11-30T11:31:19+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='19_R0', message='Completed task 19_R0 on worker 2')
+2020-11-30T11:31:19+0530: Connected by ('127.0.0.1', 33100)
+2020-11-30T11:31:19+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='20_M1', message='Completed task 20_M1 on worker 1')
+2020-11-30T11:31:19+0530: Connected by ('127.0.0.1', 33102)
+2020-11-30T11:31:19+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='21_M0', message='Completed task 21_M0 on worker 2')
+2020-11-30T11:31:19+0530: Connected by ('127.0.0.1', 33104)
+2020-11-30T11:31:19+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:19+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='22_R0', message='Completed task 22_R0 on worker 2')
+2020-11-30T11:31:19+0530: Sent data to worker
+2020-11-30T11:31:19+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:19+0530: Sent data to worker
+2020-11-30T11:31:19+0530: Processing query Query(job_id='24', map_tasks=[Task(task_id='24_M0', duration=3), Task(task_id='24_M1', duration=3)], reduce_tasks=[Task(task_id='24_R0', duration=2)])
+2020-11-30T11:31:20+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:20+0530: Sent data to worker
+2020-11-30T11:31:20+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:20+0530: Sent data to worker
+2020-11-30T11:31:20+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:20+0530: Sent data to worker
+2020-11-30T11:31:20+0530: Processing query Query(job_id='25', map_tasks=[Task(task_id='25_M0', duration=1)], reduce_tasks=[Task(task_id='25_R0', duration=1), Task(task_id='25_R1', duration=1)])
+2020-11-30T11:31:21+0530: Connected by ('127.0.0.1', 58588)
+2020-11-30T11:31:21+0530: Got query: Query(job_id='40', map_tasks=[Task(task_id='40_M0', duration=4), Task(task_id='40_M1', duration=3), Task(task_id='40_M2', duration=3), Task(task_id='40_M3', duration=1)], reduce_tasks=[Task(task_id='40_R0', duration=4)])
+2020-11-30T11:31:21+0530: Connected by ('127.0.0.1', 33118)
+2020-11-30T11:31:21+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='22_M0', message='Completed task 22_M0 on worker 2')
+2020-11-30T11:31:21+0530: Connected by ('127.0.0.1', 33120)
+2020-11-30T11:31:21+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='22_R1', message='Completed task 22_R1 on worker 2')
+2020-11-30T11:31:21+0530: Connected by ('127.0.0.1', 33122)
+2020-11-30T11:31:21+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='23_M0', message='Completed task 23_M0 on worker 1')
+2020-11-30T11:31:21+0530: Connected by ('127.0.0.1', 58596)
+2020-11-30T11:31:21+0530: Got query: Query(job_id='41', map_tasks=[Task(task_id='41_M0', duration=4), Task(task_id='41_M1', duration=1), Task(task_id='41_M2', duration=4), Task(task_id='41_M3', duration=2)], reduce_tasks=[Task(task_id='41_R0', duration=3), Task(task_id='41_R1', duration=4)])
+2020-11-30T11:31:21+0530: Connected by ('127.0.0.1', 58598)
+2020-11-30T11:31:21+0530: Got query: Query(job_id='42', map_tasks=[Task(task_id='42_M0', duration=2), Task(task_id='42_M1', duration=4), Task(task_id='42_M2', duration=2)], reduce_tasks=[Task(task_id='42_R0', duration=1)])
+2020-11-30T11:31:22+0530: Connected by ('127.0.0.1', 33128)
+2020-11-30T11:31:22+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='22_M1', message='Completed task 22_M1 on worker 2')
+2020-11-30T11:31:22+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:22+0530: Sent data to worker
+2020-11-30T11:31:22+0530: Connected by ('127.0.0.1', 33132)
+2020-11-30T11:31:22+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='24_R0', message='Completed task 24_R0 on worker 1')
+2020-11-30T11:31:22+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:22+0530: Sent data to worker
+2020-11-30T11:31:22+0530: Connected by ('127.0.0.1', 58608)
+2020-11-30T11:31:22+0530: Got query: Query(job_id='43', map_tasks=[Task(task_id='43_M0', duration=2), Task(task_id='43_M1', duration=2)], reduce_tasks=[Task(task_id='43_R0', duration=3), Task(task_id='43_R1', duration=4)])
+2020-11-30T11:31:23+0530: Connected by ('127.0.0.1', 58610)
+2020-11-30T11:31:23+0530: Got query: Query(job_id='44', map_tasks=[Task(task_id='44_M0', duration=2)], reduce_tasks=[Task(task_id='44_R0', duration=1)])
+2020-11-30T11:31:23+0530: Connected by ('127.0.0.1', 33140)
+2020-11-30T11:31:23+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='23_R0', message='Completed task 23_R0 on worker 1')
+2020-11-30T11:31:23+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:23+0530: Sent data to worker
+2020-11-30T11:31:23+0530: Processing query Query(job_id='26', map_tasks=[Task(task_id='26_M0', duration=1)], reduce_tasks=[Task(task_id='26_R0', duration=2)])
+2020-11-30T11:31:23+0530: Connected by ('127.0.0.1', 33144)
+2020-11-30T11:31:23+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='24_M1', message='Completed task 24_M1 on worker 1')
+2020-11-30T11:31:23+0530: Connected by ('127.0.0.1', 33146)
+2020-11-30T11:31:23+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='24_M0', message='Completed task 24_M0 on worker 1')
+2020-11-30T11:31:23+0530: Connected by ('127.0.0.1', 33148)
+2020-11-30T11:31:23+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='25_M0', message='Completed task 25_M0 on worker 1')
+2020-11-30T11:31:23+0530: Connected by ('127.0.0.1', 33150)
+2020-11-30T11:31:23+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='25_R0', message='Completed task 25_R0 on worker 1')
+2020-11-30T11:31:24+0530: Connected by ('127.0.0.1', 58624)
+2020-11-30T11:31:24+0530: Got query: Query(job_id='45', map_tasks=[Task(task_id='45_M0', duration=4), Task(task_id='45_M1', duration=1)], reduce_tasks=[Task(task_id='45_R0', duration=2)])
+2020-11-30T11:31:24+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:24+0530: Sent data to worker
+2020-11-30T11:31:24+0530: Connected by ('127.0.0.1', 33156)
+2020-11-30T11:31:24+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:24+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='25_R1', message='Completed task 25_R1 on worker 1')
+2020-11-30T11:31:24+0530: Sent data to worker
+2020-11-30T11:31:24+0530: Processing query Query(job_id='27', map_tasks=[Task(task_id='27_M0', duration=3), Task(task_id='27_M1', duration=4)], reduce_tasks=[Task(task_id='27_R0', duration=2)])
+2020-11-30T11:31:25+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:25+0530: Connected by ('127.0.0.1', 33160)
+2020-11-30T11:31:25+0530: Sent data to worker
+2020-11-30T11:31:25+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:25+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='26_M0', message='Completed task 26_M0 on worker 3')
+2020-11-30T11:31:25+0530: Sent data to worker
+2020-11-30T11:31:25+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:25+0530: Sent data to worker
+2020-11-30T11:31:25+0530: Processing query Query(job_id='28', map_tasks=[Task(task_id='28_M0', duration=4)], reduce_tasks=[Task(task_id='28_R0', duration=3), Task(task_id='28_R1', duration=1)])
+2020-11-30T11:31:25+0530: Connected by ('127.0.0.1', 58640)
+2020-11-30T11:31:25+0530: Got query: Query(job_id='46', map_tasks=[Task(task_id='46_M0', duration=4), Task(task_id='46_M1', duration=2)], reduce_tasks=[Task(task_id='46_R0', duration=3)])
+2020-11-30T11:31:26+0530: Connected by ('127.0.0.1', 58642)
+2020-11-30T11:31:26+0530: Got query: Query(job_id='47', map_tasks=[Task(task_id='47_M0', duration=4), Task(task_id='47_M1', duration=3)], reduce_tasks=[Task(task_id='47_R0', duration=2)])
+2020-11-30T11:31:26+0530: Connected by ('127.0.0.1', 33172)
+2020-11-30T11:31:26+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='26_R0', message='Completed task 26_R0 on worker 3')
+2020-11-30T11:31:26+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:26+0530: Sent data to worker
+2020-11-30T11:31:26+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:26+0530: Sent data to worker
+2020-11-30T11:31:26+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:26+0530: Sent data to worker
+2020-11-30T11:31:26+0530: Processing query Query(job_id='29', map_tasks=[Task(task_id='29_M0', duration=1), Task(task_id='29_M1', duration=3)], reduce_tasks=[Task(task_id='29_R0', duration=1), Task(task_id='29_R1', duration=3)])
+2020-11-30T11:31:27+0530: Connected by ('127.0.0.1', 33180)
+2020-11-30T11:31:27+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='27_R0', message='Completed task 27_R0 on worker 1')
+2020-11-30T11:31:27+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:27+0530: Sent data to worker
+2020-11-30T11:31:27+0530: Connected by ('127.0.0.1', 33184)
+2020-11-30T11:31:27+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:27+0530: Sent data to worker
+2020-11-30T11:31:27+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:27+0530: Sent data to worker
+2020-11-30T11:31:27+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:27+0530: Sent data to worker
+2020-11-30T11:31:27+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='28_R1', message='Completed task 28_R1 on worker 3')
+2020-11-30T11:31:27+0530: Processing query Query(job_id='30', map_tasks=[Task(task_id='30_M0', duration=4), Task(task_id='30_M1', duration=4), Task(task_id='30_M2', duration=3), Task(task_id='30_M3', duration=3)], reduce_tasks=[Task(task_id='30_R0', duration=4), Task(task_id='30_R1', duration=2)])
+2020-11-30T11:31:28+0530: Connected by ('127.0.0.1', 33192)
+2020-11-30T11:31:28+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='27_M0', message='Completed task 27_M0 on worker 1')
+2020-11-30T11:31:28+0530: Connected by ('127.0.0.1', 33194)
+2020-11-30T11:31:28+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:28+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='29_M0', message='Completed task 29_M0 on worker 2')
+2020-11-30T11:31:28+0530: Connected by ('127.0.0.1', 33196)
+2020-11-30T11:31:28+0530: Sent data to worker
+2020-11-30T11:31:28+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:28+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='29_R0', message='Completed task 29_R0 on worker 2')
+2020-11-30T11:31:28+0530: Sent data to worker
+2020-11-30T11:31:28+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:28+0530: Sent data to worker
+2020-11-30T11:31:28+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:28+0530: Sent data to worker
+2020-11-30T11:31:28+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:28+0530: Sent data to worker
+2020-11-30T11:31:29+0530: Connected by ('127.0.0.1', 33208)
+2020-11-30T11:31:29+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='27_M1', message='Completed task 27_M1 on worker 1')
+2020-11-30T11:31:29+0530: Connected by ('127.0.0.1', 33210)
+2020-11-30T11:31:29+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='28_R0', message='Completed task 28_R0 on worker 3')
+2020-11-30T11:31:30+0530: Connected by ('127.0.0.1', 33212)
+2020-11-30T11:31:30+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='28_M0', message='Completed task 28_M0 on worker 3')
+2020-11-30T11:31:30+0530: Connected by ('127.0.0.1', 33214)
+2020-11-30T11:31:30+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='29_M1', message='Completed task 29_M1 on worker 2')
+2020-11-30T11:31:30+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:30+0530: Sent data to worker
+2020-11-30T11:31:30+0530: Processing query Query(job_id='31', map_tasks=[Task(task_id='31_M0', duration=4), Task(task_id='31_M1', duration=3), Task(task_id='31_M2', duration=3), Task(task_id='31_M3', duration=1)], reduce_tasks=[Task(task_id='31_R0', duration=1)])
+2020-11-30T11:31:30+0530: Connected by ('127.0.0.1', 33216)
+2020-11-30T11:31:30+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='29_R1', message='Completed task 29_R1 on worker 2')
+2020-11-30T11:31:31+0530: Connected by ('127.0.0.1', 33220)
+2020-11-30T11:31:31+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='30_M2', message='Completed task 30_M2 on worker 2')
+2020-11-30T11:31:31+0530: Connected by ('127.0.0.1', 33222)
+2020-11-30T11:31:31+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='30_M3', message='Completed task 30_M3 on worker 2')
+2020-11-30T11:31:31+0530: Connected by ('127.0.0.1', 58696)
+2020-11-30T11:31:31+0530: Got query: Query(job_id='48', map_tasks=[Task(task_id='48_M0', duration=3)], reduce_tasks=[Task(task_id='48_R0', duration=2)])
+2020-11-30T11:31:32+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:32+0530: Connected by ('127.0.0.1', 33226)
+2020-11-30T11:31:32+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='30_M0', message='Completed task 30_M0 on worker 2')
+2020-11-30T11:31:32+0530: Connected by ('127.0.0.1', 33230)
+2020-11-30T11:31:32+0530: Sent data to worker
+2020-11-30T11:31:32+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:32+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='30_R1', message='Completed task 30_R1 on worker 2')
+2020-11-30T11:31:32+0530: Connected by ('127.0.0.1', 33232)
+2020-11-30T11:31:32+0530: Sent data to worker
+2020-11-30T11:31:32+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='30_M1', message='Completed task 30_M1 on worker 2')
+2020-11-30T11:31:32+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:32+0530: Connected by ('127.0.0.1', 33236)
+2020-11-30T11:31:32+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='30_R0', message='Completed task 30_R0 on worker 2')
+2020-11-30T11:31:32+0530: Sent data to worker
+2020-11-30T11:31:32+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:32+0530: Sent data to worker
+2020-11-30T11:31:32+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:32+0530: Sent data to worker
+2020-11-30T11:31:32+0530: Processing query Query(job_id='32', map_tasks=[Task(task_id='32_M0', duration=1), Task(task_id='32_M1', duration=1), Task(task_id='32_M2', duration=3), Task(task_id='32_M3', duration=1)], reduce_tasks=[Task(task_id='32_R0', duration=1)])
+2020-11-30T11:31:33+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:33+0530: Sent data to worker
+2020-11-30T11:31:33+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:33+0530: Connected by ('127.0.0.1', 33246)
+2020-11-30T11:31:33+0530: Connected by ('127.0.0.1', 33248)
+2020-11-30T11:31:33+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='31_M3', message='Completed task 31_M3 on worker 2')
+2020-11-30T11:31:33+0530: Sent data to worker
+2020-11-30T11:31:33+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='31_R0', message='Completed task 31_R0 on worker 2')
+2020-11-30T11:31:33+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:33+0530: Sent data to worker
+2020-11-30T11:31:33+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:33+0530: Sent data to worker
+2020-11-30T11:31:33+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:33+0530: Sent data to worker
+2020-11-30T11:31:33+0530: Processing query Query(job_id='33', map_tasks=[Task(task_id='33_M0', duration=3), Task(task_id='33_M1', duration=1)], reduce_tasks=[Task(task_id='33_R0', duration=2)])
+2020-11-30T11:31:33+0530: Connected by ('127.0.0.1', 58730)
+2020-11-30T11:31:33+0530: Got query: Query(job_id='49', map_tasks=[Task(task_id='49_M0', duration=1), Task(task_id='49_M1', duration=1), Task(task_id='49_M2', duration=4)], reduce_tasks=[Task(task_id='49_R0', duration=4), Task(task_id='49_R1', duration=4)])
+2020-11-30T11:31:34+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:34+0530: Sent data to worker
+2020-11-30T11:31:34+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:34+0530: Sent data to worker
+2020-11-30T11:31:34+0530: Connected by ('127.0.0.1', 33262)
+2020-11-30T11:31:34+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:34+0530: Connected by ('127.0.0.1', 33264)
+2020-11-30T11:31:34+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='32_M1', message='Completed task 32_M1 on worker 1')
+2020-11-30T11:31:34+0530: Sent data to worker
+2020-11-30T11:31:34+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='32_R0', message='Completed task 32_R0 on worker 1')
+2020-11-30T11:31:34+0530: Connected by ('127.0.0.1', 33266)
+2020-11-30T11:31:34+0530: Processing query Query(job_id='34', map_tasks=[Task(task_id='34_M0', duration=2), Task(task_id='34_M1', duration=4)], reduce_tasks=[Task(task_id='34_R0', duration=4), Task(task_id='34_R1', duration=4)])
+2020-11-30T11:31:34+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='32_M0', message='Completed task 32_M0 on worker 1')
+2020-11-30T11:31:34+0530: Connected by ('127.0.0.1', 33270)
+2020-11-30T11:31:34+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='32_M3', message='Completed task 32_M3 on worker 1')
+2020-11-30T11:31:35+0530: Connected by ('127.0.0.1', 33274)
+2020-11-30T11:31:35+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='31_M1', message='Completed task 31_M1 on worker 2')
+2020-11-30T11:31:35+0530: Connected by ('127.0.0.1', 33276)
+2020-11-30T11:31:35+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='31_M2', message='Completed task 31_M2 on worker 2')
+2020-11-30T11:31:35+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:35+0530: Sent data to worker
+2020-11-30T11:31:35+0530: Connected by ('127.0.0.1', 33280)
+2020-11-30T11:31:35+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:35+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='33_M1', message='Completed task 33_M1 on worker 2')
+2020-11-30T11:31:35+0530: Sent data to worker
+2020-11-30T11:31:35+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:35+0530: Sent data to worker
+2020-11-30T11:31:35+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:35+0530: Sent data to worker
+2020-11-30T11:31:35+0530: Processing query Query(job_id='35', map_tasks=[Task(task_id='35_M0', duration=4), Task(task_id='35_M1', duration=4), Task(task_id='35_M2', duration=3), Task(task_id='35_M3', duration=2)], reduce_tasks=[Task(task_id='35_R0', duration=4)])
+2020-11-30T11:31:35+0530: Connected by ('127.0.0.1', 58760)
+2020-11-30T11:31:35+0530: Got query: Query(job_id='50', map_tasks=[Task(task_id='50_M0', duration=4), Task(task_id='50_M1', duration=4)], reduce_tasks=[Task(task_id='50_R0', duration=4), Task(task_id='50_R1', duration=2)])
+2020-11-30T11:31:35+0530: Connected by ('127.0.0.1', 58762)
+2020-11-30T11:31:35+0530: Got query: Query(job_id='51', map_tasks=[Task(task_id='51_M0', duration=4), Task(task_id='51_M1', duration=3), Task(task_id='51_M2', duration=2)], reduce_tasks=[Task(task_id='51_R0', duration=2)])
+2020-11-30T11:31:36+0530: Connected by ('127.0.0.1', 58764)
+2020-11-30T11:31:36+0530: Got query: Query(job_id='52', map_tasks=[Task(task_id='52_M0', duration=1)], reduce_tasks=[Task(task_id='52_R0', duration=3), Task(task_id='52_R1', duration=1)])
+2020-11-30T11:31:36+0530: Connected by ('127.0.0.1', 33294)
+2020-11-30T11:31:36+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='31_M0', message='Completed task 31_M0 on worker 2')
+2020-11-30T11:31:36+0530: Connected by ('127.0.0.1', 33296)
+2020-11-30T11:31:36+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='32_M2', message='Completed task 32_M2 on worker 1')
+2020-11-30T11:31:36+0530: Connected by ('127.0.0.1', 33298)
+2020-11-30T11:31:36+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='33_R0', message='Completed task 33_R0 on worker 2')
+2020-11-30T11:31:36+0530: Connected by ('127.0.0.1', 58772)
+2020-11-30T11:31:36+0530: Got query: Query(job_id='53', map_tasks=[Task(task_id='53_M0', duration=1), Task(task_id='53_M1', duration=3)], reduce_tasks=[Task(task_id='53_R0', duration=3), Task(task_id='53_R1', duration=1)])
+2020-11-30T11:31:37+0530: Connected by ('127.0.0.1', 58774)
+2020-11-30T11:31:37+0530: Got query: Query(job_id='54', map_tasks=[Task(task_id='54_M0', duration=2), Task(task_id='54_M1', duration=3), Task(task_id='54_M2', duration=1), Task(task_id='54_M3', duration=1)], reduce_tasks=[Task(task_id='54_R0', duration=1), Task(task_id='54_R1', duration=1)])
+2020-11-30T11:31:37+0530: Connected by ('127.0.0.1', 33304)
+2020-11-30T11:31:37+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='33_M0', message='Completed task 33_M0 on worker 2')
+2020-11-30T11:31:37+0530: Connected by ('127.0.0.1', 33306)
+2020-11-30T11:31:37+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='34_M0', message='Completed task 34_M0 on worker 1')
+2020-11-30T11:31:37+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:37+0530: Sent data to worker
+2020-11-30T11:31:37+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:37+0530: Sent data to worker
+2020-11-30T11:31:37+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:37+0530: Sent data to worker
+2020-11-30T11:31:38+0530: Connected by ('127.0.0.1', 58786)
+2020-11-30T11:31:38+0530: Got query: Query(job_id='55', map_tasks=[Task(task_id='55_M0', duration=1)], reduce_tasks=[Task(task_id='55_R0', duration=4)])
+2020-11-30T11:31:38+0530: Connected by ('127.0.0.1', 58788)
+2020-11-30T11:31:38+0530: Got query: Query(job_id='56', map_tasks=[Task(task_id='56_M0', duration=4), Task(task_id='56_M1', duration=1), Task(task_id='56_M2', duration=2)], reduce_tasks=[Task(task_id='56_R0', duration=1)])
+2020-11-30T11:31:39+0530: Connected by ('127.0.0.1', 58790)
+2020-11-30T11:31:39+0530: Got query: Query(job_id='57', map_tasks=[Task(task_id='57_M0', duration=2), Task(task_id='57_M1', duration=2)], reduce_tasks=[Task(task_id='57_R0', duration=2)])
+2020-11-30T11:31:39+0530: Connected by ('127.0.0.1', 33320)
+2020-11-30T11:31:39+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='34_M1', message='Completed task 34_M1 on worker 1')
+2020-11-30T11:31:39+0530: Connected by ('127.0.0.1', 33322)
+2020-11-30T11:31:39+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='34_R0', message='Completed task 34_R0 on worker 1')
+2020-11-30T11:31:39+0530: Connected by ('127.0.0.1', 33324)
+2020-11-30T11:31:39+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='34_R1', message='Completed task 34_R1 on worker 1')
+2020-11-30T11:31:39+0530: Connected by ('127.0.0.1', 58798)
+2020-11-30T11:31:39+0530: Got query: Query(job_id='58', map_tasks=[Task(task_id='58_M0', duration=3), Task(task_id='58_M1', duration=4), Task(task_id='58_M2', duration=1), Task(task_id='58_M3', duration=1)], reduce_tasks=[Task(task_id='58_R0', duration=1)])
+2020-11-30T11:31:39+0530: Connected by ('127.0.0.1', 58800)
+2020-11-30T11:31:39+0530: Got query: Query(job_id='59', map_tasks=[Task(task_id='59_M0', duration=3), Task(task_id='59_M1', duration=3)], reduce_tasks=[Task(task_id='59_R0', duration=3)])
+2020-11-30T11:31:39+0530: Connected by ('127.0.0.1', 58802)
+2020-11-30T11:31:39+0530: Got query: Query(job_id='60', map_tasks=[Task(task_id='60_M0', duration=1), Task(task_id='60_M1', duration=3)], reduce_tasks=[Task(task_id='60_R0', duration=3)])
+2020-11-30T11:31:40+0530: Connected by ('127.0.0.1', 33332)
+2020-11-30T11:31:40+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='35_M2', message='Completed task 35_M2 on worker 3')
+2020-11-30T11:31:40+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:40+0530: Sent data to worker
+2020-11-30T11:31:40+0530: Connected by ('127.0.0.1', 58808)
+2020-11-30T11:31:40+0530: Got query: Query(job_id='61', map_tasks=[Task(task_id='61_M0', duration=2), Task(task_id='61_M1', duration=1)], reduce_tasks=[Task(task_id='61_R0', duration=3), Task(task_id='61_R1', duration=3)])
+2020-11-30T11:31:41+0530: Connected by ('127.0.0.1', 33338)
+2020-11-30T11:31:41+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='35_M0', message='Completed task 35_M0 on worker 3')
+2020-11-30T11:31:41+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:41+0530: Connected by ('127.0.0.1', 33340)
+2020-11-30T11:31:41+0530: Sent data to worker
+2020-11-30T11:31:41+0530: Processing query Query(job_id='36', map_tasks=[Task(task_id='36_M0', duration=1), Task(task_id='36_M1', duration=3), Task(task_id='36_M2', duration=2), Task(task_id='36_M3', duration=2)], reduce_tasks=[Task(task_id='36_R0', duration=2)])
+2020-11-30T11:31:41+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='35_M1', message='Completed task 35_M1 on worker 3')
+2020-11-30T11:31:42+0530: Connected by ('127.0.0.1', 33344)
+2020-11-30T11:31:42+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='35_M3', message='Completed task 35_M3 on worker 3')
+2020-11-30T11:31:43+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:43+0530: Sent data to worker
+2020-11-30T11:31:43+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:43+0530: Sent data to worker
+2020-11-30T11:31:43+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:43+0530: Sent data to worker
+2020-11-30T11:31:43+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:43+0530: Sent data to worker
+2020-11-30T11:31:43+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:43+0530: Sent data to worker
+2020-11-30T11:31:43+0530: Processing query Query(job_id='37', map_tasks=[Task(task_id='37_M0', duration=3)], reduce_tasks=[Task(task_id='37_R0', duration=2), Task(task_id='37_R1', duration=2)])
+2020-11-30T11:31:44+0530: Connected by ('127.0.0.1', 33356)
+2020-11-30T11:31:44+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='36_M0', message='Completed task 36_M0 on worker 1')
+2020-11-30T11:31:44+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:44+0530: Sent data to worker
+2020-11-30T11:31:44+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:44+0530: Sent data to worker
+2020-11-30T11:31:44+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:44+0530: Sent data to worker
+2020-11-30T11:31:44+0530: Processing query Query(job_id='38', map_tasks=[Task(task_id='38_M0', duration=2), Task(task_id='38_M1', duration=4), Task(task_id='38_M2', duration=2)], reduce_tasks=[Task(task_id='38_R0', duration=2), Task(task_id='38_R1', duration=2)])
+2020-11-30T11:31:44+0530: Connected by ('127.0.0.1', 58836)
+2020-11-30T11:31:44+0530: Got query: Query(job_id='62', map_tasks=[Task(task_id='62_M0', duration=4)], reduce_tasks=[Task(task_id='62_R0', duration=3)])
+2020-11-30T11:31:45+0530: Connected by ('127.0.0.1', 33366)
+2020-11-30T11:31:45+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='35_R0', message='Completed task 35_R0 on worker 3')
+2020-11-30T11:31:45+0530: Connected by ('127.0.0.1', 33368)
+2020-11-30T11:31:45+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:45+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='36_M3', message='Completed task 36_M3 on worker 1')
+2020-11-30T11:31:45+0530: Connected by ('127.0.0.1', 33370)
+2020-11-30T11:31:45+0530: Sent data to worker
+2020-11-30T11:31:45+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:45+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='36_M2', message='Completed task 36_M2 on worker 1')
+2020-11-30T11:31:45+0530: Connected by ('127.0.0.1', 33372)
+2020-11-30T11:31:45+0530: Sent data to worker
+2020-11-30T11:31:45+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:45+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='36_R0', message='Completed task 36_R0 on worker 1')
+2020-11-30T11:31:45+0530: Sent data to worker
+2020-11-30T11:31:45+0530: Connected by ('127.0.0.1', 58852)
+2020-11-30T11:31:45+0530: Got query: Query(job_id='63', map_tasks=[Task(task_id='63_M0', duration=3), Task(task_id='63_M1', duration=3), Task(task_id='63_M2', duration=1)], reduce_tasks=[Task(task_id='63_R0', duration=3)])
+2020-11-30T11:31:46+0530: Connected by ('127.0.0.1', 33382)
+2020-11-30T11:31:46+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='36_M1', message='Completed task 36_M1 on worker 1')
+2020-11-30T11:31:46+0530: Connected by ('127.0.0.1', 33384)
+2020-11-30T11:31:46+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='37_R0', message='Completed task 37_R0 on worker 2')
+2020-11-30T11:31:46+0530: Connected by ('127.0.0.1', 33386)
+2020-11-30T11:31:46+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='37_R1', message='Completed task 37_R1 on worker 2')
+2020-11-30T11:31:46+0530: Connected by ('127.0.0.1', 58860)
+2020-11-30T11:31:46+0530: Got query: Query(job_id='64', map_tasks=[Task(task_id='64_M0', duration=3), Task(task_id='64_M1', duration=2), Task(task_id='64_M2', duration=4), Task(task_id='64_M3', duration=1)], reduce_tasks=[Task(task_id='64_R0', duration=2)])
+2020-11-30T11:31:47+0530: Connected by ('127.0.0.1', 58862)
+2020-11-30T11:31:47+0530: Got query: Query(job_id='65', map_tasks=[Task(task_id='65_M0', duration=4), Task(task_id='65_M1', duration=1)], reduce_tasks=[Task(task_id='65_R0', duration=2), Task(task_id='65_R1', duration=4)])
+2020-11-30T11:31:47+0530: Connected by ('127.0.0.1', 33392)
+2020-11-30T11:31:47+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='37_M0', message='Completed task 37_M0 on worker 2')
+2020-11-30T11:31:47+0530: Connected by ('127.0.0.1', 33394)
+2020-11-30T11:31:47+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='38_M0', message='Completed task 38_M0 on worker 3')
+2020-11-30T11:31:47+0530: Connected by ('127.0.0.1', 33396)
+2020-11-30T11:31:47+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:47+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='38_M2', message='Completed task 38_M2 on worker 3')
+2020-11-30T11:31:47+0530: Sent data to worker
+2020-11-30T11:31:47+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:47+0530: Sent data to worker
+2020-11-30T11:31:47+0530: Processing query Query(job_id='39', map_tasks=[Task(task_id='39_M0', duration=4), Task(task_id='39_M1', duration=1), Task(task_id='39_M2', duration=2), Task(task_id='39_M3', duration=4)], reduce_tasks=[Task(task_id='39_R0', duration=2), Task(task_id='39_R1', duration=4)])
+2020-11-30T11:31:47+0530: Connected by ('127.0.0.1', 58874)
+2020-11-30T11:31:47+0530: Got query: Query(job_id='66', map_tasks=[Task(task_id='66_M0', duration=4)], reduce_tasks=[Task(task_id='66_R0', duration=1)])
+2020-11-30T11:31:47+0530: Connected by ('127.0.0.1', 58876)
+2020-11-30T11:31:47+0530: Got query: Query(job_id='67', map_tasks=[Task(task_id='67_M0', duration=1), Task(task_id='67_M1', duration=2)], reduce_tasks=[Task(task_id='67_R0', duration=4)])
+2020-11-30T11:31:48+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:48+0530: Sent data to worker
+2020-11-30T11:31:48+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:48+0530: Sent data to worker
+2020-11-30T11:31:48+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:48+0530: Sent data to worker
+2020-11-30T11:31:48+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:48+0530: Sent data to worker
+2020-11-30T11:31:48+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:48+0530: Sent data to worker
+2020-11-30T11:31:48+0530: Connected by ('127.0.0.1', 58888)
+2020-11-30T11:31:48+0530: Got query: Query(job_id='68', map_tasks=[Task(task_id='68_M0', duration=3), Task(task_id='68_M1', duration=1), Task(task_id='68_M2', duration=3)], reduce_tasks=[Task(task_id='68_R0', duration=2), Task(task_id='68_R1', duration=2)])
+2020-11-30T11:31:49+0530: Connected by ('127.0.0.1', 58890)
+2020-11-30T11:31:49+0530: Got query: Query(job_id='69', map_tasks=[Task(task_id='69_M0', duration=1)], reduce_tasks=[Task(task_id='69_R0', duration=4), Task(task_id='69_R1', duration=2)])
+2020-11-30T11:31:49+0530: Connected by ('127.0.0.1', 33420)
+2020-11-30T11:31:49+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='38_M1', message='Completed task 38_M1 on worker 3')
+2020-11-30T11:31:49+0530: Connected by ('127.0.0.1', 33422)
+2020-11-30T11:31:49+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='38_R0', message='Completed task 38_R0 on worker 3')
+2020-11-30T11:31:49+0530: Connected by ('127.0.0.1', 33424)
+2020-11-30T11:31:49+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='38_R1', message='Completed task 38_R1 on worker 3')
+2020-11-30T11:31:49+0530: Connected by ('127.0.0.1', 33426)
+2020-11-30T11:31:49+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='39_M1', message='Completed task 39_M1 on worker 1')
+2020-11-30T11:31:49+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:49+0530: Sent data to worker
+2020-11-30T11:31:49+0530: Processing query Query(job_id='40', map_tasks=[Task(task_id='40_M0', duration=4), Task(task_id='40_M1', duration=3), Task(task_id='40_M2', duration=3), Task(task_id='40_M3', duration=1)], reduce_tasks=[Task(task_id='40_R0', duration=4)])
+2020-11-30T11:31:50+0530: Connected by ('127.0.0.1', 58902)
+2020-11-30T11:31:50+0530: Got query: Query(job_id='70', map_tasks=[Task(task_id='70_M0', duration=3)], reduce_tasks=[Task(task_id='70_R0', duration=1)])
+2020-11-30T11:31:50+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:50+0530: Sent data to worker
+2020-11-30T11:31:50+0530: Connected by ('127.0.0.1', 33432)
+2020-11-30T11:31:50+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:50+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='39_M2', message='Completed task 39_M2 on worker 1')
+2020-11-30T11:31:50+0530: Connected by ('127.0.0.1', 33436)
+2020-11-30T11:31:50+0530: Sent data to worker
+2020-11-30T11:31:50+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='39_R0', message='Completed task 39_R0 on worker 1')
+2020-11-30T11:31:50+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:50+0530: Sent data to worker
+2020-11-30T11:31:50+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:50+0530: Sent data to worker
+2020-11-30T11:31:50+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:31:50+0530: Sent data to worker
+2020-11-30T11:31:50+0530: Processing query Query(job_id='41', map_tasks=[Task(task_id='41_M0', duration=4), Task(task_id='41_M1', duration=1), Task(task_id='41_M2', duration=4), Task(task_id='41_M3', duration=2)], reduce_tasks=[Task(task_id='41_R0', duration=3), Task(task_id='41_R1', duration=4)])
+2020-11-30T11:31:50+0530: Connected by ('127.0.0.1', 58918)
+2020-11-30T11:31:50+0530: Got query: Query(job_id='71', map_tasks=[Task(task_id='71_M0', duration=4)], reduce_tasks=[Task(task_id='71_R0', duration=3)])
+2020-11-30T11:31:50+0530: Connected by ('127.0.0.1', 58920)
+2020-11-30T11:31:50+0530: Got query: Query(job_id='72', map_tasks=[Task(task_id='72_M0', duration=4), Task(task_id='72_M1', duration=4), Task(task_id='72_M2', duration=3), Task(task_id='72_M3', duration=3)], reduce_tasks=[Task(task_id='72_R0', duration=4)])
+2020-11-30T11:31:51+0530: Connected by ('127.0.0.1', 33450)
+2020-11-30T11:31:51+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:51+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='40_M3', message='Completed task 40_M3 on worker 2')
+2020-11-30T11:31:51+0530: Sent data to worker
+2020-11-30T11:31:51+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:51+0530: Sent data to worker
+2020-11-30T11:31:52+0530: Connected by ('127.0.0.1', 58928)
+2020-11-30T11:31:52+0530: Got query: Query(job_id='73', map_tasks=[Task(task_id='73_M0', duration=1), Task(task_id='73_M1', duration=2), Task(task_id='73_M2', duration=3), Task(task_id='73_M3', duration=4)], reduce_tasks=[Task(task_id='73_R0', duration=4)])
+2020-11-30T11:31:52+0530: Connected by ('127.0.0.1', 33458)
+2020-11-30T11:31:52+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='39_M0', message='Completed task 39_M0 on worker 1')
+2020-11-30T11:31:52+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:52+0530: Sent data to worker
+2020-11-30T11:31:52+0530: Connected by ('127.0.0.1', 33462)
+2020-11-30T11:31:52+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='39_M3', message='Completed task 39_M3 on worker 1')
+2020-11-30T11:31:52+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:52+0530: Sent data to worker
+2020-11-30T11:31:52+0530: Connected by ('127.0.0.1', 33466)
+2020-11-30T11:31:52+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='41_M1', message='Completed task 41_M1 on worker 1')
+2020-11-30T11:31:52+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:52+0530: Sent data to worker
+2020-11-30T11:31:53+0530: Connected by ('127.0.0.1', 33470)
+2020-11-30T11:31:53+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='39_R1', message='Completed task 39_R1 on worker 1')
+2020-11-30T11:31:53+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:53+0530: Connected by ('127.0.0.1', 33472)
+2020-11-30T11:31:53+0530: Sent data to worker
+2020-11-30T11:31:53+0530: Processing query Query(job_id='42', map_tasks=[Task(task_id='42_M0', duration=2), Task(task_id='42_M1', duration=4), Task(task_id='42_M2', duration=2)], reduce_tasks=[Task(task_id='42_R0', duration=1)])
+2020-11-30T11:31:53+0530: Connected by ('127.0.0.1', 33476)
+2020-11-30T11:31:53+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='40_M1', message='Completed task 40_M1 on worker 2')
+2020-11-30T11:31:53+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='40_M2', message='Completed task 40_M2 on worker 2')
+2020-11-30T11:31:53+0530: Connected by ('127.0.0.1', 58950)
+2020-11-30T11:31:53+0530: Got query: Query(job_id='74', map_tasks=[Task(task_id='74_M0', duration=1), Task(task_id='74_M1', duration=4), Task(task_id='74_M2', duration=2)], reduce_tasks=[Task(task_id='74_R0', duration=3), Task(task_id='74_R1', duration=2)])
+2020-11-30T11:31:54+0530: Connected by ('127.0.0.1', 33480)
+2020-11-30T11:31:54+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='40_M0', message='Completed task 40_M0 on worker 2')
+2020-11-30T11:31:54+0530: Connected by ('127.0.0.1', 33482)
+2020-11-30T11:31:54+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='41_M3', message='Completed task 41_M3 on worker 1')
+2020-11-30T11:31:54+0530: Connected by ('127.0.0.1', 33484)
+2020-11-30T11:31:54+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='40_R0', message='Completed task 40_R0 on worker 2')
+2020-11-30T11:31:54+0530: Connected by ('127.0.0.1', 58958)
+2020-11-30T11:31:54+0530: Got query: Query(job_id='75', map_tasks=[Task(task_id='75_M0', duration=3), Task(task_id='75_M1', duration=3), Task(task_id='75_M2', duration=4)], reduce_tasks=[Task(task_id='75_R0', duration=1), Task(task_id='75_R1', duration=1)])
+2020-11-30T11:31:54+0530: Connected by ('127.0.0.1', 58960)
+2020-11-30T11:31:54+0530: Got query: Query(job_id='76', map_tasks=[Task(task_id='76_M0', duration=1), Task(task_id='76_M1', duration=1), Task(task_id='76_M2', duration=3)], reduce_tasks=[Task(task_id='76_R0', duration=4), Task(task_id='76_R1', duration=3)])
+2020-11-30T11:31:55+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:55+0530: Sent data to worker
+2020-11-30T11:31:55+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:55+0530: Sent data to worker
+2020-11-30T11:31:55+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:55+0530: Sent data to worker
+2020-11-30T11:31:55+0530: Connected by ('127.0.0.1', 33496)
+2020-11-30T11:31:55+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='41_M0', message='Completed task 41_M0 on worker 1')
+2020-11-30T11:31:55+0530: Connected by ('127.0.0.1', 33498)
+2020-11-30T11:31:55+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='41_R0', message='Completed task 41_R0 on worker 1')
+2020-11-30T11:31:56+0530: Connected by ('127.0.0.1', 33500)
+2020-11-30T11:31:56+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='41_M2', message='Completed task 41_M2 on worker 1')
+2020-11-30T11:31:56+0530: Connected by ('127.0.0.1', 58974)
+2020-11-30T11:31:56+0530: Got query: Query(job_id='77', map_tasks=[Task(task_id='77_M0', duration=3)], reduce_tasks=[Task(task_id='77_R0', duration=4)])
+2020-11-30T11:31:57+0530: Connected by ('127.0.0.1', 33504)
+2020-11-30T11:31:57+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='41_R1', message='Completed task 41_R1 on worker 1')
+2020-11-30T11:31:57+0530: Connected by ('127.0.0.1', 33506)
+2020-11-30T11:31:57+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='42_M0', message='Completed task 42_M0 on worker 3')
+2020-11-30T11:31:57+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:57+0530: Sent data to worker
+2020-11-30T11:31:57+0530: Processing query Query(job_id='43', map_tasks=[Task(task_id='43_M0', duration=2), Task(task_id='43_M1', duration=2)], reduce_tasks=[Task(task_id='43_R0', duration=3), Task(task_id='43_R1', duration=4)])
+2020-11-30T11:31:57+0530: Connected by ('127.0.0.1', 33510)
+2020-11-30T11:31:57+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='42_M2', message='Completed task 42_M2 on worker 3')
+2020-11-30T11:31:58+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:58+0530: Sent data to worker
+2020-11-30T11:31:58+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:58+0530: Sent data to worker
+2020-11-30T11:31:58+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:58+0530: Connected by ('127.0.0.1', 33516)
+2020-11-30T11:31:58+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='42_R0', message='Completed task 42_R0 on worker 3')
+2020-11-30T11:31:58+0530: Sent data to worker
+2020-11-30T11:31:58+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:31:58+0530: Sent data to worker
+2020-11-30T11:31:58+0530: Processing query Query(job_id='44', map_tasks=[Task(task_id='44_M0', duration=2)], reduce_tasks=[Task(task_id='44_R0', duration=1)])
+2020-11-30T11:31:59+0530: Connected by ('127.0.0.1', 33522)
+2020-11-30T11:31:59+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='42_M1', message='Completed task 42_M1 on worker 3')
+2020-11-30T11:31:59+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:59+0530: Sent data to worker
+2020-11-30T11:31:59+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:31:59+0530: Sent data to worker
+2020-11-30T11:31:59+0530: Processing query Query(job_id='45', map_tasks=[Task(task_id='45_M0', duration=4), Task(task_id='45_M1', duration=1)], reduce_tasks=[Task(task_id='45_R0', duration=2)])
+2020-11-30T11:31:59+0530: Connected by ('127.0.0.1', 59000)
+2020-11-30T11:31:59+0530: Got query: Query(job_id='78', map_tasks=[Task(task_id='78_M0', duration=1), Task(task_id='78_M1', duration=4)], reduce_tasks=[Task(task_id='78_R0', duration=2)])
+2020-11-30T11:32:00+0530: Connected by ('127.0.0.1', 33530)
+2020-11-30T11:32:00+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='43_M0', message='Completed task 43_M0 on worker 1')
+2020-11-30T11:32:00+0530: Connected by ('127.0.0.1', 33532)
+2020-11-30T11:32:00+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='43_M1', message='Completed task 43_M1 on worker 1')
+2020-11-30T11:32:00+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:00+0530: Sent data to worker
+2020-11-30T11:32:00+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:00+0530: Connected by ('127.0.0.1', 33536)
+2020-11-30T11:32:00+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='44_R0', message='Completed task 44_R0 on worker 3')
+2020-11-30T11:32:00+0530: Sent data to worker
+2020-11-30T11:32:00+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:00+0530: Sent data to worker
+2020-11-30T11:32:00+0530: Processing query Query(job_id='46', map_tasks=[Task(task_id='46_M0', duration=4), Task(task_id='46_M1', duration=2)], reduce_tasks=[Task(task_id='46_R0', duration=3)])
+2020-11-30T11:32:01+0530: Connected by ('127.0.0.1', 33542)
+2020-11-30T11:32:01+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='43_R0', message='Completed task 43_R0 on worker 1')
+2020-11-30T11:32:01+0530: Connected by ('127.0.0.1', 33544)
+2020-11-30T11:32:01+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='44_M0', message='Completed task 44_M0 on worker 3')
+2020-11-30T11:32:01+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:01+0530: Sent data to worker
+2020-11-30T11:32:01+0530: Connected by ('127.0.0.1', 33548)
+2020-11-30T11:32:01+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:01+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='45_M1', message='Completed task 45_M1 on worker 2')
+2020-11-30T11:32:01+0530: Sent data to worker
+2020-11-30T11:32:01+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:01+0530: Sent data to worker
+2020-11-30T11:32:01+0530: Processing query Query(job_id='47', map_tasks=[Task(task_id='47_M0', duration=4), Task(task_id='47_M1', duration=3)], reduce_tasks=[Task(task_id='47_R0', duration=2)])
+2020-11-30T11:32:01+0530: Connected by ('127.0.0.1', 59026)
+2020-11-30T11:32:01+0530: Got query: Query(job_id='79', map_tasks=[Task(task_id='79_M0', duration=2), Task(task_id='79_M1', duration=2), Task(task_id='79_M2', duration=3), Task(task_id='79_M3', duration=2)], reduce_tasks=[Task(task_id='79_R0', duration=3), Task(task_id='79_R1', duration=3)])
+2020-11-30T11:32:02+0530: Connected by ('127.0.0.1', 33556)
+2020-11-30T11:32:02+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='43_R1', message='Completed task 43_R1 on worker 1')
+2020-11-30T11:32:02+0530: Connected by ('127.0.0.1', 33558)
+2020-11-30T11:32:02+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='45_R0', message='Completed task 45_R0 on worker 2')
+2020-11-30T11:32:03+0530: Connected by ('127.0.0.1', 59032)
+2020-11-30T11:32:03+0530: Got query: Query(job_id='80', map_tasks=[Task(task_id='80_M0', duration=4), Task(task_id='80_M1', duration=3), Task(task_id='80_M2', duration=3), Task(task_id='80_M3', duration=2)], reduce_tasks=[Task(task_id='80_R0', duration=3), Task(task_id='80_R1', duration=2)])
+2020-11-30T11:32:03+0530: Connected by ('127.0.0.1', 33562)
+2020-11-30T11:32:03+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='46_M1', message='Completed task 46_M1 on worker 3')
+2020-11-30T11:32:03+0530: Connected by ('127.0.0.1', 59036)
+2020-11-30T11:32:03+0530: Got query: Query(job_id='81', map_tasks=[Task(task_id='81_M0', duration=4), Task(task_id='81_M1', duration=2), Task(task_id='81_M2', duration=1), Task(task_id='81_M3', duration=4)], reduce_tasks=[Task(task_id='81_R0', duration=1), Task(task_id='81_R1', duration=1)])
+2020-11-30T11:32:04+0530: Connected by ('127.0.0.1', 33566)
+2020-11-30T11:32:04+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='45_M0', message='Completed task 45_M0 on worker 2')
+2020-11-30T11:32:04+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:04+0530: Sent data to worker
+2020-11-30T11:32:04+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:04+0530: Sent data to worker
+2020-11-30T11:32:04+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:04+0530: Connected by ('127.0.0.1', 33572)
+2020-11-30T11:32:04+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='46_R0', message='Completed task 46_R0 on worker 3')
+2020-11-30T11:32:04+0530: Sent data to worker
+2020-11-30T11:32:04+0530: Processing query Query(job_id='48', map_tasks=[Task(task_id='48_M0', duration=3)], reduce_tasks=[Task(task_id='48_R0', duration=2)])
+2020-11-30T11:32:05+0530: Connected by ('127.0.0.1', 59048)
+2020-11-30T11:32:05+0530: Got query: Query(job_id='82', map_tasks=[Task(task_id='82_M0', duration=3), Task(task_id='82_M1', duration=4), Task(task_id='82_M2', duration=2)], reduce_tasks=[Task(task_id='82_R0', duration=4), Task(task_id='82_R1', duration=4)])
+2020-11-30T11:32:05+0530: Connected by ('127.0.0.1', 33578)
+2020-11-30T11:32:05+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='46_M0', message='Completed task 46_M0 on worker 3')
+2020-11-30T11:32:05+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:05+0530: Sent data to worker
+2020-11-30T11:32:05+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:05+0530: Sent data to worker
+2020-11-30T11:32:05+0530: Processing query Query(job_id='49', map_tasks=[Task(task_id='49_M0', duration=1), Task(task_id='49_M1', duration=1), Task(task_id='49_M2', duration=4)], reduce_tasks=[Task(task_id='49_R0', duration=4), Task(task_id='49_R1', duration=4)])
+2020-11-30T11:32:06+0530: Connected by ('127.0.0.1', 33584)
+2020-11-30T11:32:06+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='47_R0', message='Completed task 47_R0 on worker 2')
+2020-11-30T11:32:06+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:06+0530: Sent data to worker
+2020-11-30T11:32:06+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:06+0530: Sent data to worker
+2020-11-30T11:32:06+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:06+0530: Sent data to worker
+2020-11-30T11:32:06+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:06+0530: Sent data to worker
+2020-11-30T11:32:06+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:06+0530: Sent data to worker
+2020-11-30T11:32:06+0530: Processing query Query(job_id='50', map_tasks=[Task(task_id='50_M0', duration=4), Task(task_id='50_M1', duration=4)], reduce_tasks=[Task(task_id='50_R0', duration=4), Task(task_id='50_R1', duration=2)])
+2020-11-30T11:32:06+0530: Connected by ('127.0.0.1', 59068)
+2020-11-30T11:32:06+0530: Got query: Query(job_id='83', map_tasks=[Task(task_id='83_M0', duration=4), Task(task_id='83_M1', duration=1)], reduce_tasks=[Task(task_id='83_R0', duration=4), Task(task_id='83_R1', duration=4)])
+2020-11-30T11:32:07+0530: Connected by ('127.0.0.1', 59070)
+2020-11-30T11:32:07+0530: Got query: Query(job_id='84', map_tasks=[Task(task_id='84_M0', duration=4), Task(task_id='84_M1', duration=2), Task(task_id='84_M2', duration=2)], reduce_tasks=[Task(task_id='84_R0', duration=2), Task(task_id='84_R1', duration=3)])
+2020-11-30T11:32:07+0530: Connected by ('127.0.0.1', 33600)
+2020-11-30T11:32:07+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='47_M1', message='Completed task 47_M1 on worker 2')
+2020-11-30T11:32:07+0530: Connected by ('127.0.0.1', 33602)
+2020-11-30T11:32:07+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='48_R0', message='Completed task 48_R0 on worker 2')
+2020-11-30T11:32:07+0530: Connected by ('127.0.0.1', 33604)
+2020-11-30T11:32:07+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:07+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='49_M0', message='Completed task 49_M0 on worker 1')
+2020-11-30T11:32:07+0530: Connected by ('127.0.0.1', 33606)
+2020-11-30T11:32:07+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='49_M1', message='Completed task 49_M1 on worker 1')
+2020-11-30T11:32:07+0530: Sent data to worker
+2020-11-30T11:32:07+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:07+0530: Sent data to worker
+2020-11-30T11:32:07+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:07+0530: Sent data to worker
+2020-11-30T11:32:07+0530: Connected by ('127.0.0.1', 59086)
+2020-11-30T11:32:07+0530: Got query: Query(job_id='85', map_tasks=[Task(task_id='85_M0', duration=4), Task(task_id='85_M1', duration=1), Task(task_id='85_M2', duration=3), Task(task_id='85_M3', duration=3)], reduce_tasks=[Task(task_id='85_R0', duration=1)])
+2020-11-30T11:32:08+0530: Connected by ('127.0.0.1', 33616)
+2020-11-30T11:32:08+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='47_M0', message='Completed task 47_M0 on worker 2')
+2020-11-30T11:32:08+0530: Connected by ('127.0.0.1', 33618)
+2020-11-30T11:32:08+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='48_M0', message='Completed task 48_M0 on worker 2')
+2020-11-30T11:32:08+0530: Connected by ('127.0.0.1', 59092)
+2020-11-30T11:32:08+0530: Got query: Query(job_id='86', map_tasks=[Task(task_id='86_M0', duration=4)], reduce_tasks=[Task(task_id='86_R0', duration=3)])
+2020-11-30T11:32:10+0530: Connected by ('127.0.0.1', 33622)
+2020-11-30T11:32:10+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='49_R1', message='Completed task 49_R1 on worker 1')
+2020-11-30T11:32:10+0530: Connected by ('127.0.0.1', 33624)
+2020-11-30T11:32:10+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='49_R0', message='Completed task 49_R0 on worker 1')
+2020-11-30T11:32:10+0530: Connected by ('127.0.0.1', 33626)
+2020-11-30T11:32:10+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='49_M2', message='Completed task 49_M2 on worker 1')
+2020-11-30T11:32:11+0530: Connected by ('127.0.0.1', 33628)
+2020-11-30T11:32:11+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='50_M0', message='Completed task 50_M0 on worker 3')
+2020-11-30T11:32:11+0530: Connected by ('127.0.0.1', 33630)
+2020-11-30T11:32:11+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:11+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='50_M1', message='Completed task 50_M1 on worker 3')
+2020-11-30T11:32:11+0530: Connected by ('127.0.0.1', 33632)
+2020-11-30T11:32:11+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='50_R0', message='Completed task 50_R0 on worker 3')
+2020-11-30T11:32:11+0530: Sent data to worker
+2020-11-30T11:32:11+0530: Processing query Query(job_id='51', map_tasks=[Task(task_id='51_M0', duration=4), Task(task_id='51_M1', duration=3), Task(task_id='51_M2', duration=2)], reduce_tasks=[Task(task_id='51_R0', duration=2)])
+2020-11-30T11:32:12+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:12+0530: Sent data to worker
+2020-11-30T11:32:12+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:12+0530: Sent data to worker
+2020-11-30T11:32:12+0530: Connected by ('127.0.0.1', 59112)
+2020-11-30T11:32:12+0530: Got query: Query(job_id='87', map_tasks=[Task(task_id='87_M0', duration=3), Task(task_id='87_M1', duration=4), Task(task_id='87_M2', duration=3), Task(task_id='87_M3', duration=3)], reduce_tasks=[Task(task_id='87_R0', duration=2)])
+2020-11-30T11:32:13+0530: Connected by ('127.0.0.1', 33642)
+2020-11-30T11:32:13+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='50_R1', message='Completed task 50_R1 on worker 3')
+2020-11-30T11:32:13+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:13+0530: Sent data to worker
+2020-11-30T11:32:13+0530: Connected by ('127.0.0.1', 59118)
+2020-11-30T11:32:13+0530: Got query: Query(job_id='88', map_tasks=[Task(task_id='88_M0', duration=3), Task(task_id='88_M1', duration=3)], reduce_tasks=[Task(task_id='88_R0', duration=2), Task(task_id='88_R1', duration=4)])
+2020-11-30T11:32:13+0530: Connected by ('127.0.0.1', 59120)
+2020-11-30T11:32:13+0530: Got query: Query(job_id='89', map_tasks=[Task(task_id='89_M0', duration=1), Task(task_id='89_M1', duration=2), Task(task_id='89_M2', duration=1)], reduce_tasks=[Task(task_id='89_R0', duration=3), Task(task_id='89_R1', duration=3)])
+2020-11-30T11:32:14+0530: Connected by ('127.0.0.1', 59122)
+2020-11-30T11:32:14+0530: Got query: Query(job_id='90', map_tasks=[Task(task_id='90_M0', duration=2)], reduce_tasks=[Task(task_id='90_R0', duration=2)])
+2020-11-30T11:32:14+0530: Connected by ('127.0.0.1', 59124)
+2020-11-30T11:32:14+0530: Got query: Query(job_id='91', map_tasks=[Task(task_id='91_M0', duration=3)], reduce_tasks=[Task(task_id='91_R0', duration=3)])
+2020-11-30T11:32:14+0530: Connected by ('127.0.0.1', 59126)
+2020-11-30T11:32:14+0530: Got query: Query(job_id='92', map_tasks=[Task(task_id='92_M0', duration=3), Task(task_id='92_M1', duration=1), Task(task_id='92_M2', duration=2)], reduce_tasks=[Task(task_id='92_R0', duration=2)])
+2020-11-30T11:32:15+0530: Connected by ('127.0.0.1', 59128)
+2020-11-30T11:32:15+0530: Got query: Query(job_id='93', map_tasks=[Task(task_id='93_M0', duration=4), Task(task_id='93_M1', duration=2), Task(task_id='93_M2', duration=1)], reduce_tasks=[Task(task_id='93_R0', duration=3)])
+2020-11-30T11:32:15+0530: Connected by ('127.0.0.1', 33658)
+2020-11-30T11:32:15+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='51_M1', message='Completed task 51_M1 on worker 3')
+2020-11-30T11:32:15+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:15+0530: Sent data to worker
+2020-11-30T11:32:15+0530: Processing query Query(job_id='52', map_tasks=[Task(task_id='52_M0', duration=1)], reduce_tasks=[Task(task_id='52_R0', duration=3), Task(task_id='52_R1', duration=1)])
+2020-11-30T11:32:15+0530: Connected by ('127.0.0.1', 33662)
+2020-11-30T11:32:15+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='51_M2', message='Completed task 51_M2 on worker 3')
+2020-11-30T11:32:16+0530: Connected by ('127.0.0.1', 33664)
+2020-11-30T11:32:16+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='51_M0', message='Completed task 51_M0 on worker 3')
+2020-11-30T11:32:16+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:16+0530: Sent data to worker
+2020-11-30T11:32:16+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:16+0530: Sent data to worker
+2020-11-30T11:32:16+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:16+0530: Sent data to worker
+2020-11-30T11:32:16+0530: Processing query Query(job_id='53', map_tasks=[Task(task_id='53_M0', duration=1), Task(task_id='53_M1', duration=3)], reduce_tasks=[Task(task_id='53_R0', duration=3), Task(task_id='53_R1', duration=1)])
+2020-11-30T11:32:17+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:17+0530: Connected by ('127.0.0.1', 33672)
+2020-11-30T11:32:17+0530: Connected by ('127.0.0.1', 33674)
+2020-11-30T11:32:17+0530: Sent data to worker
+2020-11-30T11:32:17+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:17+0530: Connected by ('127.0.0.1', 33678)
+2020-11-30T11:32:17+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='51_R0', message='Completed task 51_R0 on worker 3')
+2020-11-30T11:32:17+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='52_M0', message='Completed task 52_M0 on worker 2')
+2020-11-30T11:32:17+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='52_R1', message='Completed task 52_R1 on worker 2')
+2020-11-30T11:32:17+0530: Sent data to worker
+2020-11-30T11:32:17+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:17+0530: Sent data to worker
+2020-11-30T11:32:17+0530: Connected by ('127.0.0.1', 59156)
+2020-11-30T11:32:17+0530: Got query: Query(job_id='94', map_tasks=[Task(task_id='94_M0', duration=2)], reduce_tasks=[Task(task_id='94_R0', duration=4), Task(task_id='94_R1', duration=3)])
+2020-11-30T11:32:17+0530: Connected by ('127.0.0.1', 59158)
+2020-11-30T11:32:17+0530: Got query: Query(job_id='95', map_tasks=[Task(task_id='95_M0', duration=4), Task(task_id='95_M1', duration=3), Task(task_id='95_M2', duration=4)], reduce_tasks=[Task(task_id='95_R0', duration=3)])
+2020-11-30T11:32:18+0530: Connected by ('127.0.0.1', 33688)
+2020-11-30T11:32:18+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='53_M0', message='Completed task 53_M0 on worker 3')
+2020-11-30T11:32:18+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:18+0530: Sent data to worker
+2020-11-30T11:32:18+0530: Processing query Query(job_id='54', map_tasks=[Task(task_id='54_M0', duration=2), Task(task_id='54_M1', duration=3), Task(task_id='54_M2', duration=1), Task(task_id='54_M3', duration=1)], reduce_tasks=[Task(task_id='54_R0', duration=1), Task(task_id='54_R1', duration=1)])
+2020-11-30T11:32:19+0530: Connected by ('127.0.0.1', 59164)
+2020-11-30T11:32:19+0530: Got query: Query(job_id='96', map_tasks=[Task(task_id='96_M0', duration=2), Task(task_id='96_M1', duration=4)], reduce_tasks=[Task(task_id='96_R0', duration=2), Task(task_id='96_R1', duration=3)])
+2020-11-30T11:32:19+0530: Connected by ('127.0.0.1', 33694)
+2020-11-30T11:32:19+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='52_R0', message='Completed task 52_R0 on worker 2')
+2020-11-30T11:32:19+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:19+0530: Sent data to worker
+2020-11-30T11:32:19+0530: Connected by ('127.0.0.1', 33698)
+2020-11-30T11:32:19+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:19+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='53_R1', message='Completed task 53_R1 on worker 3')
+2020-11-30T11:32:19+0530: Sent data to worker
+2020-11-30T11:32:19+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:19+0530: Sent data to worker
+2020-11-30T11:32:19+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:19+0530: Sent data to worker
+2020-11-30T11:32:19+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:19+0530: Sent data to worker
+2020-11-30T11:32:19+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:19+0530: Sent data to worker
+2020-11-30T11:32:19+0530: Processing query Query(job_id='55', map_tasks=[Task(task_id='55_M0', duration=1)], reduce_tasks=[Task(task_id='55_R0', duration=4)])
+2020-11-30T11:32:20+0530: Connected by ('127.0.0.1', 33712)
+2020-11-30T11:32:20+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='53_R0', message='Completed task 53_R0 on worker 3')
+2020-11-30T11:32:20+0530: Connected by ('127.0.0.1', 33710)
+2020-11-30T11:32:20+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='53_M1', message='Completed task 53_M1 on worker 3')
+2020-11-30T11:32:20+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:20+0530: Sent data to worker
+2020-11-30T11:32:20+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:20+0530: Connected by ('127.0.0.1', 33714)
+2020-11-30T11:32:20+0530: Sent data to worker
+2020-11-30T11:32:20+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='54_M3', message='Completed task 54_M3 on worker 2')
+2020-11-30T11:32:20+0530: Processing query Query(job_id='56', map_tasks=[Task(task_id='56_M0', duration=4), Task(task_id='56_M1', duration=1), Task(task_id='56_M2', duration=2)], reduce_tasks=[Task(task_id='56_R0', duration=1)])
+2020-11-30T11:32:20+0530: Connected by ('127.0.0.1', 33718)
+2020-11-30T11:32:20+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='54_R0', message='Completed task 54_R0 on worker 2')
+2020-11-30T11:32:20+0530: Connected by ('127.0.0.1', 33722)
+2020-11-30T11:32:20+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='54_M2', message='Completed task 54_M2 on worker 2')
+2020-11-30T11:32:20+0530: Connected by ('127.0.0.1', 33724)
+2020-11-30T11:32:20+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='54_R1', message='Completed task 54_R1 on worker 2')
+2020-11-30T11:32:20+0530: Connected by ('127.0.0.1', 59198)
+2020-11-30T11:32:20+0530: Got query: Query(job_id='97', map_tasks=[Task(task_id='97_M0', duration=3), Task(task_id='97_M1', duration=2), Task(task_id='97_M2', duration=2)], reduce_tasks=[Task(task_id='97_R0', duration=2), Task(task_id='97_R1', duration=4)])
+2020-11-30T11:32:21+0530: Connected by ('127.0.0.1', 33728)
+2020-11-30T11:32:21+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='54_M0', message='Completed task 54_M0 on worker 2')
+2020-11-30T11:32:21+0530: Connected by ('127.0.0.1', 33730)
+2020-11-30T11:32:21+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:21+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='55_M0', message='Completed task 55_M0 on worker 1')
+2020-11-30T11:32:21+0530: Sent data to worker
+2020-11-30T11:32:21+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:21+0530: Sent data to worker
+2020-11-30T11:32:21+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:21+0530: Sent data to worker
+2020-11-30T11:32:22+0530: Connected by ('127.0.0.1', 33738)
+2020-11-30T11:32:22+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='54_M1', message='Completed task 54_M1 on worker 2')
+2020-11-30T11:32:22+0530: Connected by ('127.0.0.1', 33740)
+2020-11-30T11:32:22+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='56_M1', message='Completed task 56_M1 on worker 3')
+2020-11-30T11:32:22+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:22+0530: Sent data to worker
+2020-11-30T11:32:22+0530: Processing query Query(job_id='57', map_tasks=[Task(task_id='57_M0', duration=2), Task(task_id='57_M1', duration=2)], reduce_tasks=[Task(task_id='57_R0', duration=2)])
+2020-11-30T11:32:23+0530: Connected by ('127.0.0.1', 33744)
+2020-11-30T11:32:23+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='56_M2', message='Completed task 56_M2 on worker 3')
+2020-11-30T11:32:23+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:23+0530: Connected by ('127.0.0.1', 33746)
+2020-11-30T11:32:23+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='56_R0', message='Completed task 56_R0 on worker 3')
+2020-11-30T11:32:23+0530: Sent data to worker
+2020-11-30T11:32:23+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:23+0530: Sent data to worker
+2020-11-30T11:32:23+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:23+0530: Sent data to worker
+2020-11-30T11:32:23+0530: Processing query Query(job_id='58', map_tasks=[Task(task_id='58_M0', duration=3), Task(task_id='58_M1', duration=4), Task(task_id='58_M2', duration=1), Task(task_id='58_M3', duration=1)], reduce_tasks=[Task(task_id='58_R0', duration=1)])
+2020-11-30T11:32:24+0530: Connected by ('127.0.0.1', 59226)
+2020-11-30T11:32:24+0530: Got query: Query(job_id='98', map_tasks=[Task(task_id='98_M0', duration=1), Task(task_id='98_M1', duration=1)], reduce_tasks=[Task(task_id='98_R0', duration=2)])
+2020-11-30T11:32:24+0530: Connected by ('127.0.0.1', 59228)
+2020-11-30T11:32:24+0530: Got query: Query(job_id='99', map_tasks=[Task(task_id='99_M0', duration=2), Task(task_id='99_M1', duration=1), Task(task_id='99_M2', duration=3), Task(task_id='99_M3', duration=4)], reduce_tasks=[Task(task_id='99_R0', duration=1)])
+2020-11-30T11:32:24+0530: Connected by ('127.0.0.1', 33758)
+2020-11-30T11:32:24+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='55_R0', message='Completed task 55_R0 on worker 1')
+2020-11-30T11:32:24+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:24+0530: Sent data to worker
+2020-11-30T11:32:24+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:24+0530: Sent data to worker
+2020-11-30T11:32:25+0530: Connected by ('127.0.0.1', 33764)
+2020-11-30T11:32:25+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='56_M0', message='Completed task 56_M0 on worker 3')
+2020-11-30T11:32:25+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:25+0530: Sent data to worker
+2020-11-30T11:32:25+0530: Connected by ('127.0.0.1', 33768)
+2020-11-30T11:32:25+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='57_M0', message='Completed task 57_M0 on worker 1')
+2020-11-30T11:32:25+0530: Connected by ('127.0.0.1', 33770)
+2020-11-30T11:32:25+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='57_M1', message='Completed task 57_M1 on worker 1')
+2020-11-30T11:32:25+0530: Connected by ('127.0.0.1', 33772)
+2020-11-30T11:32:25+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='57_R0', message='Completed task 57_R0 on worker 1')
+2020-11-30T11:32:26+0530: Connected by ('127.0.0.1', 33774)
+2020-11-30T11:32:26+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='58_M2', message='Completed task 58_M2 on worker 3')
+2020-11-30T11:32:26+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:26+0530: Sent data to worker
+2020-11-30T11:32:27+0530: Connected by ('127.0.0.1', 33778)
+2020-11-30T11:32:27+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='58_M3', message='Completed task 58_M3 on worker 3')
+2020-11-30T11:32:27+0530: Connected by ('127.0.0.1', 33780)
+2020-11-30T11:32:27+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:27+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='58_M0', message='Completed task 58_M0 on worker 3')
+2020-11-30T11:32:27+0530: Sent data to worker
+2020-11-30T11:32:27+0530: Processing query Query(job_id='59', map_tasks=[Task(task_id='59_M0', duration=3), Task(task_id='59_M1', duration=3)], reduce_tasks=[Task(task_id='59_R0', duration=3)])
+2020-11-30T11:32:28+0530: Connected by ('127.0.0.1', 33784)
+2020-11-30T11:32:28+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='58_M1', message='Completed task 58_M1 on worker 3')
+2020-11-30T11:32:28+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:28+0530: Connected by ('127.0.0.1', 33786)
+2020-11-30T11:32:28+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='58_R0', message='Completed task 58_R0 on worker 3')
+2020-11-30T11:32:28+0530: Sent data to worker
+2020-11-30T11:32:28+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:28+0530: Sent data to worker
+2020-11-30T11:32:28+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:28+0530: Sent data to worker
+2020-11-30T11:32:28+0530: Processing query Query(job_id='60', map_tasks=[Task(task_id='60_M0', duration=1), Task(task_id='60_M1', duration=3)], reduce_tasks=[Task(task_id='60_R0', duration=3)])
+2020-11-30T11:32:29+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:29+0530: Sent data to worker
+2020-11-30T11:32:29+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:29+0530: Sent data to worker
+2020-11-30T11:32:29+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:29+0530: Sent data to worker
+2020-11-30T11:32:29+0530: Processing query Query(job_id='61', map_tasks=[Task(task_id='61_M0', duration=2), Task(task_id='61_M1', duration=1)], reduce_tasks=[Task(task_id='61_R0', duration=3), Task(task_id='61_R1', duration=3)])
+2020-11-30T11:32:30+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:30+0530: Connected by ('127.0.0.1', 33800)
+2020-11-30T11:32:30+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='60_M0', message='Completed task 60_M0 on worker 3')
+2020-11-30T11:32:30+0530: Sent data to worker
+2020-11-30T11:32:30+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:30+0530: Sent data to worker
+2020-11-30T11:32:30+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:30+0530: Sent data to worker
+2020-11-30T11:32:30+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:30+0530: Sent data to worker
+2020-11-30T11:32:30+0530: Processing query Query(job_id='62', map_tasks=[Task(task_id='62_M0', duration=4)], reduce_tasks=[Task(task_id='62_R0', duration=3)])
+2020-11-30T11:32:31+0530: Connected by ('127.0.0.1', 33810)
+2020-11-30T11:32:31+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='59_R0', message='Completed task 59_R0 on worker 2')
+2020-11-30T11:32:31+0530: Connected by ('127.0.0.1', 33812)
+2020-11-30T11:32:31+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='59_M1', message='Completed task 59_M1 on worker 2')
+2020-11-30T11:32:31+0530: Connected by ('127.0.0.1', 33814)
+2020-11-30T11:32:31+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='59_M0', message='Completed task 59_M0 on worker 2')
+2020-11-30T11:32:31+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:31+0530: Connected by ('127.0.0.1', 33816)
+2020-11-30T11:32:31+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='61_M1', message='Completed task 61_M1 on worker 2')
+2020-11-30T11:32:31+0530: Sent data to worker
+2020-11-30T11:32:32+0530: Connected by ('127.0.0.1', 33822)
+2020-11-30T11:32:32+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='60_R0', message='Completed task 60_R0 on worker 3')
+2020-11-30T11:32:32+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:32+0530: Connected by ('127.0.0.1', 33820)
+2020-11-30T11:32:32+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='60_M1', message='Completed task 60_M1 on worker 3')
+2020-11-30T11:32:32+0530: Connected by ('127.0.0.1', 33824)
+2020-11-30T11:32:32+0530: Sent data to worker
+2020-11-30T11:32:32+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='61_M0', message='Completed task 61_M0 on worker 2')
+2020-11-30T11:32:32+0530: Processing query Query(job_id='63', map_tasks=[Task(task_id='63_M0', duration=3), Task(task_id='63_M1', duration=3), Task(task_id='63_M2', duration=1)], reduce_tasks=[Task(task_id='63_R0', duration=3)])
+2020-11-30T11:32:33+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:33+0530: Sent data to worker
+2020-11-30T11:32:33+0530: Connected by ('127.0.0.1', 33830)
+2020-11-30T11:32:33+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='61_R0', message='Completed task 61_R0 on worker 2')
+2020-11-30T11:32:33+0530: Connected by ('127.0.0.1', 33832)
+2020-11-30T11:32:33+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='61_R1', message='Completed task 61_R1 on worker 2')
+2020-11-30T11:32:35+0530: Connected by ('127.0.0.1', 33834)
+2020-11-30T11:32:35+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='62_R0', message='Completed task 62_R0 on worker 3')
+2020-11-30T11:32:35+0530: Connected by ('127.0.0.1', 33836)
+2020-11-30T11:32:35+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:35+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='62_M0', message='Completed task 62_M0 on worker 3')
+2020-11-30T11:32:35+0530: Sent data to worker
+2020-11-30T11:32:35+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:35+0530: Sent data to worker
+2020-11-30T11:32:36+0530: Connected by ('127.0.0.1', 33842)
+2020-11-30T11:32:36+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='63_M0', message='Completed task 63_M0 on worker 3')
+2020-11-30T11:32:36+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:36+0530: Sent data to worker
+2020-11-30T11:32:36+0530: Processing query Query(job_id='64', map_tasks=[Task(task_id='64_M0', duration=3), Task(task_id='64_M1', duration=2), Task(task_id='64_M2', duration=4), Task(task_id='64_M3', duration=1)], reduce_tasks=[Task(task_id='64_R0', duration=2)])
+2020-11-30T11:32:36+0530: Connected by ('127.0.0.1', 33846)
+2020-11-30T11:32:36+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='63_M2', message='Completed task 63_M2 on worker 3')
+2020-11-30T11:32:37+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:37+0530: Sent data to worker
+2020-11-30T11:32:37+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:37+0530: Sent data to worker
+2020-11-30T11:32:37+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:37+0530: Sent data to worker
+2020-11-30T11:32:37+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:37+0530: Sent data to worker
+2020-11-30T11:32:37+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:37+0530: Sent data to worker
+2020-11-30T11:32:37+0530: Processing query Query(job_id='65', map_tasks=[Task(task_id='65_M0', duration=4), Task(task_id='65_M1', duration=1)], reduce_tasks=[Task(task_id='65_R0', duration=2), Task(task_id='65_R1', duration=4)])
+2020-11-30T11:32:38+0530: Connected by ('127.0.0.1', 33858)
+2020-11-30T11:32:38+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='63_M1', message='Completed task 63_M1 on worker 3')
+2020-11-30T11:32:38+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:38+0530: Connected by ('127.0.0.1', 33862)
+2020-11-30T11:32:38+0530: Sent data to worker
+2020-11-30T11:32:38+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='64_M3', message='Completed task 64_M3 on worker 2')
+2020-11-30T11:32:38+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:38+0530: Sent data to worker
+2020-11-30T11:32:39+0530: Connected by ('127.0.0.1', 33866)
+2020-11-30T11:32:39+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='63_R0', message='Completed task 63_R0 on worker 3')
+2020-11-30T11:32:39+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:39+0530: Sent data to worker
+2020-11-30T11:32:39+0530: Connected by ('127.0.0.1', 33870)
+2020-11-30T11:32:39+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='64_M1', message='Completed task 64_M1 on worker 2')
+2020-11-30T11:32:39+0530: Connected by ('127.0.0.1', 33872)
+2020-11-30T11:32:39+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='64_R0', message='Completed task 64_R0 on worker 2')
+2020-11-30T11:32:39+0530: Connected by ('127.0.0.1', 33874)
+2020-11-30T11:32:39+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='65_M1', message='Completed task 65_M1 on worker 3')
+2020-11-30T11:32:39+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:39+0530: Sent data to worker
+2020-11-30T11:32:39+0530: Processing query Query(job_id='66', map_tasks=[Task(task_id='66_M0', duration=4)], reduce_tasks=[Task(task_id='66_R0', duration=1)])
+2020-11-30T11:32:40+0530: Connected by ('127.0.0.1', 33878)
+2020-11-30T11:32:40+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='64_M0', message='Completed task 64_M0 on worker 2')
+2020-11-30T11:32:40+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:40+0530: Sent data to worker
+2020-11-30T11:32:40+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:40+0530: Sent data to worker
+2020-11-30T11:32:40+0530: Processing query Query(job_id='67', map_tasks=[Task(task_id='67_M0', duration=1), Task(task_id='67_M1', duration=2)], reduce_tasks=[Task(task_id='67_R0', duration=4)])
+2020-11-30T11:32:41+0530: Connected by ('127.0.0.1', 33886)
+2020-11-30T11:32:41+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='64_M2', message='Completed task 64_M2 on worker 2')
+2020-11-30T11:32:41+0530: Connected by ('127.0.0.1', 33884)
+2020-11-30T11:32:41+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='65_R0', message='Completed task 65_R0 on worker 3')
+2020-11-30T11:32:41+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:41+0530: Sent data to worker
+2020-11-30T11:32:41+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:41+0530: Sent data to worker
+2020-11-30T11:32:41+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:41+0530: Sent data to worker
+2020-11-30T11:32:41+0530: Connected by ('127.0.0.1', 33894)
+2020-11-30T11:32:41+0530: Processing query Query(job_id='68', map_tasks=[Task(task_id='68_M0', duration=3), Task(task_id='68_M1', duration=1), Task(task_id='68_M2', duration=3)], reduce_tasks=[Task(task_id='68_R0', duration=2), Task(task_id='68_R1', duration=2)])
+2020-11-30T11:32:41+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='66_R0', message='Completed task 66_R0 on worker 1')
+2020-11-30T11:32:42+0530: Connected by ('127.0.0.1', 33896)
+2020-11-30T11:32:42+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='65_M0', message='Completed task 65_M0 on worker 3')
+2020-11-30T11:32:42+0530: Connected by ('127.0.0.1', 33898)
+2020-11-30T11:32:42+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:42+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='67_M0', message='Completed task 67_M0 on worker 1')
+2020-11-30T11:32:42+0530: Sent data to worker
+2020-11-30T11:32:42+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:42+0530: Sent data to worker
+2020-11-30T11:32:42+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:42+0530: Sent data to worker
+2020-11-30T11:32:42+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:42+0530: Sent data to worker
+2020-11-30T11:32:42+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:42+0530: Sent data to worker
+2020-11-30T11:32:42+0530: Processing query Query(job_id='69', map_tasks=[Task(task_id='69_M0', duration=1)], reduce_tasks=[Task(task_id='69_R0', duration=4), Task(task_id='69_R1', duration=2)])
+2020-11-30T11:32:43+0530: Connected by ('127.0.0.1', 33910)
+2020-11-30T11:32:43+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='65_R1', message='Completed task 65_R1 on worker 3')
+2020-11-30T11:32:43+0530: Connected by ('127.0.0.1', 33912)
+2020-11-30T11:32:43+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='67_M1', message='Completed task 67_M1 on worker 1')
+2020-11-30T11:32:43+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:43+0530: Connected by ('127.0.0.1', 33916)
+2020-11-30T11:32:43+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='68_M1', message='Completed task 68_M1 on worker 2')
+2020-11-30T11:32:43+0530: Sent data to worker
+2020-11-30T11:32:43+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:43+0530: Sent data to worker
+2020-11-30T11:32:43+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:43+0530: Sent data to worker
+2020-11-30T11:32:43+0530: Processing query Query(job_id='70', map_tasks=[Task(task_id='70_M0', duration=3)], reduce_tasks=[Task(task_id='70_R0', duration=1)])
+2020-11-30T11:32:44+0530: Connected by ('127.0.0.1', 33922)
+2020-11-30T11:32:44+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='66_M0', message='Completed task 66_M0 on worker 1')
+2020-11-30T11:32:44+0530: Connected by ('127.0.0.1', 33924)
+2020-11-30T11:32:44+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:44+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='69_M0', message='Completed task 69_M0 on worker 1')
+2020-11-30T11:32:44+0530: Connected by ('127.0.0.1', 33926)
+2020-11-30T11:32:44+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='68_R0', message='Completed task 68_R0 on worker 2')
+2020-11-30T11:32:44+0530: Connected by ('127.0.0.1', 33930)
+2020-11-30T11:32:44+0530: Sent data to worker
+2020-11-30T11:32:44+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:44+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='68_R1', message='Completed task 68_R1 on worker 2')
+2020-11-30T11:32:44+0530: Sent data to worker
+2020-11-30T11:32:44+0530: Processing query Query(job_id='71', map_tasks=[Task(task_id='71_M0', duration=4)], reduce_tasks=[Task(task_id='71_R0', duration=3)])
+2020-11-30T11:32:45+0530: Connected by ('127.0.0.1', 33936)
+2020-11-30T11:32:45+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='68_M0', message='Completed task 68_M0 on worker 2')
+2020-11-30T11:32:45+0530: Connected by ('127.0.0.1', 33938)
+2020-11-30T11:32:45+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='67_R0', message='Completed task 67_R0 on worker 1')
+2020-11-30T11:32:45+0530: Connected by ('127.0.0.1', 33940)
+2020-11-30T11:32:45+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='68_M2', message='Completed task 68_M2 on worker 2')
+2020-11-30T11:32:45+0530: Connected by ('127.0.0.1', 33942)
+2020-11-30T11:32:45+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='69_R1', message='Completed task 69_R1 on worker 1')
+2020-11-30T11:32:45+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:45+0530: Sent data to worker
+2020-11-30T11:32:45+0530: Connected by ('127.0.0.1', 33946)
+2020-11-30T11:32:45+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:45+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='70_R0', message='Completed task 70_R0 on worker 2')
+2020-11-30T11:32:45+0530: Sent data to worker
+2020-11-30T11:32:45+0530: Processing query Query(job_id='72', map_tasks=[Task(task_id='72_M0', duration=4), Task(task_id='72_M1', duration=4), Task(task_id='72_M2', duration=3), Task(task_id='72_M3', duration=3)], reduce_tasks=[Task(task_id='72_R0', duration=4)])
+2020-11-30T11:32:46+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:46+0530: Sent data to worker
+2020-11-30T11:32:46+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:46+0530: Sent data to worker
+2020-11-30T11:32:46+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:46+0530: Sent data to worker
+2020-11-30T11:32:46+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:46+0530: Sent data to worker
+2020-11-30T11:32:46+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:46+0530: Sent data to worker
+2020-11-30T11:32:46+0530: Processing query Query(job_id='73', map_tasks=[Task(task_id='73_M0', duration=1), Task(task_id='73_M1', duration=2), Task(task_id='73_M2', duration=3), Task(task_id='73_M3', duration=4)], reduce_tasks=[Task(task_id='73_R0', duration=4)])
+2020-11-30T11:32:47+0530: Connected by ('127.0.0.1', 33960)
+2020-11-30T11:32:47+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='69_R0', message='Completed task 69_R0 on worker 1')
+2020-11-30T11:32:47+0530: Connected by ('127.0.0.1', 33962)
+2020-11-30T11:32:47+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='70_M0', message='Completed task 70_M0 on worker 2')
+2020-11-30T11:32:47+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:47+0530: Sent data to worker
+2020-11-30T11:32:47+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:47+0530: Sent data to worker
+2020-11-30T11:32:47+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:47+0530: Sent data to worker
+2020-11-30T11:32:48+0530: Connected by ('127.0.0.1', 33970)
+2020-11-30T11:32:48+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='71_R0', message='Completed task 71_R0 on worker 1')
+2020-11-30T11:32:48+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:48+0530: Sent data to worker
+2020-11-30T11:32:48+0530: Connected by ('127.0.0.1', 33974)
+2020-11-30T11:32:48+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='73_M0', message='Completed task 73_M0 on worker 1')
+2020-11-30T11:32:48+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:48+0530: Sent data to worker
+2020-11-30T11:32:48+0530: Processing query Query(job_id='74', map_tasks=[Task(task_id='74_M0', duration=1), Task(task_id='74_M1', duration=4), Task(task_id='74_M2', duration=2)], reduce_tasks=[Task(task_id='74_R0', duration=3), Task(task_id='74_R1', duration=2)])
+2020-11-30T11:32:49+0530: Connected by ('127.0.0.1', 33978)
+2020-11-30T11:32:49+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='71_M0', message='Completed task 71_M0 on worker 1')
+2020-11-30T11:32:49+0530: Connected by ('127.0.0.1', 33980)
+2020-11-30T11:32:49+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='72_M3', message='Completed task 72_M3 on worker 2')
+2020-11-30T11:32:49+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:49+0530: Connected by ('127.0.0.1', 33982)
+2020-11-30T11:32:49+0530: Connected by ('127.0.0.1', 33984)
+2020-11-30T11:32:49+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='72_M2', message='Completed task 72_M2 on worker 2')
+2020-11-30T11:32:49+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='73_M1', message='Completed task 73_M1 on worker 1')
+2020-11-30T11:32:49+0530: Sent data to worker
+2020-11-30T11:32:49+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:49+0530: Sent data to worker
+2020-11-30T11:32:49+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:49+0530: Sent data to worker
+2020-11-30T11:32:50+0530: Connected by ('127.0.0.1', 33992)
+2020-11-30T11:32:50+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='72_M0', message='Completed task 72_M0 on worker 2')
+2020-11-30T11:32:50+0530: Connected by ('127.0.0.1', 33994)
+2020-11-30T11:32:50+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='72_M1', message='Completed task 72_M1 on worker 2')
+2020-11-30T11:32:50+0530: Connected by ('127.0.0.1', 33996)
+2020-11-30T11:32:50+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='72_R0', message='Completed task 72_R0 on worker 2')
+2020-11-30T11:32:50+0530: Connected by ('127.0.0.1', 33998)
+2020-11-30T11:32:50+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='73_M2', message='Completed task 73_M2 on worker 1')
+2020-11-30T11:32:50+0530: Connected by ('127.0.0.1', 34000)
+2020-11-30T11:32:50+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='74_M0', message='Completed task 74_M0 on worker 3')
+2020-11-30T11:32:50+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:50+0530: Sent data to worker
+2020-11-30T11:32:51+0530: Connected by ('127.0.0.1', 34004)
+2020-11-30T11:32:51+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='74_M2', message='Completed task 74_M2 on worker 3')
+2020-11-30T11:32:51+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:51+0530: Sent data to worker
+2020-11-30T11:32:51+0530: Processing query Query(job_id='75', map_tasks=[Task(task_id='75_M0', duration=3), Task(task_id='75_M1', duration=3), Task(task_id='75_M2', duration=4)], reduce_tasks=[Task(task_id='75_R0', duration=1), Task(task_id='75_R1', duration=1)])
+2020-11-30T11:32:52+0530: Connected by ('127.0.0.1', 34008)
+2020-11-30T11:32:52+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='73_M3', message='Completed task 73_M3 on worker 1')
+2020-11-30T11:32:52+0530: Connected by ('127.0.0.1', 34010)
+2020-11-30T11:32:52+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='73_R0', message='Completed task 73_R0 on worker 1')
+2020-11-30T11:32:52+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:52+0530: Sent data to worker
+2020-11-30T11:32:52+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:52+0530: Sent data to worker
+2020-11-30T11:32:52+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:52+0530: Sent data to worker
+2020-11-30T11:32:52+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:52+0530: Sent data to worker
+2020-11-30T11:32:52+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:52+0530: Sent data to worker
+2020-11-30T11:32:52+0530: Processing query Query(job_id='76', map_tasks=[Task(task_id='76_M0', duration=1), Task(task_id='76_M1', duration=1), Task(task_id='76_M2', duration=3)], reduce_tasks=[Task(task_id='76_R0', duration=4), Task(task_id='76_R1', duration=3)])
+2020-11-30T11:32:53+0530: Connected by ('127.0.0.1', 34022)
+2020-11-30T11:32:53+0530: Got data WorkerMessage(addr=('127.0.0.1', 4002), task_id='74_M1', message='Completed task 74_M1 on worker 3')
+2020-11-30T11:32:53+0530: Connected by ('127.0.0.1', 34024)
+2020-11-30T11:32:53+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='75_R0', message='Completed task 75_R0 on worker 1')
+2020-11-30T11:32:53+0530: Connected by ('127.0.0.1', 34026)
+2020-11-30T11:32:53+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='75_R1', message='Completed task 75_R1 on worker 1')
+2020-11-30T11:32:54+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:54+0530: Sent data to worker
+2020-11-30T11:32:54+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:54+0530: Sent data to worker
+2020-11-30T11:32:54+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:54+0530: Sent data to worker
+2020-11-30T11:32:54+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:54+0530: Sent data to worker
+2020-11-30T11:32:54+0530: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
+2020-11-30T11:32:54+0530: Sent data to worker
+2020-11-30T11:32:54+0530: Processing query Query(job_id='77', map_tasks=[Task(task_id='77_M0', duration=3)], reduce_tasks=[Task(task_id='77_R0', duration=4)])
+2020-11-30T11:32:55+0530: Connected by ('127.0.0.1', 34038)
+2020-11-30T11:32:55+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='75_M0', message='Completed task 75_M0 on worker 1')
+2020-11-30T11:32:55+0530: Connected by ('127.0.0.1', 34040)
+2020-11-30T11:32:55+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='75_M1', message='Completed task 75_M1 on worker 1')
+2020-11-30T11:32:55+0530: Connected by ('127.0.0.1', 34042)
+2020-11-30T11:32:55+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='76_M0', message='Completed task 76_M0 on worker 2')
+2020-11-30T11:32:55+0530: Connected by ('127.0.0.1', 34044)
+2020-11-30T11:32:55+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='76_M1', message='Completed task 76_M1 on worker 2')
+2020-11-30T11:32:55+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:55+0530: Sent data to worker
+2020-11-30T11:32:55+0530: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
+2020-11-30T11:32:55+0530: Sent data to worker
+2020-11-30T11:32:55+0530: Processing query Query(job_id='78', map_tasks=[Task(task_id='78_M0', duration=1), Task(task_id='78_M1', duration=4)], reduce_tasks=[Task(task_id='78_R0', duration=2)])
+2020-11-30T11:32:56+0530: Connected by ('127.0.0.1', 34050)
+2020-11-30T11:32:56+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='75_M2', message='Completed task 75_M2 on worker 1')
+2020-11-30T11:32:56+0530: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
+2020-11-30T11:32:57+0530: Connected by ('127.0.0.1', 34054)
+2020-11-30T11:32:57+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='76_M2', message='Completed task 76_M2 on worker 2')
+2020-11-30T11:32:57+0530: Connected by ('127.0.0.1', 34056)
+2020-11-30T11:32:57+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='76_R1', message='Completed task 76_R1 on worker 2')
+2020-11-30T11:32:58+0530: Connected by ('127.0.0.1', 34058)
+2020-11-30T11:32:58+0530: Got data WorkerMessage(addr=('127.0.0.1', 4001), task_id='76_R0', message='Completed task 76_R0 on worker 2')
+2020-11-30T11:32:58+0530: Connected by ('127.0.0.1', 34060)
+2020-11-30T11:32:58+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='77_M0', message='Completed task 77_M0 on worker 1')
+2020-11-30T11:32:59+0530: Connected by ('127.0.0.1', 34062)
+2020-11-30T11:32:59+0530: Got data WorkerMessage(addr=('127.0.0.1', 4000), task_id='77_R0', message='Completed task 77_R0 on worker 1')

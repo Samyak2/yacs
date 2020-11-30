@@ -13,7 +13,7 @@ logFile = "master.log"
 
 logging.basicConfig(
     filename=logFile,
-    filemod='a',
+    filemode='a',
     format="%(asctime)s: %(message)s", 
     level=logging.INFO,
     datefmt="%Y-%m-%dT%H:%M:%S%z"
