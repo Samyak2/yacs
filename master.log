@@ -1,174 +1,48 @@
-2020-12-01T17:47:56.742077: Starting client requests thread.
-2020-12-01T17:47:56.742858: Started listening for messages from worker nodes
-2020-12-01T17:47:59.010425: Connected by ('127.0.0.1', 41498)
-2020-12-01T17:47:59.010903: NEW_JOB: Got query with job id 0
-2020-12-01T17:48:00.012910: RUN_TASK: running task 0_M0 on worker 2
-2020-12-01T17:48:00.013940: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
-2020-12-01T17:48:00.014932: Sent data to worker
-2020-12-01T17:48:01.016659: RUN_TASK: running task 0_M1 on worker 3
-2020-12-01T17:48:01.017413: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
-2020-12-01T17:48:01.018379: Sent data to worker
-2020-12-01T17:48:01.019705: Connected by ('127.0.0.1', 55324)
-2020-12-01T17:48:01.020504: TASK_DONE: Completed task 0_M0 on worker 1
-2020-12-01T17:48:02.021948: RUN_TASK: running task 0_R0 on worker 1
-2020-12-01T17:48:02.022484: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
-2020-12-01T17:48:02.028746: Sent data to worker
-2020-12-01T17:48:03.033807: Connected by ('127.0.0.1', 55344)
-2020-12-01T17:48:03.034490: TASK_DONE: Completed task 0_R0 on worker 0
-2020-12-01T17:48:05.026171: Connected by ('127.0.0.1', 55362)
-2020-12-01T17:48:05.026863: TASK_DONE: Completed task 0_M1 on worker 2
-2020-12-01T17:48:06.027996: RUN_TASK: running task 0_R1 on worker 1
-2020-12-01T17:48:06.028592: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
-2020-12-01T17:48:06.029492: Sent data to worker
-2020-12-01T17:48:10.036241: Connected by ('127.0.0.1', 55406)
-2020-12-01T17:48:10.036859: TASK_DONE: Completed task 0_R1 on worker 0
-2020-12-01T17:48:28.133824: Connected by ('127.0.0.1', 41748)
-2020-12-01T17:48:28.134069: NEW_JOB: Got query with job id 0
-2020-12-01T17:48:28.267321: Connected by ('127.0.0.1', 41750)
-2020-12-01T17:48:28.267912: NEW_JOB: Got query with job id 1
-2020-12-01T17:48:28.472303: Connected by ('127.0.0.1', 41752)
-2020-12-01T17:48:28.473119: NEW_JOB: Got query with job id 2
-2020-12-01T17:48:28.716697: Connected by ('127.0.0.1', 41754)
-2020-12-01T17:48:28.717288: NEW_JOB: Got query with job id 3
-2020-12-01T17:48:29.003163: Connected by ('127.0.0.1', 41764)
-2020-12-01T17:48:29.003812: NEW_JOB: Got query with job id 4
-2020-12-01T17:48:29.135140: RUN_TASK: running task 0_M0 on worker 2
-2020-12-01T17:48:29.135693: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
-2020-12-01T17:48:29.136559: Sent data to worker
-2020-12-01T17:48:29.360189: Connected by ('127.0.0.1', 41768)
-2020-12-01T17:48:29.360828: NEW_JOB: Got query with job id 5
-2020-12-01T17:48:30.138040: RUN_TASK: running task 1_M0 on worker 2
-2020-12-01T17:48:30.138675: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
-2020-12-01T17:48:30.139668: Sent data to worker
-2020-12-01T17:48:31.141030: RUN_TASK: running task 2_M0 on worker 2
-2020-12-01T17:48:31.141610: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
-2020-12-01T17:48:31.142625: Sent data to worker
-2020-12-01T17:48:31.606261: Connected by ('127.0.0.1', 41790)
-2020-12-01T17:48:31.606901: NEW_JOB: Got query with job id 6
-2020-12-01T17:48:32.144132: RUN_TASK: running task 3_M0 on worker 1
-2020-12-01T17:48:32.144748: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
-2020-12-01T17:48:32.145817: Sent data to worker
-2020-12-01T17:48:32.332949: Connected by ('127.0.0.1', 41802)
-2020-12-01T17:48:32.333609: NEW_JOB: Got query with job id 7
-2020-12-01T17:48:32.649190: Connected by ('127.0.0.1', 41804)
-2020-12-01T17:48:32.649886: NEW_JOB: Got query with job id 8
-2020-12-01T17:48:33.143306: Connected by ('127.0.0.1', 55618)
-2020-12-01T17:48:33.144070: TASK_DONE: Completed task 0_M0 on worker 1
-2020-12-01T17:48:33.145055: Connected by ('127.0.0.1', 55620)
-2020-12-01T17:48:33.145811: TASK_DONE: Completed task 1_M0 on worker 1
-2020-12-01T17:48:33.146878: RUN_TASK: running task 4_M0 on worker 2
-2020-12-01T17:48:33.147367: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
-2020-12-01T17:48:33.147817: Connected by ('127.0.0.1', 55622)
-2020-12-01T17:48:33.149040: TASK_DONE: Completed task 2_M0 on worker 1
-2020-12-01T17:48:33.149377: Sent data to worker
-2020-12-01T17:48:33.149660: Connected by ('127.0.0.1', 55626)
-2020-12-01T17:48:33.151431: TASK_DONE: Completed task 3_M0 on worker 0
-2020-12-01T17:48:33.558100: Connected by ('127.0.0.1', 41824)
-2020-12-01T17:48:33.558819: NEW_JOB: Got query with job id 9
-2020-12-01T17:48:34.152171: RUN_TASK: running task 5_M0 on worker 3
-2020-12-01T17:48:34.152901: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
-2020-12-01T17:48:34.153503: Connected by ('127.0.0.1', 55638)
-2020-12-01T17:48:34.154605: TASK_DONE: Completed task 4_M0 on worker 1
-2020-12-01T17:48:34.154977: Sent data to worker
-2020-12-01T17:48:35.156906: RUN_TASK: running task 6_M0 on worker 1
-2020-12-01T17:48:35.157697: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
-2020-12-01T17:48:35.158792: Sent data to worker
-2020-12-01T17:48:36.159952: RUN_TASK: running task 7_M0 on worker 2
-2020-12-01T17:48:36.160411: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
-2020-12-01T17:48:36.161192: Sent data to worker
-2020-12-01T17:48:37.162013: RUN_TASK: running task 7_M1 on worker 2
-2020-12-01T17:48:37.162558: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
-2020-12-01T17:48:37.163457: Sent data to worker
-2020-12-01T17:48:38.160308: Connected by ('127.0.0.1', 55682)
-2020-12-01T17:48:38.161056: TASK_DONE: Completed task 5_M0 on worker 2
-2020-12-01T17:48:38.164944: RUN_TASK: running task 8_M0 on worker 3
-2020-12-01T17:48:38.166557: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
-2020-12-01T17:48:38.167377: Sent data to worker
-2020-12-01T17:48:39.165285: Connected by ('127.0.0.1', 55694)
-2020-12-01T17:48:39.166044: TASK_DONE: Completed task 6_M0 on worker 0
-2020-12-01T17:48:39.168943: RUN_TASK: running task 8_M1 on worker 1
-2020-12-01T17:48:39.169402: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
-2020-12-01T17:48:39.170248: Sent data to worker
-2020-12-01T17:48:40.167976: Connected by ('127.0.0.1', 55706)
-2020-12-01T17:48:40.168634: TASK_DONE: Completed task 7_M0 on worker 1
-2020-12-01T17:48:40.169135: Connected by ('127.0.0.1', 55708)
-2020-12-01T17:48:40.169804: TASK_DONE: Completed task 7_M1 on worker 1
-2020-12-01T17:48:40.170875: RUN_TASK: running task 0_R0 on worker 1
-2020-12-01T17:48:40.171424: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
-2020-12-01T17:48:40.172206: Sent data to worker
-2020-12-01T17:48:41.172970: RUN_TASK: running task 1_R0 on worker 3
-2020-12-01T17:48:41.173562: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
-2020-12-01T17:48:41.174563: Sent data to worker
-2020-12-01T17:48:41.175334: Connected by ('127.0.0.1', 55722)
-2020-12-01T17:48:41.176082: TASK_DONE: Completed task 8_M1 on worker 0
-2020-12-01T17:48:42.173302: Connected by ('127.0.0.1', 55732)
-2020-12-01T17:48:42.174132: TASK_DONE: Completed task 8_M0 on worker 2
-2020-12-01T17:48:42.175925: RUN_TASK: running task 2_R0 on worker 3
-2020-12-01T17:48:42.176353: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
-2020-12-01T17:48:42.177095: Sent data to worker
-2020-12-01T17:48:43.178352: RUN_TASK: running task 3_R0 on worker 2
-2020-12-01T17:48:43.178826: Connected by ('127.0.0.1', 55744)
-2020-12-01T17:48:43.179338: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
-2020-12-01T17:48:43.180185: TASK_DONE: Completed task 0_R0 on worker 0
-2020-12-01T17:48:43.180845: Connected by ('127.0.0.1', 55746)
-2020-12-01T17:48:43.182411: TASK_DONE: Completed task 2_R0 on worker 2
-2020-12-01T17:48:43.183263: Sent data to worker
-2020-12-01T17:48:44.180436: Connected by ('127.0.0.1', 55758)
-2020-12-01T17:48:44.181409: TASK_DONE: Completed task 1_R0 on worker 2
-2020-12-01T17:48:44.183888: RUN_TASK: running task 9_M0 on worker 1
-2020-12-01T17:48:44.184412: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
-2020-12-01T17:48:44.185451: Sent data to worker
-2020-12-01T17:48:45.186979: RUN_TASK: running task 9_M1 on worker 1
-2020-12-01T17:48:45.187600: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
-2020-12-01T17:48:45.188062: Connected by ('127.0.0.1', 55770)
-2020-12-01T17:48:45.189093: TASK_DONE: Completed task 3_R0 on worker 1
-2020-12-01T17:48:45.189920: Sent data to worker
-2020-12-01T17:48:46.190517: Connected by ('127.0.0.1', 55782)
-2020-12-01T17:48:46.190892: RUN_TASK: running task 4_R0 on worker 1
-2020-12-01T17:48:46.191548: TASK_DONE: Completed task 9_M0 on worker 0
-2020-12-01T17:48:46.192216: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
-2020-12-01T17:48:46.193871: Sent data to worker
-2020-12-01T17:48:47.195413: RUN_TASK: running task 5_R0 on worker 3
-2020-12-01T17:48:47.196053: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
-2020-12-01T17:48:47.196918: Sent data to worker
-2020-12-01T17:48:48.198463: RUN_TASK: running task 6_R0 on worker 1
-2020-12-01T17:48:48.199118: Connecting to worker <Worker id=1 127.0.0.1:4000 slots=5>
-2020-12-01T17:48:48.205058: Sent data to worker
-2020-12-01T17:48:49.194450: Connected by ('127.0.0.1', 55816)
-2020-12-01T17:48:49.194783: TASK_DONE: Completed task 9_M1 on worker 0
-2020-12-01T17:48:49.200428: Connected by ('127.0.0.1', 55818)
-2020-12-01T17:48:49.200676: TASK_DONE: Completed task 5_R0 on worker 2
-2020-12-01T17:48:49.205810: RUN_TASK: running task 7_R0 on worker 3
-2020-12-01T17:48:49.206025: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
-2020-12-01T17:48:49.206463: Sent data to worker
-2020-12-01T17:48:50.200590: Connected by ('127.0.0.1', 55830)
-2020-12-01T17:48:50.201392: TASK_DONE: Completed task 4_R0 on worker 0
-2020-12-01T17:48:50.206951: RUN_TASK: running task 7_R1 on worker 2
-2020-12-01T17:48:50.207402: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
-2020-12-01T17:48:50.208267: Sent data to worker
-2020-12-01T17:48:50.209357: Connected by ('127.0.0.1', 55834)
-2020-12-01T17:48:50.210163: TASK_DONE: Completed task 6_R0 on worker 0
-2020-12-01T17:48:51.209921: RUN_TASK: running task 8_R1 on worker 2
-2020-12-01T17:48:51.210468: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
-2020-12-01T17:48:51.211329: Sent data to worker
-2020-12-01T17:48:52.212967: RUN_TASK: running task 8_R0 on worker 2
-2020-12-01T17:48:52.213700: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
-2020-12-01T17:48:52.214837: Sent data to worker
-2020-12-01T17:48:53.212280: Connected by ('127.0.0.1', 55864)
-2020-12-01T17:48:53.212985: TASK_DONE: Completed task 7_R0 on worker 2
-2020-12-01T17:48:53.215942: RUN_TASK: running task 9_R0 on worker 2
-2020-12-01T17:48:53.216388: Connecting to worker <Worker id=2 127.0.0.1:4001 slots=7>
-2020-12-01T17:48:53.217182: Sent data to worker
-2020-12-01T17:48:53.219619: Connected by ('127.0.0.1', 55868)
-2020-12-01T17:48:53.220264: TASK_DONE: Completed task 8_R0 on worker 1
-2020-12-01T17:48:54.214538: Connected by ('127.0.0.1', 55878)
-2020-12-01T17:48:54.215262: TASK_DONE: Completed task 7_R1 on worker 1
-2020-12-01T17:48:54.216254: Connected by ('127.0.0.1', 55880)
-2020-12-01T17:48:54.216984: TASK_DONE: Completed task 8_R1 on worker 1
-2020-12-01T17:48:54.217875: RUN_TASK: running task 9_R1 on worker 3
-2020-12-01T17:48:54.218432: Connecting to worker <Worker id=3 127.0.0.1:4002 slots=3>
-2020-12-01T17:48:54.219372: Sent data to worker
-2020-12-01T17:48:54.221095: Connected by ('127.0.0.1', 55884)
-2020-12-01T17:48:54.221808: TASK_DONE: Completed task 9_R0 on worker 1
-2020-12-01T17:48:56.223464: Connected by ('127.0.0.1', 55902)
-2020-12-01T17:48:56.224264: TASK_DONE: Completed task 9_R1 on worker 2
+2020-12-01T21:02:37.742340: Starting client requests thread.
+2020-12-01T21:02:37.743640: Started listening for messages from worker nodes
+2020-12-01T21:02:44.040375: Connected by ('127.0.0.1', 47270)
+2020-12-01T21:02:44.040742: NEW_JOB: Got query with job id 0 JOB {'job_id': '0', 'map_tasks': [{'task_id': '0_M0', 'duration': 2}, {'task_id': '0_M1', 'duration': 3}], 'reduce_tasks': [{'task_id': '0_R0', 'duration': 4}]}
+2020-12-01T21:02:45.042296: RUN_TASK: running task 0_M0 on worker 1
+2020-12-01T21:02:45.042873: Connecting to worker <Worker id=1 127.0.0.1:4001 slots=5>
+2020-12-01T21:02:45.043550: Sent data to worker
+2020-12-01T21:02:46.556502: Connected by ('127.0.0.1', 47274)
+2020-12-01T21:02:46.557820: NEW_JOB: Got query with job id 1 JOB {'job_id': '1', 'map_tasks': [{'task_id': '1_M0', 'duration': 2}], 'reduce_tasks': [{'task_id': '1_R0', 'duration': 3}, {'task_id': '1_R1', 'duration': 1}]}
+2020-12-01T21:02:47.047693: Connected by ('127.0.0.1', 47510)
+2020-12-01T21:02:47.048102: TASK_DONE: Completed task 0_M0 on worker 1
+2020-12-01T21:02:47.559482: RUN_TASK: running task 1_M0 on worker 2
+2020-12-01T21:02:47.559776: Connecting to worker <Worker id=2 127.0.0.1:4002 slots=7>
+2020-12-01T21:02:47.560146: Sent data to worker
+2020-12-01T21:02:47.658265: Connected by ('127.0.0.1', 47280)
+2020-12-01T21:02:47.659058: NEW_JOB: Got query with job id 2 JOB {'job_id': '2', 'map_tasks': [{'task_id': '2_M0', 'duration': 3}, {'task_id': '2_M1', 'duration': 3}, {'task_id': '2_M2', 'duration': 3}, {'task_id': '2_M3', 'duration': 1}], 'reduce_tasks': [{'task_id': '2_R0', 'duration': 3}, {'task_id': '2_R1', 'duration': 2}]}
+2020-12-01T21:02:48.561843: RUN_TASK: running task 0_R0 on worker 3
+2020-12-01T21:02:48.562302: Connecting to worker <Worker id=3 127.0.0.1:4003 slots=3>
+2020-12-01T21:02:48.562709: Sent data to worker
+2020-12-01T21:02:49.563841: Connected by ('127.0.0.1', 47518)
+2020-12-01T21:02:49.564303: RUN_TASK: running task 2_M0 on worker 1
+2020-12-01T21:02:49.564451: Connecting to worker <Worker id=1 127.0.0.1:4001 slots=5>
+2020-12-01T21:02:49.564699: TASK_DONE: Completed task 1_M0 on worker 2
+2020-12-01T21:02:49.564989: Sent data to worker
+2020-12-01T21:02:50.566212: RUN_TASK: running task 2_M1 on worker 2
+2020-12-01T21:02:50.566545: Connecting to worker <Worker id=2 127.0.0.1:4002 slots=7>
+2020-12-01T21:02:50.566925: Sent data to worker
+2020-12-01T21:02:51.568125: RUN_TASK: running task 1_R0 on worker 3
+2020-12-01T21:02:51.568470: Connecting to worker <Worker id=3 127.0.0.1:4003 slots=3>
+2020-12-01T21:02:51.569044: Sent data to worker
+2020-12-01T21:02:52.568228: Connected by ('127.0.0.1', 47526)
+2020-12-01T21:02:52.568780: TASK_DONE: Completed task 0_R0 on worker 3
+2020-12-01T21:02:52.569786: Connected by ('127.0.0.1', 47528)
+2020-12-01T21:02:52.570797: TASK_DONE: Completed task 2_M0 on worker 1
+2020-12-01T21:02:53.571662: Connected by ('127.0.0.1', 47530)
+2020-12-01T21:02:53.572419: RUN_TASK: running task 2_R0 on worker 1
+2020-12-01T21:02:53.573353: TASK_DONE: Completed task 2_M1 on worker 2
+2020-12-01T21:02:53.573624: Connecting to worker <Worker id=1 127.0.0.1:4001 slots=5>
+2020-12-01T21:02:53.574377: Sent data to worker
+2020-12-01T21:02:54.573094: Connected by ('127.0.0.1', 47534)
+2020-12-01T21:02:54.574281: TASK_DONE: Completed task 1_R0 on worker 3
+2020-12-01T21:02:54.575718: RUN_TASK: running task 2_R1 on worker 2
+2020-12-01T21:02:54.576760: Connecting to worker <Worker id=2 127.0.0.1:4002 slots=7>
+2020-12-01T21:02:54.577152: Sent data to worker
+2020-12-01T21:02:56.578798: Connected by ('127.0.0.1', 47538)
+2020-12-01T21:02:56.579150: TASK_DONE: Completed task 2_R0 on worker 1
+2020-12-01T21:02:56.580882: Connected by ('127.0.0.1', 47540)
+2020-12-01T21:02:56.581192: TASK_DONE: Completed task 2_R1 on worker 2
