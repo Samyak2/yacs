@@ -1,2 +1,144 @@
-2020-12-01T21:28:48.448574: Starting client requests thread.
-2020-12-01T21:28:48.449440: Started listening for messages from worker nodes
+2020-12-01T22:39:21.648584: Starting client requests thread.
+2020-12-01T22:39:21.649682: Started listening for messages from worker nodes
+2020-12-01T22:39:41.530300: Connected by ('127.0.0.1', 55864)
+2020-12-01T22:39:41.530955: NEW_JOB: Got query with job id 0 JOB {'job_id': '0', 'map_tasks': [{'task_id': '0_M0', 'duration': 4}, {'task_id': '0_M1', 'duration': 4}, {'task_id': '0_M2', 'duration': 3}], 'reduce_tasks': [{'task_id': '0_R0', 'duration': 3}, {'task_id': '0_R1', 'duration': 3}]}
+2020-12-01T22:39:41.531300: acquiring lock of worker 1
+2020-12-01T22:39:41.531501: acquiring lock of worker 2
+2020-12-01T22:39:41.531601: acquiring lock of worker 3
+2020-12-01T22:39:41.531789: releasing lock of worker 1
+2020-12-01T22:39:41.531940: releasing lock of worker 2
+2020-12-01T22:39:41.532068: releasing lock of worker 3
+2020-12-01T22:39:41.532194: RUN_TASK: running task 0_M0 on worker 1
+2020-12-01T22:39:41.532361: Connecting to worker <Worker id=1 127.0.0.1:4001 slots=5>
+2020-12-01T22:39:41.532748: Sent data to worker
+2020-12-01T22:39:41.532903: acquiring lock of worker 1
+2020-12-01T22:39:41.533021: acquiring lock of worker 2
+2020-12-01T22:39:41.533133: acquiring lock of worker 3
+2020-12-01T22:39:41.533282: releasing lock of worker 1
+2020-12-01T22:39:41.533396: releasing lock of worker 2
+2020-12-01T22:39:41.533510: releasing lock of worker 3
+2020-12-01T22:39:41.533621: RUN_TASK: running task 0_M1 on worker 3
+2020-12-01T22:39:41.533766: Connecting to worker <Worker id=3 127.0.0.1:4003 slots=3>
+2020-12-01T22:39:41.534064: Sent data to worker
+2020-12-01T22:39:42.341127: Connected by ('127.0.0.1', 55878)
+2020-12-01T22:39:42.342263: NEW_JOB: Got query with job id 1 JOB {'job_id': '1', 'map_tasks': [{'task_id': '1_M0', 'duration': 4}, {'task_id': '1_M1', 'duration': 3}, {'task_id': '1_M2', 'duration': 3}, {'task_id': '1_M3', 'duration': 3}], 'reduce_tasks': [{'task_id': '1_R0', 'duration': 3}]}
+2020-12-01T22:39:42.342978: acquiring lock of worker 1
+2020-12-01T22:39:42.343551: acquiring lock of worker 2
+2020-12-01T22:39:42.343906: acquiring lock of worker 3
+2020-12-01T22:39:42.344412: releasing lock of worker 1
+2020-12-01T22:39:42.345031: releasing lock of worker 2
+2020-12-01T22:39:42.345602: releasing lock of worker 3
+2020-12-01T22:39:42.346042: RUN_TASK: running task 1_M0 on worker 2
+2020-12-01T22:39:42.346633: Connecting to worker <Worker id=2 127.0.0.1:4002 slots=7>
+2020-12-01T22:39:42.348151: Sent data to worker
+2020-12-01T22:39:43.043880: Connected by ('127.0.0.1', 55890)
+2020-12-01T22:39:43.044791: NEW_JOB: Got query with job id 2 JOB {'job_id': '2', 'map_tasks': [{'task_id': '2_M0', 'duration': 2}], 'reduce_tasks': [{'task_id': '2_R0', 'duration': 3}, {'task_id': '2_R1', 'duration': 2}]}
+2020-12-01T22:39:43.045436: acquiring lock of worker 1
+2020-12-01T22:39:43.045884: acquiring lock of worker 2
+2020-12-01T22:39:43.046203: acquiring lock of worker 3
+2020-12-01T22:39:43.046532: releasing lock of worker 1
+2020-12-01T22:39:43.046820: releasing lock of worker 2
+2020-12-01T22:39:43.047086: releasing lock of worker 3
+2020-12-01T22:39:43.047388: RUN_TASK: running task 2_M0 on worker 1
+2020-12-01T22:39:43.047792: Connecting to worker <Worker id=1 127.0.0.1:4001 slots=5>
+2020-12-01T22:39:43.048655: Sent data to worker
+2020-12-01T22:39:44.320736: Connected by ('127.0.0.1', 55902)
+2020-12-01T22:39:44.321716: NEW_JOB: Got query with job id 3 JOB {'job_id': '3', 'map_tasks': [{'task_id': '3_M0', 'duration': 2}], 'reduce_tasks': [{'task_id': '3_R0', 'duration': 2}, {'task_id': '3_R1', 'duration': 3}]}
+2020-12-01T22:39:44.322392: acquiring lock of worker 1
+2020-12-01T22:39:44.322933: acquiring lock of worker 2
+2020-12-01T22:39:44.323333: acquiring lock of worker 3
+2020-12-01T22:39:44.323588: releasing lock of worker 1
+2020-12-01T22:39:44.323937: releasing lock of worker 2
+2020-12-01T22:39:44.324252: releasing lock of worker 3
+2020-12-01T22:39:44.324600: RUN_TASK: running task 3_M0 on worker 1
+2020-12-01T22:39:44.325038: Connecting to worker <Worker id=1 127.0.0.1:4001 slots=5>
+2020-12-01T22:39:44.326340: Sent data to worker
+2020-12-01T22:39:45.053635: Connected by ('127.0.0.1', 41486)
+2020-12-01T22:39:45.054750: TASK_DONE: Completed task 2_M0 on worker 1
+2020-12-01T22:39:45.055678: acquiring lock of worker 1
+2020-12-01T22:39:45.056267: acquiring lock of worker 2
+2020-12-01T22:39:45.056556: acquiring lock of worker 3
+2020-12-01T22:39:45.056843: releasing lock of worker 1
+2020-12-01T22:39:45.057243: releasing lock of worker 2
+2020-12-01T22:39:45.057690: releasing lock of worker 3
+2020-12-01T22:39:45.058045: RUN_TASK: running task 2_R0 on worker 2
+2020-12-01T22:39:45.058547: Connecting to worker <Worker id=2 127.0.0.1:4002 slots=7>
+2020-12-01T22:39:45.059611: Sent data to worker
+2020-12-01T22:39:45.232918: Connected by ('127.0.0.1', 55918)
+2020-12-01T22:39:45.233938: NEW_JOB: Got query with job id 4 JOB {'job_id': '4', 'map_tasks': [{'task_id': '4_M0', 'duration': 4}, {'task_id': '4_M1', 'duration': 4}, {'task_id': '4_M2', 'duration': 2}, {'task_id': '4_M3', 'duration': 3}], 'reduce_tasks': [{'task_id': '4_R0', 'duration': 1}]}
+2020-12-01T22:39:45.234596: acquiring lock of worker 1
+2020-12-01T22:39:45.235077: acquiring lock of worker 2
+2020-12-01T22:39:45.235466: acquiring lock of worker 3
+2020-12-01T22:39:45.235805: releasing lock of worker 1
+2020-12-01T22:39:45.236114: releasing lock of worker 2
+2020-12-01T22:39:45.236451: releasing lock of worker 3
+2020-12-01T22:39:45.236741: RUN_TASK: running task 4_M0 on worker 1
+2020-12-01T22:39:45.237132: Connecting to worker <Worker id=1 127.0.0.1:4001 slots=5>
+2020-12-01T22:39:45.238038: Sent data to worker
+2020-12-01T22:39:45.538899: Connected by ('127.0.0.1', 41494)
+2020-12-01T22:39:45.539961: TASK_DONE: Completed task 0_M0 on worker 1
+2020-12-01T22:39:45.540575: acquiring lock of worker 1
+2020-12-01T22:39:45.540951: Connected by ('127.0.0.1', 41496)
+2020-12-01T22:39:45.541283: acquiring lock of worker 2
+2020-12-01T22:39:45.542360: acquiring lock of worker 3
+2020-12-01T22:39:45.542658: releasing lock of worker 1
+2020-12-01T22:39:45.542892: releasing lock of worker 2
+2020-12-01T22:39:45.543099: releasing lock of worker 3
+2020-12-01T22:39:45.543413: RUN_TASK: running task 0_R0 on worker 3
+2020-12-01T22:39:45.543822: Connecting to worker <Worker id=3 127.0.0.1:4003 slots=3>
+2020-12-01T22:39:45.544771: Sent data to worker
+2020-12-01T22:39:45.541944: TASK_DONE: Completed task 0_M1 on worker 3
+2020-12-01T22:39:45.546109: acquiring lock of worker 1
+2020-12-01T22:39:45.546765: acquiring lock of worker 2
+2020-12-01T22:39:45.547462: acquiring lock of worker 3
+2020-12-01T22:39:45.547894: releasing lock of worker 1
+2020-12-01T22:39:45.548062: releasing lock of worker 2
+2020-12-01T22:39:45.548275: releasing lock of worker 3
+2020-12-01T22:39:45.548548: RUN_TASK: running task 0_R1 on worker 3
+2020-12-01T22:39:45.548831: Connecting to worker <Worker id=3 127.0.0.1:4003 slots=3>
+2020-12-01T22:39:45.549470: Sent data to worker
+2020-12-01T22:39:46.331737: Connected by ('127.0.0.1', 41510)
+2020-12-01T22:39:46.332719: TASK_DONE: Completed task 3_M0 on worker 1
+2020-12-01T22:39:46.333329: acquiring lock of worker 1
+2020-12-01T22:39:46.333704: acquiring lock of worker 2
+2020-12-01T22:39:46.333987: acquiring lock of worker 3
+2020-12-01T22:39:46.334265: releasing lock of worker 1
+2020-12-01T22:39:46.334510: releasing lock of worker 2
+2020-12-01T22:39:46.334743: releasing lock of worker 3
+2020-12-01T22:39:46.334977: RUN_TASK: running task 3_R0 on worker 1
+2020-12-01T22:39:46.335311: Connecting to worker <Worker id=1 127.0.0.1:4001 slots=5>
+2020-12-01T22:39:46.336088: Sent data to worker
+2020-12-01T22:39:46.355348: Connected by ('127.0.0.1', 41514)
+2020-12-01T22:39:46.356065: TASK_DONE: Completed task 1_M0 on worker 2
+2020-12-01T22:39:46.356632: acquiring lock of worker 1
+2020-12-01T22:39:46.356969: acquiring lock of worker 2
+2020-12-01T22:39:46.357286: acquiring lock of worker 3
+2020-12-01T22:39:46.357593: releasing lock of worker 1
+2020-12-01T22:39:46.357850: releasing lock of worker 2
+2020-12-01T22:39:46.358108: releasing lock of worker 3
+2020-12-01T22:39:46.358380: RUN_TASK: running task 1_R0 on worker 3
+2020-12-01T22:39:46.358749: Connecting to worker <Worker id=3 127.0.0.1:4003 slots=3>
+2020-12-01T22:39:46.359589: Sent data to worker
+2020-12-01T22:39:48.064331: Connected by ('127.0.0.1', 41534)
+2020-12-01T22:39:48.064979: TASK_DONE: Completed task 2_R0 on worker 2
+2020-12-01T22:39:48.340756: Connected by ('127.0.0.1', 41536)
+2020-12-01T22:39:48.341934: TASK_DONE: Completed task 3_R0 on worker 1
+2020-12-01T22:39:48.550651: Connected by ('127.0.0.1', 41538)
+2020-12-01T22:39:48.551467: TASK_DONE: Completed task 0_R0 on worker 3
+2020-12-01T22:39:48.554527: Connected by ('127.0.0.1', 41540)
+2020-12-01T22:39:48.555298: TASK_DONE: Completed task 0_R1 on worker 3
+2020-12-01T22:39:49.244366: Connected by ('127.0.0.1', 41550)
+2020-12-01T22:39:49.245222: TASK_DONE: Completed task 4_M0 on worker 1
+2020-12-01T22:39:49.245814: acquiring lock of worker 1
+2020-12-01T22:39:49.246131: acquiring lock of worker 2
+2020-12-01T22:39:49.246483: acquiring lock of worker 3
+2020-12-01T22:39:49.246789: releasing lock of worker 1
+2020-12-01T22:39:49.247060: releasing lock of worker 2
+2020-12-01T22:39:49.247388: releasing lock of worker 3
+2020-12-01T22:39:49.247646: RUN_TASK: running task 4_R0 on worker 1
+2020-12-01T22:39:49.247993: Connecting to worker <Worker id=1 127.0.0.1:4001 slots=5>
+2020-12-01T22:39:49.248819: Sent data to worker
+2020-12-01T22:39:49.364836: Connected by ('127.0.0.1', 41554)
+2020-12-01T22:39:49.365362: TASK_DONE: Completed task 1_R0 on worker 3
+2020-12-01T22:39:50.251564: Connected by ('127.0.0.1', 41564)
+2020-12-01T22:39:50.252420: TASK_DONE: Completed task 4_R0 on worker 1
