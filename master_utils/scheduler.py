@@ -7,12 +7,8 @@ from master_utils.worker import Worker
 POLLING_TIME = 1
 
 
-class RandomScheduler:
-    """A scheduler that takes a random worker at
-    a time. If the randomly selected worker is not
-    available, wait for POLLING_TIME seconds and try
-    again
-    """
+class Scheduler:
+    """General class for a scheduler"""
 
     def __init__(self, workers: Dict[Tuple, Worker]):
         self.workers = workers
@@ -21,6 +17,17 @@ class RandomScheduler:
 
     def getNext(self):
         """Returns next worker to schedule on"""
+        raise NotImplementedError
+
+
+class RandomScheduler(Scheduler):
+    """A scheduler that takes a random worker at
+    a time. If the randomly selected worker is not
+    available, wait for POLLING_TIME seconds and try
+    again
+    """
+
+    def getNext(self):
         found = False
         while not found:
             worker_addr = random.choice(self.worker_keys)
