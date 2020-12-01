@@ -8,6 +8,7 @@ class Task:
     regardless of type
     """
 
+    job_id: str
     task_id: str
     duration: int
 
@@ -19,4 +20,5 @@ class WorkerMessage:
     addr: Tuple[str, int]
     message: str
     task_id: int
+    job_id: int
     w_id: int

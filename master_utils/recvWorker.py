@@ -5,7 +5,7 @@ import queue
 from typing import Dict, Tuple
 
 from master_utils.worker import Worker
-from job_utils.task import WorkerMessage, Task
+from job_utils.task import WorkerMessage
 
 
 def recvFromWorker(host, port, message):
@@ -37,7 +37,7 @@ def processWorkerMessage(
     workerMessages: queue.Queue,
     taskQueue: queue.Queue,
     workers: Dict[Tuple, Worker],
-    mapRedMap: Dict[str, Task],
+    jobStore: Dict[str, Dict[str, set]],
 ):
     """Processes all data added to the worker message queue
 
@@ -49,6 +49,10 @@ def processWorkerMessage(
         logging.info("TASK_DONE: Completed task %s on worker %s", msg.task_id, msg.w_id)
         if msg.task_id is not None:
             workers[msg.addr].finishTask()
-            if msg.task_id in mapRedMap:
-                taskQueue.put(mapRedMap[msg.task_id])
-                mapRedMap.pop(msg.task_id)
+            if msg.job_id in jobStore:
+                if msg.task_id in jobStore[msg.job_id]["map_tasks"]:
+                    jobStore[msg.job_id]["map_tasks"].remove(msg.task_id)
+                if len(jobStore[msg.job_id]["map_tasks"]) == 0:
+                    for red_task in jobStore[msg.job_id]["reduce_tasks"]:
+                        taskQueue.put(red_task)
+                    jobStore.pop(msg.job_id)

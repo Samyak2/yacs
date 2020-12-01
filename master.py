@@ -60,7 +60,7 @@ workerMessages = queue.Queue()
 taskQueue = queue.Queue()
 
 # dictionary to associate map task with corresponding reduce task
-mapRedMap: Dict[str, Task] = dict()
+jobStore: Dict[str, Dict[str, int]] = dict()
 
 # host and port details
 host = "localhost"
@@ -71,7 +71,7 @@ sendWorkerPort = 4000
 # start master threads
 logging.info("Starting client requests thread.")
 clientThread = threading.Thread(
-    target=getRequestData, args=(host, clientPort, taskQueue, mapRedMap)
+    target=getRequestData, args=(host, clientPort, taskQueue, jobStore)
 )
 processQueueThread = threading.Thread(
     target=processTaskQueue, args=(taskQueue, scheduler)
@@ -82,7 +82,7 @@ workerThread = threading.Thread(
     target=recvFromWorker, args=(host, recvWorkerPort, workerMessages)
 )
 workerMsgThread = threading.Thread(
-    target=processWorkerMessage, args=(workerMessages, taskQueue, workers, mapRedMap)
+    target=processWorkerMessage, args=(workerMessages, taskQueue, workers, jobStore)
 )
 
 clientThread.start()

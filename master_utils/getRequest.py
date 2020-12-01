@@ -22,18 +22,20 @@ class Query:
         """A generator to return all available tasks
         in the format (mapper task, reduce task)
         """
-        for map_task, red_task in zip(self.map_tasks, self.reduce_tasks):
-            yield map_task, red_task
+        for map_task in self.map_tasks:
+            yield map_task
 
 
 def makeQuery(data):
     """Converts dictionary from client query to a Query object"""
-    map_tasks = [Task(**a) for a in data["map_tasks"]]
-    reduce_tasks = [Task(**a) for a in data["reduce_tasks"]]
+    map_tasks = [Task(data["job_id"], **a) for a in data["map_tasks"]]
+    reduce_tasks = [Task(data["job_id"], **a) for a in data["reduce_tasks"]]
     return Query(data["job_id"], map_tasks, reduce_tasks)
 
 
-def getRequestData(host, port, taskQueue: queue.Queue, mapRedMap: Dict[str, Task]):
+def getRequestData(
+    host, port, taskQueue: queue.Queue, jobStore: Dict[str, Dict[str, set]]
+):
     """
     Gets requests from requests.py
     Parameters:
@@ -54,9 +56,14 @@ def getRequestData(host, port, taskQueue: queue.Queue, mapRedMap: Dict[str, Task
             data = data.decode("utf-8")
             data = json.loads(data)
             query = makeQuery(data)
-            logging.info("NEW_JOB: Got query with job id %s JOB %s", query.job_id, asdict(query))
-            for map_task, red_task in query.get_tasks():
-                mapRedMap[map_task.task_id] = red_task
+            logging.info(
+                "NEW_JOB: Got query with job id %s JOB %s", query.job_id, asdict(query)
+            )
+            jobStore[query.job_id] = dict(
+                map_tasks=set(m.task_id for m in query.map_tasks),
+                reduce_tasks=query.reduce_tasks,
+            )
+            for map_task in query.get_tasks():
                 taskQueue.put(map_task)
 
 

@@ -36,6 +36,7 @@ def waste_time(task: Task):
         message="Completed task {} on worker {}".format(task.task_id, w_id),
         task_id=task.task_id,
         w_id=w_id,
+        job_id=task.job_id,
     )
     msg = json.dumps(asdict(msg))
     master_send = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
