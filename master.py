@@ -12,7 +12,22 @@ from master_utils.scheduler import RandomScheduler, RoundRobinScheduler, LeastLo
 from config_utils import getWorkers
 from job_utils.task import Task
 
-logFile = "master.log"
+# read configuration
+workers = getWorkers("config.json")
+pprint(workers)
+
+# Initialize schedulers
+scheduler = RandomScheduler(workers)
+if len(sys.argv) > 1:
+    scAlgo = sys.argv[1]
+    scheduler = None
+    if scAlgo == "rr":
+        scheduler = RoundRobinScheduler(workers)
+    elif scAlgo == "ll":
+        scheduler = LeastLoaded(workers)
+
+
+logFile = f"master_{scheduler.name}.log"
 
 
 class CustomFormatter(logging.Formatter):
@@ -40,10 +55,6 @@ logStreamHandler.setFormatter(logFormatter)
 logHandlers = [logFileHandler, logStreamHandler]
 logging.basicConfig(level=logging.INFO, handlers=logHandlers)
 
-# read configuration
-workers = getWorkers("config.json")
-pprint(workers)
-
 # message queues
 workerMessages = queue.Queue()
 taskQueue = queue.Queue()
@@ -56,19 +67,6 @@ host = "localhost"
 clientPort = 5000
 recvWorkerPort = 5001
 sendWorkerPort = 4000
-
-# Initialize schedulers
-scAlgo = sys.argv[1]
-# TODO: take user input for this
-scheduler = None
-if scAlgo == "rr":
-    scheduler = RoundRobinScheduler(workers)
-elif scAlgo == "random":
-    scheduler = RandomScheduler(workers)
-elif scAlgo == "ll":
-    scheduler = LeastLoaded(workers)
-else:
-    scheduler = RandomScheduler(workers)
 
 # start master threads
 logging.info("Starting client requests thread.")

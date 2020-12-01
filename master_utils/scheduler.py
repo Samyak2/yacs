@@ -1,16 +1,16 @@
 from typing import Dict, Tuple
 import time
 import random
-from threading import Lock
+import logging
 
 from master_utils.worker import Worker
 
-POLLING_TIME = 1
+POLLING_TIME = 0.1
 
-mutex = Lock()
 
 class Scheduler:
     """General class for a scheduler"""
+    name = None
 
     def __init__(self, workers: Dict[Tuple, Worker]):
         self.workers = workers
@@ -35,41 +35,74 @@ class RandomScheduler(Scheduler):
     again
     """
 
+    name = "Random"
+
     def getNext(self):
+        for worker_ in self.workers.values():
+            worker_.lock.acquire()
+            logging.info("acquiring lock of worker %d", worker_.id)
+
         found = False
         while not found:
             worker_addr = random.choice(self.worker_keys)
             worker = self.workers[worker_addr]
-            if worker.slots.acquire(blocking=False):
-                worker.slots.release()
+            if worker.free_slots > 0:
                 found = True
-            time.sleep(POLLING_TIME)
-            worker_id = self.worker_keys.index(worker_addr)
+            else:
+                time.sleep(POLLING_TIME)
 
+        for worker_ in self.workers.values():
+            worker_.lock.release()
+            logging.info("releasing lock of worker %d", worker_.id)
 
         return worker
 
+
 class RoundRobinScheduler(Scheduler):
     """
-    A scheduler that cycles through all 
+    A scheduler that cycles through all
     the workers. It assigns a task a worker
     and goes on to the next.
     """
+    name = "Round Robin"
 
     def getNext(self):
+        for worker_ in self.workers.values():
+            worker_.lock.acquire()
+            logging.info("acquiring lock of worker %d", worker_.id)
+
         found = False
         while not found:
             worker_addr = self.worker_keys[self.current]
             worker = self.workers[worker_addr]
-            if worker.slots.acquire(blocking=False):
-                worker.slots.release()
+            if worker.free_slots > 0:
                 found = True
-            time.sleep(POLLING_TIME)
-            self.current = (self.current + 1) % 3
+            else:
+                time.sleep(POLLING_TIME)
+            self.current = (self.current + 1) % self.num
+
+        for worker_ in self.workers.values():
+            worker_.lock.release()
+            logging.info("releasing lock of worker %d", worker_.id)
 
         return worker
 
+
 class LeastLoaded(Scheduler):
+    name = "LeastLoaded"
 
     def getNext(self):
-        print("something lol")
+        least_worker = None
+        most_free_slots = 0
+        for worker_ in self.workers.values():
+            worker_.lock.acquire()
+            if worker_.free_slots > most_free_slots:
+                least_worker = worker_
+                most_free_slots = worker_.free_slots
+            logging.info("acquiring lock of worker %d", worker_.id)
+
+        for worker_ in self.workers.values():
+            worker_.lock.release()
+            logging.info("releasing lock of worker %d", worker_.id)
+
+        return least_worker

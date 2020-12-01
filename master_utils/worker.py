@@ -17,16 +17,25 @@ class Worker:
         self.port = port
         self.totalSlots = num_slots
         self.slots = threading.BoundedSemaphore(num_slots)
+        self.free_slots = num_slots
+        self.lock = threading.Lock()
 
     def delegateTask(self):
         """Decrements the number of available slots by one
         (blocks until a slot is available)
         """
-        return self.slots.acquire()
+        self.lock.acquire()
+        ret = self.slots.acquire()
+        self.free_slots -= 1
+        self.lock.release()
+        return ret
 
     def finishTask(self):
         """Increments the number of available slots"""
-        return self.slots.release()
+        self.lock.acquire()
+        self.slots.release()
+        self.free_slots += 1
+        self.lock.release()
 
     def __repr__(self):
         return (
