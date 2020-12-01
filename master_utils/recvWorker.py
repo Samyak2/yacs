@@ -45,6 +45,7 @@ def processWorkerMessage(
     """
     while True:
         msg: WorkerMessage = workerMessages.get()
+        print("WORKER ID : ", msg)
         logging.info("TASK_DONE: Completed task %s on worker %s", msg.task_id, msg.w_id)
         if msg.task_id is not None:
             workers[msg.addr].finishTask()

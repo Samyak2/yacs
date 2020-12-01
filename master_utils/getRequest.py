@@ -54,7 +54,7 @@ def getRequestData(host, port, taskQueue: queue.Queue, mapRedMap: Dict[str, Task
             data = data.decode("utf-8")
             data = json.loads(data)
             query = makeQuery(data)
-            logging.info("NEW_JOB: Got query with job id %s", query.job_id)
+            logging.info("NEW_JOB: Got query with job id %s JOB %s", query.job_id, asdict(query))
             for map_task, red_task in query.get_tasks():
                 mapRedMap[map_task.task_id] = red_task
                 taskQueue.put(map_task)

@@ -1,9 +1,9 @@
 #!/bin/bash
 set -euxo pipefail
 
-for i in {0..2}
+for i in {1..3}
 do
-    python ./worker.py $((4000+i)) $i &
+    python3 ./worker.py $((4000+i)) $i &
 done
 
 trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT

@@ -2,12 +2,13 @@ import threading
 import logging
 import datetime
 import queue
+import sys
 from pprint import pprint
 from typing import Dict
 
 from master_utils.getRequest import getRequestData, processTaskQueue
 from master_utils.recvWorker import recvFromWorker, processWorkerMessage
-from master_utils.scheduler import RandomScheduler
+from master_utils.scheduler import RandomScheduler, RoundRobinScheduler, LeastLoaded
 from config_utils import getWorkers
 from job_utils.task import Task
 
@@ -57,8 +58,17 @@ recvWorkerPort = 5001
 sendWorkerPort = 4000
 
 # Initialize schedulers
+scAlgo = sys.argv[1]
 # TODO: take user input for this
-scheduler = RandomScheduler(workers)
+scheduler = None
+if scAlgo == "rr":
+    scheduler = RoundRobinScheduler(workers)
+elif scAlgo == "random":
+    scheduler = RandomScheduler(workers)
+elif scAlgo == "ll":
+    scheduler = LeastLoaded(workers)
+else:
+    scheduler = RandomScheduler(workers)
 
 # start master threads
 logging.info("Starting client requests thread.")
