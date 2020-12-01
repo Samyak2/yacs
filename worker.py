@@ -35,7 +35,7 @@ def waste_time(task: Task):
         addr=[host, port],
         message="Completed task {} on worker {}".format(task.task_id, w_id),
         task_id=task.task_id,
-        w_id=w_id
+        w_id=w_id,
     )
     msg = json.dumps(asdict(msg))
     master_send = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -58,5 +58,5 @@ while True:
         logging.info("Got task: %s", pformat(task))
         # task_id, duration
         logging.info("starting task %s on worker %d", task, w_id)
-        thread = threading.Thread(target=waste_time, args=(task, ))
+        thread = threading.Thread(target=waste_time, args=(task,))
         thread.start()

@@ -15,8 +15,7 @@ logFile = "master.log"
 
 
 class CustomFormatter(logging.Formatter):
-    """To get milliseconds in log
-    """
+    """To get milliseconds in log"""
 
     converter = datetime.datetime.fromtimestamp
 
@@ -30,16 +29,15 @@ class CustomFormatter(logging.Formatter):
         return s
 
 
-logFormatter = CustomFormatter(fmt="%(asctime)s: %(message)s", datefmt="%Y-%m-%dT%H:%M:%S.%f%z")
+logFormatter = CustomFormatter(
+    fmt="%(asctime)s: %(message)s", datefmt="%Y-%m-%dT%H:%M:%S.%f%z"
+)
 logFileHandler = logging.FileHandler(logFile, mode="w")
 logFileHandler.setFormatter(logFormatter)
 logStreamHandler = logging.StreamHandler()
 logStreamHandler.setFormatter(logFormatter)
 logHandlers = [logFileHandler, logStreamHandler]
-logging.basicConfig(
-    level=logging.INFO,
-    handlers=logHandlers
-)
+logging.basicConfig(level=logging.INFO, handlers=logHandlers)
 
 # read configuration
 workers = getWorkers("config.json")
