@@ -1,0 +1,22 @@
+Task Completion Time
+1. LeastLoaded:
+        Mean: 2.734266108108108
+        Mode: 3.004223
+2. Round Robin:
+        Mean: 2.4149096923076923
+        Median: 2.007343
+3. Random:
+        Mean: 2.4587927727272727
+        Median: 2.004407
+
+
+Job Completion Time
+1. LeastLoaded:
+        Mean: 6.1141529
+        Mode: 6.011900499999999
+2. Round Robin:
+        Mean: 5.7770263
+        Median: 6.016239
+3. Random:
+        Mean: 5.813586
+        Median: 6.0128415
