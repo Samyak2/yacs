@@ -5,12 +5,14 @@ import json
 import threading
 from pprint import pformat
 import time
+from dataclasses import asdict
 from job_utils.task import Task
+from job_utils.task import WorkerMessage
 
 logging.basicConfig(
-        format="%(asctime)s: %(message)s", level=logging.INFO, datefmt="%Y-%m-%dT%H:%M:%S%z"
+    format="%(asctime)s: %(message)s", level=logging.INFO, datefmt="%Y-%m-%dT%H:%M:%S%z"
 )
- 
+
 port = int(sys.argv[1])
 w_id = int(sys.argv[2])
 responsePort = 5001
@@ -23,19 +25,22 @@ host = "127.0.0.1"
 master.bind((host, port))
 
 
-def waste_time(task_id, duration):
-    while duration != 0:
+def waste_time(task: Task):
+    time_left = task.duration
+    while time_left != 0:
         time.sleep(1)
-        duration -= 1
-    logging.info("Completed task %s on worker %d", task_id, w_id)
-    response = {}
-    response["message"] = "Completed task {} on worker {}".format(task_id, w_id)
-    response["task_id"] = task_id
-    response["addr"] = [host, port]
-    data = json.dumps(response)
+        time_left -= 1
+    logging.info("Completed task %s on worker %d", task.task_id, w_id)
+    msg = WorkerMessage(
+        addr=[host, port],
+        message="Completed task {} on worker {}".format(task.task_id, w_id),
+        task_id=task.task_id,
+        w_id=w_id
+    )
+    msg = json.dumps(asdict(msg))
     master_send = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    master_send.connect((responseHost,responsePort))
-    master_send.sendall(data.encode())
+    master_send.connect((responseHost, responsePort))
+    master_send.sendall(msg.encode())
     master_send.close()
 
 
@@ -52,8 +57,6 @@ while True:
         task = Task(**data)
         logging.info("Got task: %s", pformat(task))
         # task_id, duration
-        task_id = data["task_id"]
-        duration = data["duration"]
-        logging.info("starting task %s on worker %d", task_id, w_id)
-        thread = threading.Thread(target=waste_time, args=(task_id, duration))
+        logging.info("starting task %s on worker %d", task, w_id)
+        thread = threading.Thread(target=waste_time, args=(task, ))
         thread.start()

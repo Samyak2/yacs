@@ -3,18 +3,9 @@ import logging
 import socket
 import queue
 from typing import Dict, Tuple
-from dataclasses import dataclass
 
 from master_utils.worker import Worker
-
-
-@dataclass
-class WorkerMessage:
-    """Class to store messages from worker"""
-
-    addr: Tuple[str, int]
-    task_id: int
-    message: str
+from job_utils.task import WorkerMessage, Task
 
 
 def recvFromWorker(host, port, message):
@@ -37,18 +28,26 @@ def recvFromWorker(host, port, message):
             if not data:
                 return
             data = json.loads(data.decode())
-            data['addr'] = tuple(data['addr'])
+            data["addr"] = tuple(data["addr"])
             msg = WorkerMessage(**data)
             message.put(msg)
 
 
-def processWorkerMessage(workerMessages: queue.Queue, workers: Dict[Tuple, Worker]):
+def processWorkerMessage(
+    workerMessages: queue.Queue,
+    taskQueue: queue.Queue,
+    workers: Dict[Tuple, Worker],
+    mapRedMap: Dict[str, Task],
+):
     """Processes all data added to the worker message queue
 
     Removes task when done
     """
     while True:
-        msg = workerMessages.get()
-        logging.info("Got data %s", msg)
+        msg: WorkerMessage = workerMessages.get()
+        logging.info("TASK_DONE: Completed task %s on worker %s", msg.task_id, msg.w_id)
         if msg.task_id is not None:
             workers[msg.addr].finishTask()
+            if msg.task_id in mapRedMap:
+                taskQueue.put(mapRedMap[msg.task_id])
+                mapRedMap.pop(msg.task_id)
