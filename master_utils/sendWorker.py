@@ -11,9 +11,12 @@ def sendWorkerData(worker: Worker, query: dict):
         worker: Worker object
         query: query to be sent
     """
-    logging.info("Connecting to worker %s", worker)
-    worker_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    worker_socket.connect((worker.host, worker.port))
-    worker_socket.sendall(json.dumps(query).encode())
-    worker_socket.close()
-    logging.info("Sent data to worker")
+    try:
+        worker_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        worker_socket.connect((worker.host, worker.port))
+        worker_socket.sendall(json.dumps(query).encode())
+        worker_socket.close()
+        return True
+    except Exception as e:
+        logging.error("Could not connect to worker %s due to error: %s", worker.id, e)
+        return False

@@ -23,7 +23,6 @@ def recvFromWorker(host, port, message):
     while True:
         conn, addr = worker.accept()
         with conn:
-            logging.info("Connected by %s", addr)
             data = conn.recv(1024)
             if not data:
                 return
@@ -45,7 +44,6 @@ def processWorkerMessage(
     """
     while True:
         msg: WorkerMessage = workerMessages.get()
-        print("WORKER ID : ", msg)
         logging.info("TASK_DONE: Completed task %s on worker %s", msg.task_id, msg.w_id)
         if msg.task_id is not None:
             workers[msg.addr].finishTask()

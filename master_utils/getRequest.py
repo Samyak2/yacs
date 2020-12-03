@@ -49,7 +49,6 @@ def getRequestData(
     while True:
         conn, addr = clientRequests.accept()
         with conn:
-            logging.info("Connected by %s", addr)
             data = conn.recv(1024)
             if not data:
                 return
@@ -73,7 +72,12 @@ def processTaskQueue(taskQueue: queue.Queue, scheduler):
     """
     while True:
         task: Task = taskQueue.get()
-        worker: Worker = scheduler.getNext()
-        logging.info("RUN_TASK: running task %s on worker %s", task.task_id, worker.id)
-        worker.delegateTask()
-        sendWorkerData(worker, asdict(task))
+        task_sent = False
+        while not task_sent:
+            worker: Worker = scheduler.getNext()
+            worker.delegateTask()
+            if not sendWorkerData(worker, asdict(task)):
+                worker.finishTask()
+            else:
+                logging.info("RUN_TASK: running task %s on worker %s", task.task_id, worker.id)
+                task_sent = True
