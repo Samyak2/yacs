@@ -18,9 +18,6 @@ class Scheduler:
         self.worker_keys = list(workers.keys())
         self.current = 0
         self.num = len(workers)
-        self.slots_left = []
-        for key in self.worker_keys:
-            self.slots_left.append(self.workers[key].totalSlots)
 
     def getNext(self):
         """Returns next worker to schedule on"""
