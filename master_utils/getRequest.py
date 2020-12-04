@@ -47,11 +47,17 @@ def getRequestData(
     clientRequests.bind((host, port))
     clientRequests.listen()
     while True:
-        conn, addr = clientRequests.accept()
+        conn, _ = clientRequests.accept()
         with conn:
-            data = conn.recv(1024)
-            if not data:
-                return
+
+            fragments = []
+            while True:
+                chunk = conn.recv(1024)
+                if not chunk:
+                    break
+                fragments.append(chunk)
+            data = b"".join(fragments)
+
             data = data.decode("utf-8")
             data = json.loads(data)
             query = makeQuery(data)
