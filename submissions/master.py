@@ -4,12 +4,12 @@ import datetime
 import queue
 import sys
 from pprint import pprint
-from typing import Dict, List
+from typing import Dict, List, Tuple
+import time
 import json
 import socket
 import random
 from dataclasses import dataclass, asdict
-from typing import Tuple
 
 
 # master_utils/worker.py
@@ -322,9 +322,15 @@ def getRequestData(
         conn, addr = clientRequests.accept()
         with conn:
             logging.info("Connected by %s", addr)
-            data = conn.recv(1024)
-            if not data:
-                return
+
+            fragments = []
+            while True:
+                chunk = conn.recv(1024)
+                if not chunk:
+                    break
+                fragments.append(chunk)
+            data = b''.join(fragments)
+
             data = data.decode("utf-8")
             data = json.loads(data)
             query = makeQuery(data)
