@@ -80,14 +80,16 @@ class Scheduler:
         raise NotImplementedError
 
     def acquireWorkerLocks(self):
+        logging.info("acquiring locks of workers")
         for worker_ in self.workers.values():
             worker_.lock.acquire()
-            logging.info("acquiring lock of worker %d", worker_.id)
+        logging.info("acquired locks of workers")
 
     def releaseWorkerLocks(self):
+        logging.info("releasing locks of workers")
         for worker_ in self.workers.values():
             worker_.lock.release()
-            logging.info("releasing lock of worker %d", worker_.id)
+        logging.info("released locks of workers")
 
 
 class RandomScheduler(Scheduler):
