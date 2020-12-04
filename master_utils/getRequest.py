@@ -47,12 +47,17 @@ def getRequestData(
     clientRequests.bind((host, port))
     clientRequests.listen()
     while True:
-        conn, addr = clientRequests.accept()
+        conn, _ = clientRequests.accept()
         with conn:
-            logging.info("Connected by %s", addr)
-            data = conn.recv(1024)
-            if not data:
-                return
+
+            fragments = []
+            while True:
+                chunk = conn.recv(1024)
+                if not chunk:
+                    break
+                fragments.append(chunk)
+            data = b"".join(fragments)
+
             data = data.decode("utf-8")
             data = json.loads(data)
             query = makeQuery(data)
@@ -73,7 +78,12 @@ def processTaskQueue(taskQueue: queue.Queue, scheduler):
     """
     while True:
         task: Task = taskQueue.get()
-        worker: Worker = scheduler.getNext()
-        logging.info("RUN_TASK: running task %s on worker %s", task.task_id, worker.id)
-        worker.delegateTask()
-        sendWorkerData(worker, asdict(task))
+        task_sent = False
+        while not task_sent:
+            worker: Worker = scheduler.getNext()
+            worker.delegateTask()
+            if not sendWorkerData(worker, asdict(task)):
+                worker.finishTask()
+            else:
+                logging.info("RUN_TASK: running task %s on worker %s", task.task_id, worker.id)
+                task_sent = True
