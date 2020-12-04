@@ -56,8 +56,10 @@ class Worker:
             f" slots={self.totalSlots}>"
         )
 
+
 # master_utils/scheduler.py
 POLLING_TIME = 1
+
 
 class Scheduler:
     """General class for a scheduler"""
@@ -172,6 +174,8 @@ class LeastLoaded(Scheduler):
                 time.sleep(POLLING_TIME)
 
         return worker
+
+
 # config_utils/__init__.py
 def getWorkers(filename: str) -> List:
     workers = {}
@@ -242,7 +246,7 @@ clientPort = 5000
 recvWorkerPort = 5001
 sendWorkerPort = 4000
 
-#job_utils/task.py
+# job_utils/task.py
 @dataclass(eq=True, frozen=True)
 class Task:
     """Class to store details of each task
@@ -329,7 +333,7 @@ def getRequestData(
                 if not chunk:
                     break
                 fragments.append(chunk)
-            data = b''.join(fragments)
+            data = b"".join(fragments)
 
             data = data.decode("utf-8")
             data = json.loads(data)
@@ -355,7 +359,6 @@ def processTaskQueue(taskQueue: queue.Queue, scheduler):
         logging.info("RUN_TASK: running task %s on worker %s", task.task_id, worker.id)
         worker.delegateTask()
         sendWorkerData(worker, asdict(task))
-
 
 
 # master_utils/recvWorker.py
@@ -407,7 +410,6 @@ def processWorkerMessage(
                     for red_task in jobStore[msg.job_id]["reduce_tasks"]:
                         taskQueue.put(red_task)
                     jobStore.pop(msg.job_id)
-
 
 
 # start master threads
