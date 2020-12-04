@@ -104,20 +104,6 @@ class LeastLoaded(Scheduler):
     name = "LeastLoaded"
 
     def getNext(self):
-        # least_worker = None
-        # most_free_slots = 0
-        # for worker_ in self.workers.values():
-        #     worker_.lock.acquire()
-        #     if worker_.free_slots > most_free_slots:
-        #         least_worker = worker_
-        #         most_free_slots = worker_.free_slots
-        #     logging.info("acquiring lock of worker %d", worker_.id)
-
-        # for worker_ in self.workers.values():
-        #     worker_.lock.release()
-        #     logging.info("releasing lock of worker %d", worker_.id)
-
-        # return least_worker
 
         found = False
         while not found:

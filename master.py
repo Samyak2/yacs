@@ -10,7 +10,6 @@ from master_utils.getRequest import getRequestData, processTaskQueue
 from master_utils.recvWorker import recvFromWorker, processWorkerMessage
 from master_utils.scheduler import RandomScheduler, RoundRobinScheduler, LeastLoaded
 from config_utils import getWorkers
-from job_utils.task import Task
 
 # read configuration
 workers = getWorkers("config.json")
