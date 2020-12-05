@@ -41,7 +41,6 @@ def getRequestData(
     Parameters:
         host: host ip/name
         port: port to connect with
-        queries: queue to store the job queries from requests.py
     """
     clientRequests = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     clientRequests.bind((host, port))
