@@ -40,5 +40,5 @@ Now run `requests.py` with the number of requests you want to send to master nod
 python3 requests.py 100
 ```
 
-The log file would be generated in the root of the git repo, it's named `master.log`. Master has everything that you'd need. Worker nodes also log but those messages are sent to master, so not to worry about it.
+The log file would be generated in the root of the git repo, it's named `master_<scheduling_algorithm>.log`. Master has everything that you'd need. Worker nodes also log but those messages are sent to master, so not to worry about it.
 
