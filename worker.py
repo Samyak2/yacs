@@ -26,7 +26,6 @@ master.bind((host, port))
 
 
 def waste_time(task: Task):
-    time_left = task.duration
     time.sleep(task.duration)
     logging.info("Completed task %s on worker %d", task.task_id, w_id)
     msg = WorkerMessage(
