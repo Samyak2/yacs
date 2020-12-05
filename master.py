@@ -62,7 +62,7 @@ taskQueue = queue.Queue()
 jobStore: Dict[str, Dict[str, int]] = dict()
 
 # host and port details
-host = "localhost"
+host = "0.0.0.0"
 clientPort = 5000
 recvWorkerPort = 5001
 sendWorkerPort = 4000

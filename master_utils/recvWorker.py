@@ -52,5 +52,6 @@ def processWorkerMessage(
                     jobStore[msg.job_id]["map_tasks"].remove(msg.task_id)
                 if len(jobStore[msg.job_id]["map_tasks"]) == 0:
                     for red_task in jobStore[msg.job_id]["reduce_tasks"]:
+                        logging.info("TASK_TO_QUEUE: task %s added to queue", red_task.task_id)
                         taskQueue.put(red_task)
                     jobStore.pop(msg.job_id)

@@ -15,13 +15,13 @@ logging.basicConfig(
 
 port = int(sys.argv[1])
 w_id = int(sys.argv[2])
+host = "127.0.0.1" if len(sys.argv) < 4 else sys.argv[3]
 responsePort = 5001
-responseHost = "localhost"
+responseHost = "127.0.0.1"
 
 logging.info("Starting worker %d on port %d", w_id, port)
 
 master = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-host = "127.0.0.1"
 master.bind((host, port))
 
 
@@ -49,6 +49,9 @@ while True:
     conn, addr = master.accept()
     with conn:
         logging.info("Connected by %s", addr)
+        if addr[0] != responseHost:
+            responseHost = addr[0]
+        print(responseHost, responsePort)
         data = conn.recv(1024)
         if not data:
             continue
