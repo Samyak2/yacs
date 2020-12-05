@@ -68,6 +68,7 @@ def getRequestData(
                 reduce_tasks=query.reduce_tasks,
             )
             for map_task in query.get_tasks():
+                logging.info("TASK_TO_QUEUE: task %s added to queue", map_task.task_id)
                 taskQueue.put(map_task)
 
 

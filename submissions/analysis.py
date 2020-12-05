@@ -24,6 +24,7 @@ for i in files:
             "NEW_JOB_ID",
             "TimeStamp",
             "RUN_TASK_ID",
+            "TASK_ADDED_ID",
             "TASK_DONE_ID",
             "MAP_IDS",
             "REDUCE_IDS",
@@ -53,6 +54,7 @@ for i in files:
                 df_dict["NEW_JOB_ID"] = [nj_id]
                 df_dict["TimeStamp"] = [ts]
                 df_dict["RUN_TASK_ID"] = [""]
+                df_dict["TASK_ADDED_ID"] = [""]
                 df_dict["TASK_DONE_ID"] = [""]
                 df_dict["MAP_IDS"] = [map_tasks[:-1]]
                 df_dict["REDUCE_IDS"] = [reduce_tasks[:-1]]
@@ -63,6 +65,18 @@ for i in files:
                 df_dict["NEW_JOB_ID"] = [""]
                 df_dict["TimeStamp"] = [ts]
                 df_dict["RUN_TASK_ID"] = [rt_id]
+                df_dict["TASK_ADDED_ID"] = [""]
+                df_dict["TASK_DONE_ID"] = [""]
+                df_dict["MAP_IDS"] = [""]
+                df_dict["REDUCE_IDS"] = [""]
+
+            elif "TASK_TO_QUEUE: " in line:
+                rt_id = re.findall(r"(?:\d+_+[a-zA-Z]+\d+)", line[31:])[0]
+                ts = line.split(": ")[0]
+                df_dict["NEW_JOB_ID"] = [""]
+                df_dict["TimeStamp"] = [ts]
+                df_dict["RUN_TASK_ID"] = [""]
+                df_dict["TASK_ADDED_ID"] = [rt_id]
                 df_dict["TASK_DONE_ID"] = [""]
                 df_dict["MAP_IDS"] = [""]
                 df_dict["REDUCE_IDS"] = [""]
@@ -73,6 +87,7 @@ for i in files:
                 df_dict["NEW_JOB_ID"] = [""]
                 df_dict["TimeStamp"] = [ts]
                 df_dict["RUN_TASK_ID"] = [""]
+                df_dict["TASK_ADDED_ID"] = [""]
                 df_dict["TASK_DONE_ID"] = [td_id]
                 df_dict["MAP_IDS"] = [""]
                 df_dict["REDUCE_IDS"] = [""]
@@ -119,7 +134,7 @@ for i in files:
                     ts_end[i] = datetime.strptime(
                         row["TimeStamp"], "%Y-%m-%dT%H:%M:%S.%f"
                     )
-                if row["RUN_TASK_ID"] == i:
+                if row["TASK_ADDED_ID"] == i:
                     ts_start[i] = datetime.strptime(
                         row["TimeStamp"], "%Y-%m-%dT%H:%M:%S.%f"
                     )
@@ -175,8 +190,8 @@ fig_jobs = (
     .plot(rot=15, kind="bar", title="Plot of Jobs")
     .get_figure()
 )
-plt.clf()
 fig_jobs.savefig("jobs.png")
+plt.clf()
 
 # task 2
 import json
