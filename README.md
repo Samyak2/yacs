@@ -6,18 +6,18 @@
 
 ## Code
 
- - [`master.py`](./master.py) and `master_utils`(./master_utils)
+ - [`master.py`](./master.py) and [`master_utils`](./master_utils)
  - [`worker.py`](./worker.py)
- - [`config_utils`](./config_utils): utilities related to reading the `config.json` file
+ - [`config_utils/`](./config_utils): utilities related to reading the `config.json` file
     which defines workers.
- - [`job_utils`](./job_utils): definitions of tasks, jobs and messages shared by master and workers.
- - [`extras`](./extras): extra scripts such as config generator, sending requests to master, etc.
- - [`start_workers`](./start_workers.py): starts all workers defined in `config.json` locally with the
+ - [`job_utils/`](./job_utils): definitions of tasks, jobs and messages shared by master and workers.
+ - [`extras/`](./extras): extra scripts such as config generator, sending requests to master, etc.
+ - [`start_workers.py`](./start_workers.py): starts all workers defined in `config.json` locally with the
     correct ports. Workers are stopped once the script exits.
 
 ## Documentation
 
-[Documentation](./docs): report, architecture
+[Documentation - report and architecture](./docs)
 
 ## Analysis
 
@@ -47,12 +47,12 @@
 
  - Now run `extras/requests.py` with the number of requests you want to send to master node. It should send and finish. Let it run in the background. Example:
     ```
-    python3 requests.py 100
+    python3 extras/requests.py 100
     ```
 
     For more customized testing, `requests_eval.py`
     ```
-    python3 requests_eval.py # custom task generated
+    python3 extras/requests_eval.py # custom task generated
     ```
 
 # Analysis
