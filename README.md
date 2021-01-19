@@ -1,6 +1,25 @@
-# YACS
+# Yet Another Centralized Scheduler
 
-**Yet Another Centralized Scheduler**
+```                                                                              
+                                                                                     
+YYYYYYY       YYYYYYY           AAA                  CCCCCCCCCCCCC   SSSSSSSSSSSSSSS 
+Y:::::Y       Y:::::Y          A:::A              CCC::::::::::::C SS:::::::::::::::S
+Y:::::Y       Y:::::Y         A:::::A           CC:::::::::::::::CS:::::SSSSSS::::::S
+Y::::::Y     Y::::::Y        A:::::::A         C:::::CCCCCCCC::::CS:::::S     SSSSSSS
+YYY:::::Y   Y:::::YYY       A:::::::::A       C:::::C       CCCCCCS:::::S            
+   Y:::::Y Y:::::Y         A:::::A:::::A     C:::::C              S:::::S            
+    Y:::::Y:::::Y         A:::::A A:::::A    C:::::C               S::::SSSS         
+     Y:::::::::Y         A:::::A   A:::::A   C:::::C                SS::::::SSSSS    
+      Y:::::::Y         A:::::A     A:::::A  C:::::C                  SSS::::::::SS  
+       Y:::::Y         A:::::AAAAAAAAA:::::A C:::::C                     SSSSSS::::S 
+       Y:::::Y        A:::::::::::::::::::::AC:::::C                          S:::::S
+       Y:::::Y       A:::::AAAAAAAAAAAAA:::::AC:::::C       CCCCCC            S:::::S
+       Y:::::Y      A:::::A             A:::::AC:::::CCCCCCCC::::CSSSSSSS     S:::::S
+    YYYY:::::YYYY  A:::::A               A:::::ACC:::::::::::::::CS::::::SSSSSS:::::S
+    Y:::::::::::Y A:::::A                 A:::::A CCC::::::::::::CS:::::::::::::::SS 
+    YYYYYYYYYYYYYAAAAAAA                   AAAAAAA   CCCCCCCCCCCCC SSSSSSSSSSSSSSS   
+
+```
 
 # Layout
 
@@ -23,7 +42,7 @@
 
 [Analysis](./analysis)
 
-# How to run
+# Usage
 
  - Edit the `config.json` file with correct worker details. Or [generate one](./extras/config_gen.py).
 
